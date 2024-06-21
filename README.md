@@ -1,17 +1,5 @@
 # Classroom Management System
 
-## Project Proposal
-
-### Kathmandu University
-**Department of Computer Science and Engineering**  
-Dhulikhel, Kavre
-
-**Submitted by:**  
-- Himesh Dulal (20)
-- Suvesh Gurung (24)
-- Aryan Koju (31)
-- Pramisha Sapkota (47)
-
 ## Abstract
 The Classroom Management System (CMS) streamlines the process of assigning classrooms for proxy classes by providing real-time availability and booking options for teachers.
 
