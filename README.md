@@ -36,8 +36,8 @@ CMS addresses the inefficiency of traditional methods for finding and allocating
 - Qt 6.2
 - MySQL
 
-### Hardware
-- Any PC with Windows 10+ or Linux 64-bit OS
+<!---### Hardware-->
+<!---- Any PC with Windows 10+ or Linux 64-bit OS-->
 
 ## Project Planning
 
