@@ -1,0 +1,9 @@
+/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/CMS.dir
+/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/edit_cache.dir
+/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/rebuild_cache.dir
+/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/list_install_components.dir
+/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/install.dir
+/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/install/local.dir
+/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/install/strip.dir
+/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/CMS_autogen_timestamp_deps.dir
+/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/CMS_autogen.dir
