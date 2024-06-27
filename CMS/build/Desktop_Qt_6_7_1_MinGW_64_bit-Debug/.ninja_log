@@ -1,0 +1,9 @@
+# ninja log v6
+23	365	7411889142482065	CMS_autogen/timestamp	1545e4464dd7c39b
+23	365	7411889142482065	CMS_autogen/mocs_compilation.cpp	1545e4464dd7c39b
+23	365	7411889142482065	C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMS_autogen/timestamp	1545e4464dd7c39b
+700	3526	7411881128867228	CMakeFiles/CMS.dir/CMS_autogen/mocs_compilation.cpp.obj	d1824993534a928c
+840	3327	7411874868289062	CMakeFiles/CMS.dir/main.cpp.obj	be908e5fed455e9a
+367	6295	7411889145925331	CMakeFiles/CMS.dir/mainwindow.cpp.obj	dec7bf924b4fa47f
+23	365	7411889142482065	C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	1545e4464dd7c39b
+6297	6571	7411889205228750	CMS.exe	9ad9fd9df80886a7
