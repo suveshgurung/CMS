@@ -1,9 +1,11 @@
 #ifndef DB_CONNECTION
 #define DB_CONNECTION
 
+
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
+
 
 class CMSDatabase {
 private:
@@ -16,10 +18,6 @@ public:
     // method to connect to the database.
     bool connect();
 };
-
-namespace dbConnection {
-    bool connect(); 
-}
 
 
 #endif // !
