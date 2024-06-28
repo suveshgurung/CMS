@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "27"
+			"value" : "29"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "7"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_COLOR_DIAGNOSTICS",
@@ -1163,7 +1163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/subbu/Qt/Tools/CMake/share/cmake-3.27"
+			"value" : "/home/subbu/Qt/Tools/CMake/share/cmake-3.29"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1572,6 +1572,22 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/include"
+		},
+		{
+			"name" : "OPENGL_GLU_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "OPENGL_GLU_INCLUDE_DIR-NOTFOUND"
 		},
 		{
 			"name" : "OPENGL_GLX_INCLUDE_DIR",
@@ -5242,6 +5258,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_sqlmodel",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: sqlmodel (from target Qt6::Sql)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_sse2",
 			"properties" : 
 			[
@@ -6572,6 +6600,18 @@
 			],
 			"type" : "PATH",
 			"value" : "/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6Gui"
+		},
+		{
+			"name" : "Qt6Sql_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt6Sql."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6Sql"
 		},
 		{
 			"name" : "Qt6WidgetsTools_DIR",
