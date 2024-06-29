@@ -47,7 +47,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 23,
+				"line" : 25,
 				"parent" : 0
 			},
 			{
@@ -71,13 +71,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 62,
+				"line" : 64,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 45,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
@@ -117,12 +117,6 @@
 				"parent" : 12
 			},
 			{
-				"command" : 5,
-				"file" : 0,
-				"line" : 576,
-				"parent" : 2
-			},
-			{
 				"command" : 7,
 				"file" : 3,
 				"line" : 43,
@@ -130,83 +124,89 @@
 			},
 			{
 				"file" : 11,
-				"parent" : 15
+				"parent" : 14
 			},
 			{
 				"command" : 12,
 				"file" : 11,
 				"line" : 42,
-				"parent" : 16
+				"parent" : 15
 			},
 			{
 				"command" : 10,
 				"file" : 8,
 				"line" : 111,
-				"parent" : 17
+				"parent" : 16
 			},
 			{
 				"command" : 8,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 18
+				"parent" : 17
 			},
 			{
 				"file" : 10,
-				"parent" : 19
+				"parent" : 18
 			},
 			{
 				"command" : 7,
 				"file" : 10,
 				"line" : 43,
-				"parent" : 20
+				"parent" : 19
 			},
 			{
 				"file" : 9,
-				"parent" : 21
+				"parent" : 20
 			},
 			{
 				"command" : 11,
 				"file" : 9,
 				"line" : 33,
-				"parent" : 22
+				"parent" : 21
 			},
 			{
 				"command" : 10,
 				"file" : 8,
 				"line" : 36,
-				"parent" : 23
+				"parent" : 22
 			},
 			{
 				"command" : 8,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 24
+				"parent" : 23
 			},
 			{
 				"file" : 6,
-				"parent" : 25
+				"parent" : 24
 			},
 			{
 				"command" : 8,
 				"file" : 6,
 				"line" : 13,
-				"parent" : 26
+				"parent" : 25
 			},
 			{
 				"file" : 5,
-				"parent" : 27
+				"parent" : 26
 			},
 			{
 				"command" : 9,
 				"file" : 5,
 				"line" : 682,
-				"parent" : 28
+				"parent" : 27
 			},
 			{
 				"command" : 6,
 				"file" : 5,
 				"line" : 680,
-				"parent" : 28
+				"parent" : 27
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 576,
+				"parent" : 2
 			}
 		]
 	},
@@ -219,19 +219,23 @@
 					"fragment" : "-DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always"
 				},
 				{
-					"backtrace" : 14,
+					"backtrace" : 30,
 					"fragment" : "-fPIC"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 14,
+					"backtrace" : 30,
 					"define" : "QT_CORE_LIB"
 				},
 				{
 					"backtrace" : 6,
 					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "QT_SQL_LIB"
 				},
 				{
 					"backtrace" : 6,
@@ -245,17 +249,17 @@
 					"path" : "/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMS_autogen/include"
 				},
 				{
-					"backtrace" : 14,
+					"backtrace" : 30,
 					"isSystem" : true,
 					"path" : "/home/subbu/Qt/6.7.1/gcc_64/include/QtCore"
 				},
 				{
-					"backtrace" : 14,
+					"backtrace" : 30,
 					"isSystem" : true,
 					"path" : "/home/subbu/Qt/6.7.1/gcc_64/include"
 				},
 				{
-					"backtrace" : 14,
+					"backtrace" : 30,
 					"isSystem" : true,
 					"path" : "/home/subbu/Qt/6.7.1/gcc_64/mkspecs/linux-g++"
 				},
@@ -268,6 +272,11 @@
 					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "/home/subbu/Qt/6.7.1/gcc_64/include/QtGui"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/home/subbu/Qt/6.7.1/gcc_64/include/QtSql"
 				}
 			],
 			"language" : "CXX",
@@ -275,8 +284,8 @@
 			{
 				"backtraces" : 
 				[
-					14,
-					14
+					30,
+					30
 				],
 				"standard" : "17"
 			},
@@ -284,18 +293,19 @@
 			[
 				0,
 				1,
-				2
+				2,
+				5
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "CMS_autogen::@6890427a1f51a3e7e1df"
+			"id" : "CMS_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "CMS_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "CMS_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "CMS::@6890427a1f51a3e7e1df",
@@ -335,23 +345,28 @@
 				"role" : "libraries"
 			},
 			{
+				"backtrace" : 6,
+				"fragment" : "/home/subbu/Qt/6.7.1/gcc_64/lib/libQt6Sql.so.6.7.1",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 13,
 				"fragment" : "/home/subbu/Qt/6.7.1/gcc_64/lib/libQt6Gui.so.6.7.1",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 14,
-				"fragment" : "/home/subbu/Qt/6.7.1/gcc_64/lib/libQt6Core.so.6.7.1",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 29,
+				"backtrace" : 28,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libGLX.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 30,
+				"backtrace" : 29,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libOpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 30,
+				"fragment" : "/home/subbu/Qt/6.7.1/gcc_64/lib/libQt6Core.so.6.7.1",
 				"role" : "libraries"
 			}
 		],
@@ -372,7 +387,8 @@
 			[
 				0,
 				1,
-				2
+				2,
+				5
 			]
 		},
 		{
@@ -380,22 +396,23 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5
+				4,
+				7
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				4,
-				6
+				6,
+				8
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				9
 			]
 		}
 	],
@@ -424,6 +441,17 @@
 			"backtrace" : 4,
 			"path" : "mainwindow.h",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "dbConnection.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "dbConnection.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 4,

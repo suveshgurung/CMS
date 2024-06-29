@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlTableModel>
 
 
 namespace Ui {
@@ -21,6 +24,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QSqlDatabase db;
+    QSqlTableModel *model;
 };
 
 #endif // MAINWINDOW_H
