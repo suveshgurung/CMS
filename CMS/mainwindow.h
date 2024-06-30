@@ -22,6 +22,8 @@ public:
 private slots:
     void showTime();
 
+    //void on_test_clicked();
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
