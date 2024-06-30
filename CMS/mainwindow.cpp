@@ -4,6 +4,8 @@
 #include<QDateTime>
 #include <QString>
 #include <QSqlError>
+#include <unordered_map>
+#include "dbConnection.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -29,43 +31,19 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-//void MainWindow::on_submitButton_clicked()
-//{
-//    QString fname = ui->firstName->toPlainText();
-//    QString mname = ui->middleName->toPlainText();
-//    QString lname = ui->lastName->toPlainText();
-//    QString email = ui->email->toPlainText();
-//    QString password = ui->password->toPlainText();
-//
-//    QSqlQuery query;
-//
-//    QString insertQuery= QString("INSERT INTO User_Info (First_Name, Last_Name, Email, Password) "
-//                               "VALUES ('%1', '%2', '%3', '%4')")
-//                                .arg(fname)
-//                                .arg(lname)
-//                                .arg(email)
-//                                .arg(password);
-//
-//    if (!query.exec(insertQuery)) {
-//        qDebug() << "Error: Unable to execute query." << query.lastError();
-//        return;
-//    }
-//
-//    if (mname != "") {
-//        insertQuery = QString("INSERT INTO User_Info (Middle_Name)"
-//                              "VALUES ('%1')")
-//                                .arg(mname);
-//
-//        if (!query.exec(insertQuery)) {
-//            qDebug() << "Error: Unable to execute query." << query.lastError();
-//            return;
-//        }
-//    }
-//
-//    qDebug() << "Successfully entered data!!!";
-//}
 
-//void MainWindow::on_firstName_textChanged()
+//void MainWindow::on_test_clicked()
 //{
+//    std::unordered_map<std::string, std::string> test;
 //
+//    test["First_name"] = "Suvesh";
+//    test["Middle_name"] = "Bahadur";
+//    test["Last_name"] = "Gurung";
+//    test["Email"] = "suveshgurung2@gmail.com";
+//    test["Faculty"] = "COMP102";
+//    test["Phone_Number"] = "9860654346";
+//    test["Password"] = "GHemaOp12<3";
+//
+//
+//    cmsDb->insertData(test, "user_info");
 //}
