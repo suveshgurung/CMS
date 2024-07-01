@@ -1,5 +1,4 @@
 #include "dbConnection.h"
-#include <vector>
 
 CMSDatabase* cmsDb = nullptr;
 
