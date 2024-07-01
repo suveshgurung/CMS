@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "QMessageBox"
 #include<QTimer>
 #include<QDateTime>
 #include<QTimeEdit>
@@ -90,3 +91,28 @@ MainWindow::~MainWindow()
 //
 //    cmsDb->insertData(test, "user_info");
 //}
+
+void MainWindow::on_loginButton_clicked()
+{
+    QMessageBox:: information(this, "button clicked", "Logged In Successfully");
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_new_account_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_sign_in_clicked()
+{
+     QMessageBox:: information(this, "button clicked", "Logged In Successfully");
+}
+
+
+void MainWindow::on_back_login_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
