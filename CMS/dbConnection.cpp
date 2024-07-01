@@ -1,5 +1,7 @@
 #include "dbConnection.h"
+#include <vector>
 
+CMSDatabase* cmsDb = nullptr;
 
 /*
 * @brief    contructor definition of class CMSDatabase
@@ -35,3 +37,41 @@ bool CMSDatabase::connect() {
 
     return true;
 }
+
+
+/*
+* @brief    method to insert data into a Database
+* @params   (std::unordered_map<std::string, std::string>& dataList, std::string tableName)
+*           reference variable to the key value pair containing the data to be inserted.
+*           name of the table in which we want to enter the data.
+* @retval   bool
+*           true->data insertion was successful
+*           false->data insertion was unsuccessful
+*/
+bool CMSDatabase::insertData(const std::unordered_map<std::string, std::string>& dataList, const std::string tableName) {
+
+    QSqlQuery query;
+    QStringList columns, values;
+
+    for (const auto& pair : dataList) {
+        columns << QString::fromStdString(pair.first);
+        values << QString("'%1'").arg(QString::fromStdString(pair.second));
+    }
+
+    QString insertQuery = QString("INSERT INTO %1 (%2) VALUES (%3)")
+        .arg(QString::fromStdString(tableName))
+        .arg(columns.join(", "))
+        .arg(values.join(", "));
+
+    if (!query.exec(insertQuery)) {
+        qDebug() << "Error: Unable to execute query." << query.lastError();
+        return false;
+    } else {
+        qDebug() << "Successfully entered data!!!";
+    }
+
+    return true;
+}
+
+
+
