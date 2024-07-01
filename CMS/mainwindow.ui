@@ -17,14 +17,23 @@
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
+      <x>50</x>
+      <y>-40</y>
       <width>1920</width>
       <height>1080</height>
      </rect>
     </property>
     <property name="mouseTracking">
-     <bool>false</bool>
+     <bool>true</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>true</bool>
+    </property>
+    <property name="acceptDrops">
+     <bool>true</bool>
+    </property>
+    <property name="toolTip">
+     <string>1</string>
     </property>
     <property name="styleSheet">
      <string notr="true"/>
@@ -36,8 +45,8 @@
      <widget class="QLabel" name="TitleBar">
       <property name="geometry">
        <rect>
-        <x>550</x>
-        <y>0</y>
+        <x>700</x>
+        <y>30</y>
         <width>171</width>
         <height>51</height>
        </rect>
@@ -97,15 +106,42 @@
         <height>26</height>
        </rect>
       </property>
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="tabletTracking">
+       <bool>true</bool>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
       <property name="acceptDrops">
        <bool>true</bool>
+      </property>
+      <property name="toolTip">
+       <string>2</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-1</number>
       </property>
       <property name="styleSheet">
        <string notr="true">border:10px;
 </string>
       </property>
+      <property name="wrapping">
+       <bool>true</bool>
+      </property>
+      <property name="frame">
+       <bool>false</bool>
+      </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
+      </property>
+      <property name="specialValueText">
+       <string notr="true"/>
+      </property>
+      <property name="accelerated">
+       <bool>false</bool>
       </property>
       <property name="showGroupSeparator" stdset="0">
        <bool>true</bool>
@@ -147,10 +183,13 @@
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">border:10px;
+background-color: rgb(0, 85, 0);
+background-color: rgb(85, 170, 127);
+</string>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Find</string>
       </property>
      </widget>
      <widget class="QPushButton" name="findTime">
@@ -163,7 +202,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>FInd</string>
       </property>
      </widget>
      <widget class="QToolButton" name="toolButton">
@@ -291,8 +330,8 @@
      <widget class="QLabel" name="CurrentTime">
       <property name="geometry">
        <rect>
-        <x>1310</x>
-        <y>60</y>
+        <x>1290</x>
+        <y>80</y>
         <width>101</width>
         <height>20</height>
        </rect>
@@ -304,8 +343,8 @@
      <widget class="QLabel" name="Digital_Clock">
       <property name="geometry">
        <rect>
-        <x>1400</x>
-        <y>60</y>
+        <x>1380</x>
+        <y>80</y>
         <width>131</width>
         <height>21</height>
        </rect>

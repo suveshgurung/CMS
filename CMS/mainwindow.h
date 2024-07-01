@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 
-
 namespace Ui {
 class MainWindow;
 }
@@ -13,15 +12,14 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
-    void showTime();
+    void showTime();  // Declare showTime function
 
 private:
     Ui::MainWindow *ui;
 };
 
 #endif // MAINWINDOW_H
-
