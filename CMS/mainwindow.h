@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlTableModel>
 
 namespace Ui {
 class MainWindow;
@@ -18,8 +21,12 @@ public:
 private slots:
     void showTime();  // Declare showTime function
 
+    //void on_test_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QSqlDatabase db;
+    QSqlTableModel *model;
 };
 
 #endif // MAINWINDOW_H
