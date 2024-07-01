@@ -1,0 +1,9 @@
+C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/CMS.dir
+C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/CMS_autogen_timestamp_deps.dir
+C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/CMS_autogen.dir
