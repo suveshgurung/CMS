@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This file is managed by Qt Creator, do not edit!
 
 set("CMAKE_GENERATOR" "Ninja" CACHE "STRING" "" FORCE)
@@ -8,3 +9,7 @@ set("CMAKE_PREFIX_PATH" "/home/subbu/Qt/6.7.1/gcc_64" CACHE "PATH" "" FORCE)
 set("CMAKE_C_COMPILER" "/usr/bin/gcc-13" CACHE "FILEPATH" "" FORCE)
 set("CMAKE_CXX_COMPILER" "/usr/bin/g++-13" CACHE "FILEPATH" "" FORCE)
 set("CMAKE_CXX_FLAGS_INIT" "-DQT_QML_DEBUG" CACHE "STRING" "" FORCE)
+=======
+# This file is managed by Qt Creator, do not edit!
+
+>>>>>>> main
