@@ -4,6 +4,7 @@ C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/build/Desktop_Qt_6_7_1_M
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q23utility.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qarraydata.h \
@@ -142,6 +143,16 @@ C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/build/Desktop_Qt_6_7_1_M
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlDatabase \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlQuery \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/QSqlTableModel \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/qsqldatabase.h \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlquery.h \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/qsqlquerymodel.h \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/qsqltablemodel.h \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/qtsql-config.h \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h \
+  C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \

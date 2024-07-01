@@ -23,6 +23,14 @@ private slots:
 
     //void on_test_clicked();
 
+    void on_loginButton_clicked();
+
+    void on_new_account_clicked();
+
+    void on_sign_in_clicked();
+
+    void on_back_login_clicked();
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
