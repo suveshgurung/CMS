@@ -4,6 +4,7 @@
   /home/subbu/Qt/6.7.1/gcc_64/include/QtCore/q20memory.h \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtCore/q20type_traits.h \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtCore/q23utility.h \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtCore/qabstractitemmodel.h \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtCore/qalgorithms.h \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtCore/qanystringview.h \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtCore/qarraydata.h \
@@ -141,6 +142,16 @@
   /home/subbu/Qt/6.7.1/gcc_64/include/QtGui/qtguiglobal.h \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtGui/qtransform.h \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/QSqlDatabase \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/QSqlQuery \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/QSqlTableModel \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/qsqldatabase.h \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/qsqlquery.h \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/qsqlquerymodel.h \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/qsqltablemodel.h \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/qtsql-config.h \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/qtsqlexports.h \
+  /home/subbu/Qt/6.7.1/gcc_64/include/QtSql/qtsqlglobal.h \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtWidgets/QMainWindow \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtWidgets/qmainwindow.h \
   /home/subbu/Qt/6.7.1/gcc_64/include/QtWidgets/qsizepolicy.h \

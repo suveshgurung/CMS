@@ -289,6 +289,9 @@ OPENGL_GLES2_INCLUDE_DIR:PATH=/usr/include
 OPENGL_GLES3_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a file.
+OPENGL_GLU_INCLUDE_DIR:PATH=OPENGL_GLU_INCLUDE_DIR-NOTFOUND
+
+//Path to a file.
 OPENGL_GLX_INCLUDE_DIR:PATH=/usr/include
 
 //Path to a file.
@@ -355,6 +358,9 @@ Qt6GuiTools_DIR:PATH=/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6GuiTools
 //The directory containing a CMake configuration file for Qt6Gui.
 Qt6Gui_DIR:PATH=/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6Gui
 
+//The directory containing a CMake configuration file for Qt6Sql.
+Qt6Sql_DIR:PATH=/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6Sql
+
 //The directory containing a CMake configuration file for Qt6WidgetsTools.
 Qt6WidgetsTools_DIR:PATH=/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6WidgetsTools
 
@@ -396,9 +402,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/subbu/KU/CS/1st year 2nd sem/second sem proje
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=27
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=29
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=7
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
 //Path to CMake executable.
 CMAKE_COMMAND:INTERNAL=/home/subbu/Qt/Tools/CMake/bin/cmake
 //Path to cpack program executable.
@@ -513,7 +519,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/home/subbu/Qt/Tools/CMake/share/cmake-3.27
+CMAKE_ROOT:INTERNAL=/home/subbu/Qt/Tools/CMake/share/cmake-3.29
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -564,6 +570,8 @@ OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 OPENGL_GLES2_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLES3_INCLUDE_DIR
 OPENGL_GLES3_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: OPENGL_GLU_INCLUDE_DIR
+OPENGL_GLU_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLX_INCLUDE_DIR
 OPENGL_GLX_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_INCLUDE_DIR
@@ -1135,6 +1143,8 @@ QT_FEATURE_splashscreen:INTERNAL=ON
 QT_FEATURE_splitter:INTERNAL=ON
 //Qt feature: sql (from target Qt6::Core)
 QT_FEATURE_sql:INTERNAL=ON
+//Qt feature: sqlmodel (from target Qt6::Sql)
+QT_FEATURE_sqlmodel:INTERNAL=ON
 //Qt feature: sse2 (from target Qt6::Core)
 QT_FEATURE_sse2:INTERNAL=ON
 //Qt feature: sse3 (from target Qt6::Core)
