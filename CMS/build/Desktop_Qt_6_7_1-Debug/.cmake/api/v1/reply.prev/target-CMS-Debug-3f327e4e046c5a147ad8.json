@@ -31,9 +31,9 @@
 			"/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
 			"/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
 			"/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6/Qt6Config.cmake",
-			"/home/subbu/Qt/Tools/CMake/share/cmake-3.27/Modules/FindOpenGL.cmake",
+			"/home/subbu/Qt/Tools/CMake/share/cmake-3.29/Modules/FindOpenGL.cmake",
 			"/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6/FindWrapOpenGL.cmake",
-			"/home/subbu/Qt/Tools/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+			"/home/subbu/Qt/Tools/CMake/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake",
 			"/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
 			"/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
 			"/home/subbu/Qt/6.7.1/gcc_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
@@ -71,13 +71,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 64,
+				"line" : 65,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 47,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
@@ -193,13 +193,13 @@
 			{
 				"command" : 9,
 				"file" : 5,
-				"line" : 682,
+				"line" : 712,
 				"parent" : 27
 			},
 			{
 				"command" : 6,
 				"file" : 5,
-				"line" : 680,
+				"line" : 710,
 				"parent" : 27
 			},
 			{
@@ -397,7 +397,8 @@
 			[
 				3,
 				4,
-				7
+				7,
+				8
 			]
 		},
 		{
@@ -405,14 +406,14 @@
 			"sourceIndexes" : 
 			[
 				6,
-				8
+				9
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				9
+				10
 			]
 		}
 	],
@@ -457,6 +458,11 @@
 			"backtrace" : 4,
 			"path" : "mainwindow.ui",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "window.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
