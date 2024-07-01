@@ -1,3 +1,26 @@
+<<<<<<< HEAD
+# ninja log v5
+5	818	1719395479423420179	CMS_autogen/timestamp	a560cc76ca6317f4
+5	818	1719395479423420179	CMS_autogen/mocs_compilation.cpp	a560cc76ca6317f4
+5	818	1719395479423420179	/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMS_autogen/timestamp	a560cc76ca6317f4
+5	818	1719395479423420179	/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMS_autogen/mocs_compilation.cpp	a560cc76ca6317f4
+818	5114	1719395483728356063	CMakeFiles/CMS.dir/CMS_autogen/mocs_compilation.cpp.o	add46ec9d6000cdd
+819	5237	1719395483850354243	CMakeFiles/CMS.dir/main.cpp.o	6e6de37961d60d0a
+820	5282	1719395483895353572	CMakeFiles/CMS.dir/mainwindow.cpp.o	34c72b7b0c43b0d4
+5282	5963	1719395484566343559	CMS	d86a326153d0cdc
+9	56	1719395667602451428	CMS_autogen/timestamp	a560cc76ca6317f4
+9	56	1719395667602451428	CMS_autogen/mocs_compilation.cpp	a560cc76ca6317f4
+9	56	1719395667602451428	/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMS_autogen/timestamp	a560cc76ca6317f4
+9	56	1719395667602451428	/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMS_autogen/mocs_compilation.cpp	a560cc76ca6317f4
+61	4499	1719395672043377736	CMakeFiles/CMS.dir/mainwindow.cpp.o	34c72b7b0c43b0d4
+4500	5181	1719395672714366588	CMS	d86a326153d0cdc
+9	53	1719395735006317715	CMS_autogen/timestamp	a560cc76ca6317f4
+9	53	1719395735006317715	CMS_autogen/mocs_compilation.cpp	a560cc76ca6317f4
+9	53	1719395735006317715	/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMS_autogen/timestamp	a560cc76ca6317f4
+9	53	1719395735006317715	/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMS_autogen/mocs_compilation.cpp	a560cc76ca6317f4
+58	4578	1719395739528240541	CMakeFiles/CMS.dir/mainwindow.cpp.o	34c72b7b0c43b0d4
+4578	5278	1719395740219228737	CMS	d86a326153d0cdc
+=======
 # ninja log v5
 5	19	1719766189709261593	CMS_autogen/timestamp	a560cc76ca6317f4
 5	19	1719766189709261593	/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMS_autogen/mocs_compilation.cpp	a560cc76ca6317f4
@@ -56,3 +79,4 @@
 6	33	1719767999129635709	/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/build/Desktop_Qt_6_7_1-Debug/CMS_autogen/mocs_compilation.cpp	a560cc76ca6317f4
 34	2170	1719768021693275618	CMakeFiles/CMS.dir/mainwindow.cpp.o	1c47c253306ec5cb
 2171	2635	1719768022152268664	CMS	a020b9a113fc8b03
+>>>>>>> main
