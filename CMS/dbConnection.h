@@ -5,8 +5,10 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlError>
+#include <QSqlRecord>
 #include <unordered_map>
 #include <string>
+#include <vector>
 
 
 class CMSDatabase {
@@ -20,8 +22,14 @@ public:
     // method to connect to the database.
     bool connect();
 
+    // method to close the database.
+    bool close();
+
     // method to insert data into database.
     bool insertData(const std::unordered_map<std::string, std::string>& dataList, const std::string tableName);
+    
+    // method to get data from the database;
+    std::unordered_map<std::string, std::vector<std::string>> getData(const std::string tableName);
 };
 
 extern CMSDatabase* cmsDb;

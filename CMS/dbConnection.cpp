@@ -1,4 +1,7 @@
 #include "dbConnection.h"
+#include <string>
+#include <unordered_map>
+#include <vector>
 
 CMSDatabase* cmsDb = nullptr;
 
@@ -23,7 +26,7 @@ CMSDatabase::CMSDatabase() {
 bool CMSDatabase::connect() {
     // connect the database.
     db.setDatabaseName("/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/CMS_DB.db");
-    
+
     // check if the database is open or not.
     if (!db.open()) {
         qDebug() << "Error: Unable to setup connection with database!!!";
@@ -33,6 +36,21 @@ bool CMSDatabase::connect() {
 
     qDebug() << "Database connection successful!!!";
     qDebug() << "The tables of the database are : " << db.tables();
+
+    return true;
+}
+
+
+/*
+ * @brief   method to close the database
+ * @params  null
+ * @retval  bool
+ *          true->database was closed successful
+ *          false->database was not closed successful
+ */
+bool CMSDatabase::close() {
+    db.close();
+    //QSqlDatabase::removeDatabase(QSqlDatabase::defaultConnection);
 
     return true;
 }
@@ -52,18 +70,22 @@ bool CMSDatabase::insertData(const std::unordered_map<std::string, std::string>&
     QSqlQuery query;
     QStringList columns, values;
 
+    // get the keys and the corresponding values and put them in a QStringList
     for (const auto& pair : dataList) {
         columns << QString::fromStdString(pair.first);
         values << QString("'%1'").arg(QString::fromStdString(pair.second));
     }
 
+    // prepare the insert query
     QString insertQuery = QString("INSERT INTO %1 (%2) VALUES (%3)")
         .arg(QString::fromStdString(tableName))
         .arg(columns.join(", "))
         .arg(values.join(", "));
 
+    // execute the query
     if (!query.exec(insertQuery)) {
-        qDebug() << "Error: Unable to execute query." << query.lastError();
+        qDebug() << "Error: Unable to insert data."; 
+        qDebug() << query.lastError();
         return false;
     } else {
         qDebug() << "Successfully entered data!!!";
@@ -74,3 +96,60 @@ bool CMSDatabase::insertData(const std::unordered_map<std::string, std::string>&
 
 
 
+/*
+* @brief    method to get data from a table.
+* @params   const std::string tableName
+*           name of the table from where the data is needed.
+* @retval   std::unordered_map<std::string, std::vector<std::string>>
+*           the ouput of the select query kept in a key value pair.
+*/
+std::unordered_map<std::string, std::vector<std::string>> CMSDatabase::getData(const std::string tableName) {
+
+    QSqlQuery query;
+    std::unordered_map<std::string, std::vector<std::string>> tableData;
+
+    // get all data from the table.
+    QString selectQuery = QString("SELECT * FROM %1")
+        .arg(QString::fromStdString(tableName));
+
+    // execute the query.
+    if (!query.exec(selectQuery)) {
+        qDebug() << "Error: Unable to fetch data.";
+        qDebug() << query.lastError();
+    }
+
+    // get the returned value from the query and the number of fields returned.
+    QSqlRecord record = query.record();
+    int colNumber = query.record().count();
+    
+    QString columnName;
+
+    for (int i = 0; i < colNumber; i++) {
+        columnName = record.fieldName(i);
+
+        tableData[columnName.toStdString()] = std::vector<std::string>(); 
+    }
+
+    // iterate over every row of the table.
+    while (query.next()) {
+        for (int i = 0; i < colNumber; i++) {
+            columnName = record.fieldName(i);
+
+            // push data of each row in the corresponding field.
+            std::string data = QString(query.value(i).toString()).toStdString();
+            tableData[columnName.toStdString()].push_back(data);
+        }
+    }
+
+    // reference to show how to access the field name and the values of the corresponding field. Later needed in application.
+    //for (const auto& key : tableData) {
+    //    qDebug() << key.first << ": ";
+
+    //    for (const auto& value : key.second) {
+    //        qDebug() << value << " ";
+    //    }
+    //}
+
+    return tableData;
+    
+}
