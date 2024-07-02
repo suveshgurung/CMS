@@ -10,7 +10,6 @@
 #include <QApplication>
 #include <QString>
 #include <QSqlError>
-#include <unordered_map>
 #include "dbConnection.h"
 
 MainWindow::MainWindow(QWidget *parent)
@@ -73,24 +72,12 @@ void MainWindow::showTime(){
 MainWindow::~MainWindow()
 {
     delete ui;
+
+    cmsDb->close();
+    qDebug() << "Database closed Successfully";
 }
 
 
-//void MainWindow::on_test_clicked()
-//{
-//    std::unordered_map<std::string, std::string> test;
-//
-//    test["First_name"] = "Suvesh";
-//    test["Middle_name"] = "Bahadur";
-//    test["Last_name"] = "Gurung";
-//    test["Email"] = "suveshgurung2@gmail.com";
-//    test["Faculty"] = "COMP102";
-//    test["Phone_Number"] = "9860654346";
-//    test["Password"] = "GHemaOp12<3";
-//
-//
-//    cmsDb->insertData(test, "user_info");
-//}
 
 void MainWindow::on_loginButton_clicked()
 {
