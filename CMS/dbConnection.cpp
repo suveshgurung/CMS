@@ -1,7 +1,6 @@
 #include "dbConnection.h"
 #include <string>
 #include <unordered_map>
-#include <vector>
 
 CMSDatabase* cmsDb = nullptr;
 
@@ -25,7 +24,7 @@ CMSDatabase::CMSDatabase() {
 */
 bool CMSDatabase::connect() {
     // connect the database.
-    db.setDatabaseName("/home/subbu/KU/CS/1st year 2nd sem/second sem project/CMS/CMS/CMS_DB.db");
+    db.setDatabaseName("CMS_DB.db");
 
     // check if the database is open or not.
     if (!db.open()) {

@@ -74,6 +74,8 @@ MainWindow::~MainWindow()
     delete ui;
 
     cmsDb->close();
+    delete cmsDb;
+
     qDebug() << "Database closed Successfully";
 }
 
