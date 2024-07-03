@@ -1,7 +1,6 @@
 #include "dbConnection.h"
 #include <string>
 #include <unordered_map>
-#include <vector>
 
 CMSDatabase* cmsDb = nullptr;
 
