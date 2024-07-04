@@ -9,7 +9,6 @@
 #include <QWidget>
 #include <QApplication>
 #include <QString>
-#include <QSqlError>
 #include "dbConnection.h"
 
 MainWindow::MainWindow(QWidget *parent)
