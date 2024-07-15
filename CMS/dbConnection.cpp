@@ -11,7 +11,7 @@ CMSDatabase* cmsDb = nullptr;
 */
 CMSDatabase::CMSDatabase() {
     // set database type. 
-    db = QSqlDatabase::addDatabase("QSQLITE", "CMSConnection");
+    db = QSqlDatabase::addDatabase("QSQLITE");
 }
 
 

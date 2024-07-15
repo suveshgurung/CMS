@@ -39,7 +39,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="login_page">
      <widget class="QFrame" name="login_frame">
@@ -266,7 +266,7 @@ QRadioButton::indicator {
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QLineEdit" name="username_2">
+      <widget class="QLineEdit" name="sign_in_fname">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -284,7 +284,7 @@ QRadioButton::indicator {
         <string>First Name</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="password_2">
+      <widget class="QLineEdit" name="sign_in_mname">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -305,7 +305,7 @@ QRadioButton::indicator {
         <string>Middle Name (opt)</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="subject">
+      <widget class="QLineEdit" name="sign_in_lname">
        <property name="geometry">
         <rect>
          <x>220</x>
@@ -392,7 +392,7 @@ QRadioButton::indicator {
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QLineEdit" name="username_4">
+      <widget class="QLineEdit" name="sign_in_email">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -433,10 +433,10 @@ QRadioButton::indicator {
         <string>Gender</string>
        </property>
       </widget>
-      <widget class="QRadioButton" name="radioButton">
+      <widget class="QRadioButton" name="sign_in_male">
        <property name="geometry">
         <rect>
-         <x>40</x>
+         <x>80</x>
          <y>320</y>
          <width>92</width>
          <height>21</height>
@@ -454,10 +454,10 @@ QRadioButton::indicator {
         <string>Male</string>
        </property>
       </widget>
-      <widget class="QRadioButton" name="radioButton_2">
+      <widget class="QRadioButton" name="sign_in_female">
        <property name="geometry">
         <rect>
-         <x>160</x>
+         <x>260</x>
          <y>320</y>
          <width>92</width>
          <height>21</height>
@@ -475,28 +475,7 @@ QRadioButton::indicator {
         <string>Female</string>
        </property>
       </widget>
-      <widget class="QRadioButton" name="radioButton_3">
-       <property name="geometry">
-        <rect>
-         <x>280</x>
-         <y>320</y>
-         <width>92</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Arial</family>
-         <pointsize>-1</pointsize>
-         <italic>false</italic>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Custom</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="username_5">
+      <widget class="QLineEdit" name="sign_in_phoneNumber">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -514,7 +493,7 @@ QRadioButton::indicator {
         <string>Mobile Number</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="username_6">
+      <widget class="QLineEdit" name="sign_in_department">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -535,7 +514,7 @@ QRadioButton::indicator {
         <string>Department</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="username_7">
+      <widget class="QLineEdit" name="sign_in_password">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -912,7 +891,7 @@ background-color: rgb(231, 237, 255);</string>
      <x>0</x>
      <y>0</y>
      <width>1920</width>
-     <height>21</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>
