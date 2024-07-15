@@ -16,14 +16,12 @@ private:
     QSqlDatabase db;
 
 public:
-    // constructor
+    // constructor and destructor.
     CMSDatabase();
+    ~CMSDatabase();
 
     // method to connect to the database.
     bool connect();
-
-    // method to close the database.
-    bool close();
 
     // method to insert data into database.
     bool insertData(const std::unordered_map<std::string, std::string>& dataList, const std::string tableName);
