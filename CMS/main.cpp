@@ -1,6 +1,7 @@
 #include "mainwindow.h"
-// #include "dbConnection.h"
 #include "dbConnection.h"
+#include <QScreen>
+#include <QGuiApplication>
 #include <QApplication>
 
 
@@ -12,6 +13,10 @@ int main(int argc, char *argv[])
     cmsDb->connect();
 
     MainWindow w;
+
+    w.setMinimumSize(1920, 1080);
+    w.setMaximumSize(1920, 1080);
+
     w.show();
     return a.exec();
 }

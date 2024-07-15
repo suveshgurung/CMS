@@ -33,13 +33,13 @@
      <bool>true</bool>
     </property>
     <property name="toolTip">
-     <string>1</string>
+     <string/>
     </property>
     <property name="styleSheet">
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="login_page">
      <widget class="QFrame" name="login_frame">
