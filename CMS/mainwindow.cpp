@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "QMessageBox"
+#include "dbConnection.h"
 #include<QTimer>
 #include<QDateTime>
 #include<QTimeEdit>
@@ -9,7 +10,6 @@
 #include <QWidget>
 #include <QApplication>
 #include <QString>
-#include "dbConnection.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -94,7 +94,40 @@ void MainWindow::on_new_account_clicked()
 
 void MainWindow::on_sign_in_clicked()
 {
-     QMessageBox:: information(this, "button clicked", "Logged In Successfully");
+     // QMessageBox:: information(this, "button clicked", "Logged In Successfully");
+
+    QString fname = ui->sign_in_fname->text();
+    QString mname = ui->sign_in_mname->text();
+    QString lname = ui->sign_in_lname->text();
+    QString email = ui->sign_in_email->text();
+    QString phoneNumber = ui->sign_in_phoneNumber->text();
+    QString department = ui->sign_in_department->text();
+    QString password = ui->sign_in_password->text();
+    bool male = ui->sign_in_male->isChecked();
+    bool female = ui->sign_in_female->isChecked();
+
+    std::unordered_map<std::string, std::string> signInData;
+
+    signInData["First_Name"] = fname.toStdString();
+    if (mname != "") {
+        signInData["Middle_Name"] = mname.toStdString();
+    }
+    signInData["Last_Name"] = lname.toStdString();
+    signInData["Email"] = email.toStdString();
+    signInData["Department"] = department.toStdString();
+    signInData["Phone_Number"] = phoneNumber.toStdString();
+    signInData["Password"] = password.toStdString();
+    if (male) {
+        signInData["Gender"] = "Male";
+    } else if (female) {
+        signInData["Gender"] = "Female";
+    }  
+
+    if (cmsDb->insertData(signInData, "User_Info")) {
+        qDebug() << "Successfull";
+    } else {
+        qDebug() << "Unsuccessful";
+    }
 }
 
 
