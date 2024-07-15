@@ -11,7 +11,7 @@ CMSDatabase* cmsDb = nullptr;
 */
 CMSDatabase::CMSDatabase() {
     // set database type. 
-    db = QSqlDatabase::addDatabase("QSQLITE");
+    db = QSqlDatabase::addDatabase("QSQLITE", "CMSConnection");
 }
 
 
@@ -39,20 +39,11 @@ bool CMSDatabase::connect() {
     return true;
 }
 
-
-/*
- * @brief   method to close the database
- * @params  null
- * @retval  bool
- *          true->database was closed successful
- *          false->database was not closed successful
- */
-bool CMSDatabase::close() {
+CMSDatabase::~CMSDatabase() {
     db.close();
-    //QSqlDatabase::removeDatabase(QSqlDatabase::defaultConnection);
-
-    return true;
+    QSqlDatabase::removeDatabase("CMSConnection");
 }
+
 
 
 /*
