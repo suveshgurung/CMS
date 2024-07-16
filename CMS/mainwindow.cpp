@@ -85,11 +85,13 @@ MainWindow::~MainWindow()
 void MainWindow::on_loginButton_clicked()
 {
 
+    // retrieve info from the frontend.
     QString email = ui->login_email->text();
     QString password = ui->login_password->text();
 
+    // check for empty fields.
     if (email == "" || password == "") {
-        QMessageBox::information(this, "button clicked", "Email or password is missing!!");
+        QMessageBox::information(this, "button clicked", "Email or password is missing!!!");
         return;
     }
 
@@ -99,6 +101,7 @@ void MainWindow::on_loginButton_clicked()
     bool isUserValid = false;
     int index = 0;
 
+    // retrieve data from the database.
     userData = cmsDb->getData("User_Info");
     for (const auto& key : userData) {
         for (const auto& value : key.second) {
@@ -113,6 +116,7 @@ void MainWindow::on_loginButton_clicked()
         }
     }
 
+    // check if the user email exists.
     for (size_t i = 0; i < userEmails.size(); i++) {
         if (userEmails.at(i) == email.toStdString()) {
             isUserValid = true;
@@ -122,6 +126,7 @@ void MainWindow::on_loginButton_clicked()
         }
     }
 
+    // check if the user entered correct password.
     if (isUserValid) {
         
         if (userPasswords.at(index) == password.toStdString()) {
@@ -155,6 +160,11 @@ void MainWindow::on_sign_in_clicked()
     QString password = ui->sign_in_password->text();
     bool male = ui->sign_in_male->isChecked();
     bool female = ui->sign_in_female->isChecked();
+
+    if (fname == "" || lname == "" || email == "" || phoneNumber == "" || department == "" || password == "" || (!male && !female)) {
+        QMessageBox::information(this, "button clicked", "Please enter all the required fileds!!!");
+        return;
+    }
 
     std::unordered_map<std::string, std::string> signInData;
 
