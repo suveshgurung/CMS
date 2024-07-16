@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "QMessageBox"
+#include "dbConnection.h"
 #include<QTimer>
 #include<QDateTime>
 #include<QTimeEdit>
@@ -8,9 +10,6 @@
 #include <QWidget>
 #include <QApplication>
 #include <QString>
-#include <QSqlError>
-#include <unordered_map>
-#include "dbConnection.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -72,21 +71,68 @@ void MainWindow::showTime(){
 MainWindow::~MainWindow()
 {
     delete ui;
+
+    delete cmsDb;
+
+    qDebug() << "Database closed Successfully";
 }
 
 
-//void MainWindow::on_test_clicked()
-//{
-//    std::unordered_map<std::string, std::string> test;
-//
-//    test["First_name"] = "Suvesh";
-//    test["Middle_name"] = "Bahadur";
-//    test["Last_name"] = "Gurung";
-//    test["Email"] = "suveshgurung2@gmail.com";
-//    test["Faculty"] = "COMP102";
-//    test["Phone_Number"] = "9860654346";
-//    test["Password"] = "GHemaOp12<3";
-//
-//
-//    cmsDb->insertData(test, "user_info");
-//}
+
+void MainWindow::on_loginButton_clicked()
+{
+    QMessageBox:: information(this, "button clicked", "Logged In Successfully");
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_new_account_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_sign_in_clicked()
+{
+     // QMessageBox:: information(this, "button clicked", "Logged In Successfully");
+
+    QString fname = ui->sign_in_fname->text();
+    QString mname = ui->sign_in_mname->text();
+    QString lname = ui->sign_in_lname->text();
+    QString email = ui->sign_in_email->text();
+    QString phoneNumber = ui->sign_in_phoneNumber->text();
+    QString department = ui->sign_in_department->text();
+    QString password = ui->sign_in_password->text();
+    bool male = ui->sign_in_male->isChecked();
+    bool female = ui->sign_in_female->isChecked();
+
+    std::unordered_map<std::string, std::string> signInData;
+
+    signInData["First_Name"] = fname.toStdString();
+    if (mname != "") {
+        signInData["Middle_Name"] = mname.toStdString();
+    }
+    signInData["Last_Name"] = lname.toStdString();
+    signInData["Email"] = email.toStdString();
+    signInData["Department"] = department.toStdString();
+    signInData["Phone_Number"] = phoneNumber.toStdString();
+    signInData["Password"] = password.toStdString();
+    if (male) {
+        signInData["Gender"] = "Male";
+    } else if (female) {
+        signInData["Gender"] = "Female";
+    }  
+
+    if (cmsDb->insertData(signInData, "User_Info")) {
+        qDebug() << "Successfull";
+    } else {
+        qDebug() << "Unsuccessful";
+    }
+}
+
+
+void MainWindow::on_back_login_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
