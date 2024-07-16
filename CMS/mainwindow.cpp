@@ -10,6 +10,9 @@
 #include <QWidget>
 #include <QApplication>
 #include <QString>
+#include <cstddef>
+#include <unordered_map>
+#include <vector>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -81,8 +84,56 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_loginButton_clicked()
 {
-    QMessageBox:: information(this, "button clicked", "Logged In Successfully");
-    ui->stackedWidget->setCurrentIndex(2);
+
+    QString email = ui->login_email->text();
+    QString password = ui->login_password->text();
+
+    if (email == "" || password == "") {
+        QMessageBox::information(this, "button clicked", "Email or password is missing!!");
+        return;
+    }
+
+    std::unordered_map<std::string, std::vector<std::string>> userData;
+    std::vector<std::string> userEmails;
+    std::vector<std::string> userPasswords;
+    bool isUserValid = false;
+    int index = 0;
+
+    userData = cmsDb->getData("User_Info");
+    for (const auto& key : userData) {
+        for (const auto& value : key.second) {
+            
+            if (key.first == "Email") {
+                userEmails.push_back(value);
+            }
+            if (key.first == "Password") {
+                userPasswords.push_back(value);
+            }
+
+        }
+    }
+
+    for (size_t i = 0; i < userEmails.size(); i++) {
+        if (userEmails.at(i) == email.toStdString()) {
+            isUserValid = true;
+            index = i;
+
+            break;
+        }
+    }
+
+    if (isUserValid) {
+        
+        if (userPasswords.at(index) == password.toStdString()) {
+            ui->stackedWidget->setCurrentIndex(2);
+        } else {
+            QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
+        }
+    } else {
+        QMessageBox::information(this, "button clicked", "User not found!!!");
+        return;
+    }
+
 }
 
 
@@ -94,7 +145,6 @@ void MainWindow::on_new_account_clicked()
 
 void MainWindow::on_sign_in_clicked()
 {
-     // QMessageBox:: information(this, "button clicked", "Logged In Successfully");
 
     QString fname = ui->sign_in_fname->text();
     QString mname = ui->sign_in_mname->text();
@@ -128,6 +178,10 @@ void MainWindow::on_sign_in_clicked()
     } else {
         qDebug() << "Unsuccessful";
     }
+
+    QMessageBox::information(this, "button clicked", "SignedIn Successfully");
+
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 

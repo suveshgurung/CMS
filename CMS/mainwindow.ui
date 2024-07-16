@@ -85,7 +85,7 @@ color:rgb(251, 255, 249)
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QLineEdit" name="password">
+      <widget class="QLineEdit" name="login_password">
        <property name="geometry">
         <rect>
          <x>30</x>
@@ -112,7 +112,7 @@ color:rgb(251, 255, 249)
         <string>Password</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="username">
+      <widget class="QLineEdit" name="login_email">
        <property name="geometry">
         <rect>
          <x>30</x>
@@ -128,6 +128,9 @@ color:rgb(251, 255, 249)
        </property>
        <property name="styleSheet">
         <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
