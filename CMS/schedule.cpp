@@ -24,12 +24,30 @@ int User::getUserId() {
 
 UserWindow::UserWindow() {
     // date and time of the day.
-    QDate date = QDate::currentDate();
-    QTime time = QTime::currentTime();
+    currDate = QDate::currentDate();
+    currTime = QTime::currentTime();
 
     // day name
-    QString day = date.toString("dddd");
-    qDebug() << day;
-    qDebug() << time.toString("HH:mm:ss");
-    qDebug() << date.toString("yyyy-MM-dd");
+    QString dayName = currDate.toString("dddd");
+
+    if (dayName == "Sunday") {
+        this->dayName = SUNDAY;
+    }
+    else if (dayName == "Monday") {
+        this->dayName = MONDAY;
+    }
+    else if (dayName == "Tuesday") {
+        this->dayName = TUESDAY;
+    }
+    else if (dayName == "Wednesday") {
+        this->dayName = WEDNESDAY;
+    }
+    else if (dayName == "Thursday") {
+        this->dayName = THURSDAY;
+    }
+    else if (dayName == "Friday") {
+        this->dayName = FRIDAY;
+    }
+
+    qDebug() << this->dayName;
 }

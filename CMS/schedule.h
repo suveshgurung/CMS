@@ -77,8 +77,10 @@ private:
     Rooms windowRooms; 
     Subjects windowSubjects;
     Groups windowGroups;
-    Days windowDays;
-    QDateTime currentDateTime; 
+    Days dayName;
+
+    QDate currDate; 
+    QTime currTime;
 
 public:
     UserWindow(); 
