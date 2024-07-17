@@ -1,6 +1,7 @@
+#pragma once
+
 #ifndef DB_CONNECTION
 #define DB_CONNECTION
-
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
