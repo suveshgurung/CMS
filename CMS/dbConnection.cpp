@@ -42,6 +42,8 @@ bool CMSDatabase::connect() {
 CMSDatabase::~CMSDatabase() {
     db.close();
     QSqlDatabase::removeDatabase("CMSConnection");
+
+    delete cmsDb;
 }
 
 
