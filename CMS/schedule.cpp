@@ -28,6 +28,12 @@ UserWindow::UserWindow() {
     currDate = QDate::currentDate();
     currTime = QTime::currentTime();
 
+    date = currDate.toString();
+    time = currTime.toString();
+
+    std::string tempTime = time.toStdString().substr(0, 2);
+    hour = std::stoi(tempTime);
+
     // day name
     QString dayName = currDate.toString("dddd");
 
