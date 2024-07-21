@@ -92,22 +92,27 @@ bool CMSDatabase::insertData(const std::unordered_map<std::string, std::string>&
 * @brief    method to get data from a table.
 * @params   const std::string tableName
 *           name of the table from where the data is needed.
+*           const std::string condition = "" 
+*           extra condition for the query.
 * @retval   std::unordered_map<std::string, std::vector<std::string>>
 *           the ouput of the select query kept in a key value pair.
 */
-std::unordered_map<std::string, std::vector<std::string>> CMSDatabase::getData(const std::string tableName) {
+std::unordered_map<std::string, std::vector<std::string>> CMSDatabase::getData(const std::string& tableName) {
 
     QSqlQuery query;
     std::unordered_map<std::string, std::vector<std::string>> tableData;
 
+    QString selectQuery;
+
     // get all data from the table.
-    QString selectQuery = QString("SELECT * FROM %1")
+    selectQuery = QString("SELECT * FROM %1")
         .arg(QString::fromStdString(tableName));
 
     // execute the query.
     if (!query.exec(selectQuery)) {
         qDebug() << "Error: Unable to fetch data.";
         qDebug() << query.lastError();
+        return tableData;
     }
 
     // get the returned value from the query and the number of fields returned.
@@ -144,4 +149,59 @@ std::unordered_map<std::string, std::vector<std::string>> CMSDatabase::getData(c
 
     return tableData;
     
+}
+
+
+std::unordered_map<std::string, std::vector<std::string>> CMSDatabase::getData(const std::string& tableName, const std::string& condition) {
+
+    QSqlQuery query;
+    std::unordered_map<std::string, std::vector<std::string>> tableData;
+
+    QString selectQuery;
+
+    // get all data from the table.
+    selectQuery = QString("SELECT * FROM %1 %2")
+        .arg(QString::fromStdString(tableName))
+        .arg(QString::fromStdString(condition));
+
+    // execute the query.
+    if (!query.exec(selectQuery)) {
+        qDebug() << "Error: Unable to fetch data.";
+        qDebug() << query.lastError();
+        return tableData;
+    }
+
+    // get the returned value from the query and the number of fields returned.
+    QSqlRecord record = query.record();
+    int colNumber = query.record().count();
+    
+    QString columnName;
+
+    for (int i = 0; i < colNumber; i++) {
+        columnName = record.fieldName(i);
+
+        tableData[columnName.toStdString()] = std::vector<std::string>(); 
+    }
+
+    // iterate over every row of the table.
+    while (query.next()) {
+        for (int i = 0; i < colNumber; i++) {
+            columnName = record.fieldName(i);
+
+            // push data of each row in the corresponding field.
+            std::string data = QString(query.value(i).toString()).toStdString();
+            tableData[columnName.toStdString()].push_back(data);
+        }
+    }
+
+    // reference to show how to access the field name and the values of the corresponding field. Later needed in application.
+    //for (const auto& key : tableData) {
+    //    qDebug() << key.first << ": ";
+
+    //    for (const auto& value : key.second) {
+    //        qDebug() << value << " ";
+    //    }
+    //}
+
+    return tableData;
 }
