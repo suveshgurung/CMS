@@ -1,17 +1,58 @@
 # ninja log v6
-16	1115	7415062269260715	CMS_autogen/timestamp	cea4a32ec9b9a7be
-16	1115	7415062269260715	CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
-16	1115	7415062269260715	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/timestamp	cea4a32ec9b9a7be
-7368	9987	7413352963355508	CMakeFiles/CMS.dir/CMS_autogen/mocs_compilation.cpp.obj	e543c6a1b81b8739
-1116	5869	7415062280265452	CMakeFiles/CMS.dir/main.cpp.obj	38e373ddaed23969
-1295	6538	7415062282060443	CMakeFiles/CMS.dir/mainwindow.cpp.obj	2fefbb5d42e38638
-16	1115	7415062269260715	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
-6538	8219	7415062334487423	CMS.exe	cdaabab2801d63e2
-20	2284	7415148756533666	CMS_autogen/timestamp	cea4a32ec9b9a7be
-20	2284	7415148756533666	CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
-20	2284	7415148756533666	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/timestamp	cea4a32ec9b9a7be
-20	2284	7415148756533666	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
-2284	4941	7415148760032726	CMakeFiles/CMS.dir/CMS_autogen/mocs_compilation.cpp.obj	e543c6a1b81b8739
-2540	6018	7415148762599422	CMakeFiles/CMS.dir/main.cpp.obj	38e373ddaed23969
-2723	6808	7415148764423802	CMakeFiles/CMS.dir/mainwindow.cpp.obj	2fefbb5d42e38638
-6808	8623	7415148805267908	CMS.exe	cdaabab2801d63e2
+23	3692	7432647188788625	CMS_autogen/timestamp	cea4a32ec9b9a7be
+23	3692	7432647188788625	CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+3692	7048	7432647225481544	CMakeFiles/CMS.dir/mainwindow.cpp.obj	6c861dfc078a0542
+3836	6176	7428411714573623	CMakeFiles/CMS.dir/CMS_autogen/mocs_compilation.cpp.obj	4db7e11f2772af8d
+4065	6998	7428411716852703	CMakeFiles/CMS.dir/main.cpp.obj	e6e94f6d86dd3130
+23	3692	7432647188788625	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/timestamp	cea4a32ec9b9a7be
+23	3692	7432647188788625	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+7048	8807	7432647259038651	CMS.exe	5be90da062801edc
+8	1111	7432677723810086	build.ninja	828ed547cada99f9
+2937	3800	7428411714141115	CMS_autogen/EWIEGA46WW/qrc_resources.cpp	fdd5e2335f4ac8a0
+2937	3800	7428411714141115	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/EWIEGA46WW/qrc_resources.cpp	fdd5e2335f4ac8a0
+4523	7846	7428411721447140	CMakeFiles/CMS.dir/CMS_autogen/EWIEGA46WW/qrc_resources.cpp.obj	86e8cded36eb1dc
+4363	8363	7428411719841847	CMakeFiles/CMS.dir/dbConnection.cpp.obj	368d14552a2fc9e4
+27	3495	7432692761527917	CMS_autogen/timestamp	cea4a32ec9b9a7be
+27	3495	7432692761527917	CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+27	3495	7432692761527917	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/timestamp	cea4a32ec9b9a7be
+27	3495	7432692761527917	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+3496	6374	7432692765431936	CMakeFiles/CMS.dir/CMS_autogen/mocs_compilation.cpp.obj	4db7e11f2772af8d
+3935	7604	7432692769816427	CMakeFiles/CMS.dir/main.cpp.obj	e6e94f6d86dd3130
+4176	9161	7432692772224749	CMakeFiles/CMS.dir/mainwindow.cpp.obj	6c861dfc078a0542
+4384	9255	7432692774299956	CMakeFiles/CMS.dir/logowidget.cpp.obj	23679cc4d6113db1
+9255	11760	7432692823013382	CMS.exe	a5c6f636dda33f2b
+20	2585	7432697028327143	CMS_autogen/timestamp	cea4a32ec9b9a7be
+20	2585	7432697028327143	CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+20	2585	7432697028327143	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/timestamp	cea4a32ec9b9a7be
+20	2585	7432697028327143	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+2586	5265	7432697031713392	CMakeFiles/CMS.dir/CMS_autogen/mocs_compilation.cpp.obj	4db7e11f2772af8d
+2894	6281	7432697034799673	CMakeFiles/CMS.dir/main.cpp.obj	e6e94f6d86dd3130
+3145	7746	7432697037300871	CMakeFiles/CMS.dir/mainwindow.cpp.obj	6c861dfc078a0542
+3376	8009	7432697039610486	CMakeFiles/CMS.dir/logowidget.cpp.obj	23679cc4d6113db1
+8009	10216	7432697085946658	CMS.exe	a5c6f636dda33f2b
+15	1383	7432698609290086	CMS_autogen/timestamp	cea4a32ec9b9a7be
+15	1383	7432698609290086	CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+15	1383	7432698609290086	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/timestamp	cea4a32ec9b9a7be
+15	1383	7432698609290086	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+1383	4652	7432698622971344	CMakeFiles/CMS.dir/mainwindow.cpp.obj	6c861dfc078a0542
+1622	4867	7432698625359647	CMakeFiles/CMS.dir/logowidget.cpp.obj	23679cc4d6113db1
+4867	6921	7432698657807873	CMS.exe	a5c6f636dda33f2b
+19	1459	7432717134236298	CMS_autogen/timestamp	cea4a32ec9b9a7be
+19	1459	7432717134236298	CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+19	1459	7432717134236298	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/timestamp	cea4a32ec9b9a7be
+19	1459	7432717134236298	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+1460	4647	7432717148645245	CMakeFiles/CMS.dir/mainwindow.cpp.obj	6c861dfc078a0542
+1620	4835	7432717150248357	CMakeFiles/CMS.dir/logowidget.cpp.obj	23679cc4d6113db1
+4835	6961	7432717182397315	CMS.exe	a5c6f636dda33f2b
+23	1800	7432727773574727	CMS_autogen/timestamp	cea4a32ec9b9a7be
+23	1800	7432727773574727	CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+23	1800	7432727773574727	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/timestamp	cea4a32ec9b9a7be
+23	1800	7432727773574727	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+1801	5290	7432727791349060	CMakeFiles/CMS.dir/mainwindow.cpp.obj	6c861dfc078a0542
+5290	7594	7432727826250361	CMS.exe	a5c6f636dda33f2b
+15	2496	7432735962115563	CMS_autogen/timestamp	cea4a32ec9b9a7be
+15	2496	7432735962115563	CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+15	2496	7432735962115563	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/timestamp	cea4a32ec9b9a7be
+15	2496	7432735962115563	C:/Users/acer 5/Desktop/KU/1st year 2nd sem/Semester Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/mocs_compilation.cpp	cea4a32ec9b9a7be
+2496	6224	7432735986933938	CMakeFiles/CMS.dir/mainwindow.cpp.obj	6c861dfc078a0542
+6224	8492	7432736024211472	CMS.exe	a5c6f636dda33f2b

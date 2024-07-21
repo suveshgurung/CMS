@@ -3,6 +3,7 @@ CMS_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/q23utility.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qalgorithms.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qanystringview.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qarraydata.h \
@@ -43,6 +44,7 @@ CMS_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qglobalstatic.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qhash.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qhashfunctions.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qiodevice.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qiodevicebase.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qiterable.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qiterator.h \
@@ -110,12 +112,14 @@ CMS_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qtversionchecks.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qtypeinfo.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qtypes.h \
+	C:/Qt/6.7.2/mingw_64/include/QtCore/qurl.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qutf8stringview.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qvariant.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qvarlengtharray.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qxptype_traits.h \
 	C:/Qt/6.7.2/mingw_64/include/QtCore/qyieldcpu.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/QPixmap \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qaction.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qbitmap.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qbrush.h \
@@ -129,19 +133,40 @@ CMS_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qkeysequence.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpaintdevice.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpalette.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qpicture.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpixelformat.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpixmap.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qpolygon.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qregion.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qrgb.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qrgba64.h \
+	C:/Qt/6.7.2/mingw_64/include/QtGui/qtextdocument.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qtgui-config.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qtguiexports.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qtguiglobal.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qtransform.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/QSqlDatabase \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/QSqlQuery \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/QSqlTableModel \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/qsqldatabase.h \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/qsqlquery.h \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/qsqlquerymodel.h \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/qsqltablemodel.h \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/qtsql-config.h \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/qtsqlexports.h \
+	C:/Qt/6.7.2/mingw_64/include/QtSql/qtsqlglobal.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QLabel \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qframe.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qgridlayout.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
+	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -256,6 +281,31 @@ CMS_autogen/timestamp: \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginConfig.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QMimerSQLDriverPluginTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginConfig.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QODBCDriverPluginTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginConfig.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QPSQLDriverPluginTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginConfig.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6QSQLiteDriverPluginTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfig.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlConfigVersionImpl.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlDependencies.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlPlugins.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets-relwithdebinfo.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlTargets.cmake \
+	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake \
 	C:/Qt/6.7.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginTargets-relwithdebinfo.cmake \
@@ -521,9 +571,14 @@ CMS_autogen/timestamp: \
 	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
 	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeRCCompiler.cmake \
 	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
+	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/dbConnection.cpp \
+	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/dbConnection.h \
+	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/logowidget.cpp \
+	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/logowidget.h \
 	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/main.cpp \
 	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/mainwindow.cpp \
 	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/mainwindow.h \
+	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/resources.qrc \
 	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/window.h \
 	C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/mainwindow.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

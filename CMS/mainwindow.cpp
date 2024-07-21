@@ -10,11 +10,18 @@
 #include <QWidget>
 #include <QApplication>
 #include <QString>
+#include <QPixmap>
+#include <QLabel>
+#include <QHBoxLayout>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    logoWidget = new LogoWidget(this);
+
     QTimer *timer=new QTimer(this);
     connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
     timer->start();
@@ -65,7 +72,7 @@ void MainWindow::showTime(){
         time_text[3]=' ';
         time_text[8]=' ';
     }
-    ui->Digital_Clock->setText(time_text);
+    // ui->Digital_Clock->setText(time_text);
 
 }
 MainWindow::~MainWindow()
@@ -121,7 +128,7 @@ void MainWindow::on_sign_in_clicked()
         signInData["Gender"] = "Male";
     } else if (female) {
         signInData["Gender"] = "Female";
-    }  
+    }
 
     if (cmsDb->insertData(signInData, "User_Info")) {
         qDebug() << "Successfull";

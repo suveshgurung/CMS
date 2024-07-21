@@ -5,6 +5,7 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlTableModel>
+#include "logowidget.h"
 
 namespace Ui {
 class MainWindow;
@@ -35,6 +36,7 @@ private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
     QSqlTableModel *model;
+    LogoWidget *logoWidget;
 };
 
 #endif // MAINWINDOW_H

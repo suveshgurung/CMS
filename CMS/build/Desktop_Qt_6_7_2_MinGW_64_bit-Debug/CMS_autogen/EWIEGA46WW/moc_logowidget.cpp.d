@@ -1,10 +1,9 @@
-C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/mainwindow.h \
+C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/EWIEGA46WW/moc_logowidget.cpp: C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/logowidget.h \
   C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/CMS_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q23utility.h \
-  C:/Qt/6.7.2/mingw_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qalgorithms.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qanystringview.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/qarraydata.h \
@@ -148,18 +147,7 @@ C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/bu
   C:/Qt/6.7.2/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/QSqlDatabase \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/QSqlQuery \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/QSqlTableModel \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/qsqldatabase.h \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/qsqlquery.h \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/qsqlquerymodel.h \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/qsqltablemodel.h \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/qtsql-config.h \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/qtsqlexports.h \
-  C:/Qt/6.7.2/mingw_64/include/QtSql/qtsqlglobal.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QLabel \
-  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qboxlayout.h \
@@ -168,9 +156,7 @@ C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/bu
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qlayoutitem.h \
-  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -373,5 +359,4 @@ C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/bu
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/acer\ 5/Desktop/KU/1st\ year\ 2nd\ sem/Semester\ Project/CMS/CMS/CMS/logowidget.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
