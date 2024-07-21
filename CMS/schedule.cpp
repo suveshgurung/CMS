@@ -28,15 +28,6 @@ UserWindow::UserWindow() {
     currDate = QDate::currentDate();
     currTime = QTime::currentTime();
 
-    date = currDate.toString();
-    time = currTime.toString();
-
-    // get only the hour of the time.
-    std::string tempTime = time.toStdString().substr(0, 2);
-    hour = std::stoi(tempTime);
-
-    // qDebug() << date << " " << hour; 
-
     // day name
     QString dayName = currDate.toString("dddd");
 
