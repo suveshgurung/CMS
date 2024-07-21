@@ -4,6 +4,9 @@
 #define SCHEDULE
 
 #include <QDateTime>
+#include <unordered_map>
+#include <vector>
+#include <string>
 
 // all of these enumeration variables need to be in the order of the database to maintain id linkage.
 typedef enum {
@@ -81,10 +84,16 @@ private:
 
     QDate currDate; 
     QTime currTime;
+    QString date;
+    QString time;
+    int hour;
 
 public:
     UserWindow(); 
     ~UserWindow();
+
+    int getDay();
+    void getSchedule();
 };
 
 extern User* user;
