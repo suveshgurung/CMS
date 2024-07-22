@@ -33,7 +33,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="login_page">
        <widget class="QFrame" name="login_frame">
@@ -664,8 +664,6 @@ background-color: rgb(0, 100, 0);</string>
         </layout>
        </widget>
       </widget>
-      <widget class="QWidget" name="page"/>
-      <widget class="QWidget" name="page_2"/>
      </widget>
     </item>
    </layout>
@@ -676,7 +674,7 @@ background-color: rgb(0, 100, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>1920</width>
-     <height>26</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>

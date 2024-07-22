@@ -2,9 +2,10 @@
 #include "ui_mainwindow.h"
 #include "QMessageBox"
 #include "dbConnection.h"
-#include<QTimer>
+#include "schedule.h"
+// #include<QTimer>
 #include<QDateTime>
-#include<QTimeEdit>
+// #include<QTimeEdit>
 #include<QMainWindow>
 #include <QVBoxLayout>
 #include <QWidget>
@@ -14,6 +15,8 @@
 #include <QLabel>
 #include <QHBoxLayout>
 
+#include <cstddef>
+#include <string>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -63,6 +66,43 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
+    // QTimer *timer=new QTimer(this);
+    // connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
+    // timer->start();
+    // QTimeEdit *timeEdit = new QTimeEdit;
+    // timeEdit->setButtonSymbols(QAbstractSpinBox::UpDownArrows);
+    //
+    // timeEdit->setMinimumTime(QTime(0, 0, 0));
+    // timeEdit->setMaximumTime(QTime(23, 59, 59));
+    // QMainWindow mainWindow;
+    // mainWindow.resize(1920, 1080);
+    // QStackedWidget stackedWidget(&mainWindow);
+    // stackedWidget.setGeometry(0, 0, 1920, 1080);
+    //
+    // QWidget featureWidget(&stackedWidget);
+    // QLabel label("Feature Widget", &featureWidget);
+    // label.setAlignment(Qt::AlignCenter);
+    //
+    // stackedWidget.addWidget(&featureWidget);
+    // stackedWidget.setCurrentWidget(&featureWidget);
+    //
+    // mainWindow.setCentralWidget(&stackedWidget);
+    // mainWindow.show();
+    // QPushButton *findDate = new QPushButton("Find");
+    //
+    // // Apply a stylesheet with a hover effect
+    // findDate->setStyleSheet(
+    //     "QPushButton {"
+    //     "border: 2px solid black;"
+    //     "border-radius: 10px;" // Curved border
+    //     "padding: 10px;"
+    //     "background-color: lightgreen;"
+    //     "}"
+    //     "QPushButton:hover {"
+    //     "background-color: darkgreen;"
+    //     "color: white;"
+    //     "}"
+    //     );
 }
 
 void MainWindow::showTime(){
@@ -74,22 +114,77 @@ void MainWindow::showTime(){
     }
     // ui->Digital_Clock->setText(time_text);
 
-}
 MainWindow::~MainWindow()
 {
     delete ui;
 
-    delete cmsDb;
-
-    qDebug() << "Database closed Successfully";
 }
 
 
 
 void MainWindow::on_loginButton_clicked()
 {
-    QMessageBox:: information(this, "button clicked", "Logged In Successfully");
-    ui->stackedWidget->setCurrentIndex(2);
+
+    // retrieve info from the frontend.
+    QString email = ui->login_email->text();
+    QString password = ui->login_password->text();
+
+    // check for empty fields.
+    if (email == "" || password == "") {
+        QMessageBox::information(this, "button clicked", "Email or password is missing!!!");
+        return;
+    }
+
+    std::unordered_map<std::string, std::vector<std::string>> userData;
+    std::vector<std::string> userEmails;
+    std::vector<std::string> userPasswords;
+    std::vector<int> userId;
+    bool isUserValid = false;
+    int index = 0;
+
+    // retrieve data from the database.
+    userData = cmsDb->getData("User_Info");
+    for (const auto& key : userData) {
+        for (const auto& value : key.second) {
+            
+            if (key.first == "Email") {
+                userEmails.push_back(value);
+            }
+            if (key.first == "Password") {
+                userPasswords.push_back(value);
+            }
+            if (key.first == "User_ID") {
+                userId.push_back(std::stoi(value));
+            }
+
+        }
+    }
+
+    // check if the user email exists.
+    for (size_t i = 0; i < userEmails.size(); i++) {
+        if (userEmails.at(i) == email.toStdString()) {
+            isUserValid = true;
+            index = i;
+
+            break;
+        }
+    }
+
+    // check if the user entered correct password.
+    if (isUserValid) {
+        
+        if (userPasswords.at(index) == password.toStdString()) {
+            user->setUserId(userId.at(index));
+            qDebug() << user->getUserId();
+            // ui->stackedWidget->setCurrentIndex(2);
+        } else {
+            QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
+        }
+    } else {
+        QMessageBox::information(this, "button clicked", "User not found!!!");
+        return;
+    }
+
 }
 
 
@@ -101,7 +196,6 @@ void MainWindow::on_new_account_clicked()
 
 void MainWindow::on_sign_in_clicked()
 {
-     // QMessageBox:: information(this, "button clicked", "Logged In Successfully");
 
     QString fname = ui->sign_in_fname->text();
     QString mname = ui->sign_in_mname->text();
@@ -112,6 +206,11 @@ void MainWindow::on_sign_in_clicked()
     QString password = ui->sign_in_password->text();
     bool male = ui->sign_in_male->isChecked();
     bool female = ui->sign_in_female->isChecked();
+
+    if (fname == "" || lname == "" || email == "" || phoneNumber == "" || department == "" || password == "" || (!male && !female)) {
+        QMessageBox::information(this, "button clicked", "Please enter all the required fileds!!!");
+        return;
+    }
 
     std::unordered_map<std::string, std::string> signInData;
 
@@ -135,6 +234,10 @@ void MainWindow::on_sign_in_clicked()
     } else {
         qDebug() << "Unsuccessful";
     }
+
+    QMessageBox::information(this, "button clicked", "SignedIn Successfully");
+
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 

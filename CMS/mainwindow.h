@@ -20,7 +20,7 @@ public:
     ~MainWindow();
 
 private slots:
-    void showTime();  // Declare showTime function
+    // void showTime();  // Declare showTime function
 
     //void on_test_clicked();
 

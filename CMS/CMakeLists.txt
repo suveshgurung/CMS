@@ -18,6 +18,8 @@ set(PROJECT_SOURCES
         mainwindow.h
         dbConnection.h
         dbConnection.cpp
+        schedule.h
+        schedule.cpp
         mainwindow.ui
         ${QRC_SOURCES}
 )

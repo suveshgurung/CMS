@@ -1,6 +1,7 @@
+#pragma once
+
 #ifndef DB_CONNECTION
 #define DB_CONNECTION
-
 
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -27,7 +28,9 @@ public:
     bool insertData(const std::unordered_map<std::string, std::string>& dataList, const std::string tableName);
     
     // method to get data from the database;
-    std::unordered_map<std::string, std::vector<std::string>> getData(const std::string tableName);
+    std::unordered_map<std::string, std::vector<std::string>> getData(const std::string& tableName);
+    std::unordered_map<std::string, std::vector<std::string>> getData(const std::string& tableName, const std::string& condition);
+
 };
 
 extern CMSDatabase* cmsDb;
