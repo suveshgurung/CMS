@@ -18,8 +18,8 @@ int main(int argc, char *argv[])
 
     MainWindow w;
 
-    w.setMinimumSize(1920, 1080);
-    w.setMaximumSize(1920, 1080);
+    // w.setMinimumSize(1920, 1080);
+    // w.setMaximumSize(1920, 1080);
 
     w.show();
     return a.exec();
