@@ -30,10 +30,10 @@
        <string/>
       </property>
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color: rgb(232, 232, 232);</string>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="login_page">
        <widget class="QFrame" name="login_frame">
@@ -79,7 +79,7 @@ color:rgb(251, 255, 249)
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <widget class="QLineEdit" name="password">
+        <widget class="QLineEdit" name="login_password">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -106,7 +106,7 @@ color:rgb(251, 255, 249)
           <string>Password</string>
          </property>
         </widget>
-        <widget class="QLineEdit" name="username">
+        <widget class="QLineEdit" name="login_email">
          <property name="geometry">
           <rect>
            <x>30</x>
@@ -559,35 +559,6 @@ color: rgb(48, 138, 255)</string>
        </widget>
       </widget>
       <widget class="QWidget" name="page">
-       <widget class="QFrame" name="verticalFrame">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>149</y>
-          <width>71</width>
-          <height>1080</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(170, 255, 255);</string>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout"/>
-       </widget>
-       <widget class="QFrame" name="verticalFrame">
-        <property name="geometry">
-         <rect>
-          <x>70</x>
-          <y>149</y>
-          <width>71</width>
-          <height>1080</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(230, 247, 255);
-background-color: rgb(206, 212, 217);</string>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_2"/>
-       </widget>
        <widget class="QFrame" name="horizontalFrame">
         <property name="geometry">
          <rect>
@@ -634,48 +605,62 @@ background-color: rgb(0, 100, 0);</string>
          <string>Search</string>
         </property>
        </widget>
-       <widget class="QWidget" name="formWidget" native="true">
+       <widget class="QFrame" name="frame">
         <property name="geometry">
          <rect>
-          <x>140</x>
-          <y>149</y>
-          <width>1481</width>
-          <height>1171</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(244, 244, 244);</string>
-        </property>
-        <layout class="QFormLayout" name="formLayout">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_5">
-           <property name="font">
-            <font>
-             <family>Segoe UI Black</family>
-             <pointsize>11</pointsize>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>ROOMS</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="verticalWidget" native="true">
-        <property name="geometry">
-         <rect>
-          <x>1619</x>
-          <y>149</y>
+          <x>0</x>
+          <y>150</y>
           <width>81</width>
-          <height>1151</height>
+          <height>1080</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(212, 204, 143);</string>
+         <string notr="true">background-color: rgb(151, 245, 239);</string>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout_5"/>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>150</y>
+          <width>81</width>
+          <height>1080</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_3">
+        <property name="geometry">
+         <rect>
+          <x>1630</x>
+          <y>150</y>
+          <width>81</width>
+          <height>1080</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(204, 197, 103);</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
        </widget>
       </widget>
      </widget>
