@@ -58,6 +58,10 @@ UserWindow::UserWindow() {
 
 }
 
+UserWindow::~UserWindow() {
+    delete userWindow;
+}
+
 
 int UserWindow::getDay() {
     return dayName;
@@ -69,18 +73,22 @@ void UserWindow::getSchedule() {
     QString startTime = QString::number(hour) + ":00";
     QString endTime = QString::number(hour+1) + ":00";
 
-    std::string condition = QString("WHERE start_time='%1' AND end_time='%2'")
+    std::string condition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3'")
         .arg(startTime)
         .arg(endTime)
+        .arg(dayName)
         .toStdString();
 
-    qDebug() << condition;
+    // qDebug() << condition;
 
     scheduleData = cmsDb->getData("Schedule", condition);
 
     for (const auto& pair : scheduleData) {
         qDebug() << pair.first;
-        qDebug() << pair.second;
+        for (size_t i = 0; i < pair.second.size(); i++) {
+            qDebug() << pair.second.at(i);
+        }
+        // qDebug() << pair.second;
     }
 
 }
