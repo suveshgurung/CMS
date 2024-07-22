@@ -22,8 +22,6 @@ public:
 private slots:
     void showTime();  // Declare showTime function
 
-    //void on_test_clicked();
-
     void on_loginButton_clicked();
 
     void on_new_account_clicked();
