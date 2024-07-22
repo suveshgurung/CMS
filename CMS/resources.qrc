@@ -1,5 +1,8 @@
 <RCC>
     <qresource prefix="/resource">
         <file>Cms.png</file>
+        <file>assets/calendar.png</file>
+        <file>assets/clock.png</file>
+        <file>assets/Cms.png</file>
     </qresource>
 </RCC>
