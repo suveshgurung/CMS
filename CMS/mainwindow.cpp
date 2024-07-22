@@ -3,9 +3,9 @@
 #include "QMessageBox"
 #include "dbConnection.h"
 #include "schedule.h"
-// #include<QTimer>
+#include<QTimer>
 #include<QDateTime>
-// #include<QTimeEdit>
+#include<QTimeEdit>
 #include<QMainWindow>
 #include <QVBoxLayout>
 #include <QWidget>
@@ -14,17 +14,15 @@
 #include <QPixmap>
 #include <QLabel>
 #include <QHBoxLayout>
-
 #include <cstddef>
-#include <string>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    logoWidget = new LogoWidget(this);
-
+    // logoWidget = new LogoWidget(this);
+    //
     QTimer *timer=new QTimer(this);
     connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
     timer->start();
@@ -33,20 +31,20 @@ MainWindow::MainWindow(QWidget *parent)
 
     timeEdit->setMinimumTime(QTime(0, 0, 0));
     timeEdit->setMaximumTime(QTime(23, 59, 59));
-    QMainWindow mainWindow;
-    mainWindow.resize(1920, 1080);
-    QStackedWidget stackedWidget(&mainWindow);
-    stackedWidget.setGeometry(0, 0, 1920, 1080);
+    // QMainWindow mainWindow;
+    // mainWindow.resize(1920, 1080);
+    // QStackedWidget stackedWidget(&mainWindow);
+    // stackedWidget.setGeometry(0, 0, 1920, 1080);
 
-    QWidget featureWidget(&stackedWidget);
-    QLabel label("Feature Widget", &featureWidget);
-    label.setAlignment(Qt::AlignCenter);
-
-    stackedWidget.addWidget(&featureWidget);
-    stackedWidget.setCurrentWidget(&featureWidget);
-
-    mainWindow.setCentralWidget(&stackedWidget);
-    mainWindow.show();
+    // QWidget featureWidget(&stackedWidget);
+    // QLabel label("Feature Widget", &featureWidget);
+    // label.setAlignment(Qt::AlignCenter);
+    //
+    // stackedWidget.addWidget(&featureWidget);
+    // stackedWidget.setCurrentWidget(&featureWidget);
+    //
+    // mainWindow.setCentralWidget(&stackedWidget);
+    // mainWindow.show();
     QPushButton *findDate = new QPushButton("Find");
 
     // Apply a stylesheet with a hover effect
@@ -61,48 +59,8 @@ MainWindow::MainWindow(QWidget *parent)
         "background-color: darkgreen;"
         "color: white;"
         "}"
-        );
+    );
 
-
-
-
-    // QTimer *timer=new QTimer(this);
-    // connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
-    // timer->start();
-    // QTimeEdit *timeEdit = new QTimeEdit;
-    // timeEdit->setButtonSymbols(QAbstractSpinBox::UpDownArrows);
-    //
-    // timeEdit->setMinimumTime(QTime(0, 0, 0));
-    // timeEdit->setMaximumTime(QTime(23, 59, 59));
-    // QMainWindow mainWindow;
-    // mainWindow.resize(1920, 1080);
-    // QStackedWidget stackedWidget(&mainWindow);
-    // stackedWidget.setGeometry(0, 0, 1920, 1080);
-    //
-    // QWidget featureWidget(&stackedWidget);
-    // QLabel label("Feature Widget", &featureWidget);
-    // label.setAlignment(Qt::AlignCenter);
-    //
-    // stackedWidget.addWidget(&featureWidget);
-    // stackedWidget.setCurrentWidget(&featureWidget);
-    //
-    // mainWindow.setCentralWidget(&stackedWidget);
-    // mainWindow.show();
-    // QPushButton *findDate = new QPushButton("Find");
-    //
-    // // Apply a stylesheet with a hover effect
-    // findDate->setStyleSheet(
-    //     "QPushButton {"
-    //     "border: 2px solid black;"
-    //     "border-radius: 10px;" // Curved border
-    //     "padding: 10px;"
-    //     "background-color: lightgreen;"
-    //     "}"
-    //     "QPushButton:hover {"
-    //     "background-color: darkgreen;"
-    //     "color: white;"
-    //     "}"
-    //     );
 }
 
 void MainWindow::showTime(){
@@ -113,11 +71,11 @@ void MainWindow::showTime(){
         time_text[8]=' ';
     }
     // ui->Digital_Clock->setText(time_text);
+}
 
 MainWindow::~MainWindow()
 {
     delete ui;
-
 }
 
 
@@ -175,8 +133,11 @@ void MainWindow::on_loginButton_clicked()
         
         if (userPasswords.at(index) == password.toStdString()) {
             user->setUserId(userId.at(index));
-            qDebug() << user->getUserId();
-            // ui->stackedWidget->setCurrentIndex(2);
+            
+            userWindow->setUserId(userId.at(index));
+
+            userWindow->getSchedule();
+            ui->stackedWidget->setCurrentIndex(2);
         } else {
             QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
         }
