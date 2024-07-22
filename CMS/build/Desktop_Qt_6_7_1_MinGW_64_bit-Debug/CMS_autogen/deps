@@ -44,6 +44,7 @@ CMS_autogen/timestamp: \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qglobalstatic.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qhash.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qhashfunctions.h \
+	C:/Qt/6.7.1/mingw_64/include/QtCore/qiodevice.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qiodevicebase.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qiterable.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qiterator.h \
@@ -111,6 +112,7 @@ CMS_autogen/timestamp: \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qtversionchecks.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qtypeinfo.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qtypes.h \
+	C:/Qt/6.7.1/mingw_64/include/QtCore/qurl.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qutf8stringview.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qvariant.h \
 	C:/Qt/6.7.1/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -130,12 +132,18 @@ CMS_autogen/timestamp: \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qkeysequence.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qpaintdevice.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qpalette.h \
+	C:/Qt/6.7.1/mingw_64/include/QtGui/qpen.h \
+	C:/Qt/6.7.1/mingw_64/include/QtGui/qpicture.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qpixelformat.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qpixmap.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qpolygon.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qregion.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qrgb.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qrgba64.h \
+	C:/Qt/6.7.1/mingw_64/include/QtGui/qtextcursor.h \
+	C:/Qt/6.7.1/mingw_64/include/QtGui/qtextdocument.h \
+	C:/Qt/6.7.1/mingw_64/include/QtGui/qtextformat.h \
+	C:/Qt/6.7.1/mingw_64/include/QtGui/qtextoption.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qtgui-config.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qtguiexports.h \
 	C:/Qt/6.7.1/mingw_64/include/QtGui/qtguiglobal.h \
@@ -153,7 +161,12 @@ CMS_autogen/timestamp: \
 	C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlexports.h \
 	C:/Qt/6.7.1/mingw_64/include/QtSql/qtsqlglobal.h \
 	C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
+	C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+	C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
+	C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+	C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlineedit.h \
 	C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
+	C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
 	C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
 	C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
 	C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
@@ -559,6 +572,7 @@ CMS_autogen/timestamp: \
 	C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
 	C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/dbConnection.cpp \
 	C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/dbConnection.h \
+	C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/image.qrc \
 	C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/main.cpp \
 	C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/mainwindow.cpp \
 	C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/mainwindow.h \

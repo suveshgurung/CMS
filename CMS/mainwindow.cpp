@@ -116,3 +116,31 @@ void MainWindow::on_back_login_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
+
+void MainWindow::on_loginButton_2_clicked()
+{
+    QMessageBox:: information(this, "button clicked", "Logged In Successfully");
+    ui->stackedWidget->setCurrentIndex(2);
+        // Get the text from the username and password fields
+        //QString username = username_3->text();
+        //QString password = password_3->text();
+
+        // Validate the input
+        //if (username.isEmpty() || password.isEmpty()) {
+            // Display an error message if either field is empty
+        //    errorLabel->setText("Invalid username or password");
+        //    errorLabel->setStyleSheet("QLabel { color : red; }");  // Make error message red
+        //} else {
+            // Proceed with login process
+        //    errorLabel->clear();
+            // Add login handling code here
+        //}
+}
+
+
+
+void MainWindow::on_new_account_3_clicked()
+{
+     ui->stackedWidget->setCurrentIndex(1);
+}
+
