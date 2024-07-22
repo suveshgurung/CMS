@@ -21,6 +21,7 @@ set(PROJECT_SOURCES
         schedule.h
         schedule.cpp
         mainwindow.ui
+        ${QRC_SOURCES}
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -28,6 +29,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         window.h
+        resources.qrc
+        logowidget.h
+        logowidget.h logowidget.cpp
+        logowidget.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET CMS APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

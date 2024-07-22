@@ -11,6 +11,10 @@
 #include <QWidget>
 #include <QApplication>
 #include <QString>
+#include <QPixmap>
+#include <QLabel>
+#include <QHBoxLayout>
+
 #include <cstddef>
 #include <string>
 
@@ -18,6 +22,49 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    logoWidget = new LogoWidget(this);
+
+    QTimer *timer=new QTimer(this);
+    connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
+    timer->start();
+    QTimeEdit *timeEdit = new QTimeEdit;
+    timeEdit->setButtonSymbols(QAbstractSpinBox::UpDownArrows);
+
+    timeEdit->setMinimumTime(QTime(0, 0, 0));
+    timeEdit->setMaximumTime(QTime(23, 59, 59));
+    QMainWindow mainWindow;
+    mainWindow.resize(1920, 1080);
+    QStackedWidget stackedWidget(&mainWindow);
+    stackedWidget.setGeometry(0, 0, 1920, 1080);
+
+    QWidget featureWidget(&stackedWidget);
+    QLabel label("Feature Widget", &featureWidget);
+    label.setAlignment(Qt::AlignCenter);
+
+    stackedWidget.addWidget(&featureWidget);
+    stackedWidget.setCurrentWidget(&featureWidget);
+
+    mainWindow.setCentralWidget(&stackedWidget);
+    mainWindow.show();
+    QPushButton *findDate = new QPushButton("Find");
+
+    // Apply a stylesheet with a hover effect
+    findDate->setStyleSheet(
+        "QPushButton {"
+        "border: 2px solid black;"
+        "border-radius: 10px;" // Curved border
+        "padding: 10px;"
+        "background-color: lightgreen;"
+        "}"
+        "QPushButton:hover {"
+        "background-color: darkgreen;"
+        "color: white;"
+        "}"
+        );
+
+
+
 
     // QTimer *timer=new QTimer(this);
     // connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
@@ -58,20 +105,14 @@ MainWindow::MainWindow(QWidget *parent)
     //     );
 }
 
-// void MainWindow::showTime(){
-//     QTime time=QTime::currentTime();
-//     QString time_text=time.toString("hh : mm : ss");
-//     if(time.second()%2==0){
-//         time_text[3]=' ';
-//         time_text[8]=' ';
-//     }
-//     ui->Digital_Clock->setText(time_text);
-//
-// }
-
-
-
-
+void MainWindow::showTime(){
+    QTime time=QTime::currentTime();
+    QString time_text=time.toString("hh : mm : ss");
+    if(time.second()%2==0){
+        time_text[3]=' ';
+        time_text[8]=' ';
+    }
+    // ui->Digital_Clock->setText(time_text);
 
 MainWindow::~MainWindow()
 {
@@ -186,7 +227,7 @@ void MainWindow::on_sign_in_clicked()
         signInData["Gender"] = "Male";
     } else if (female) {
         signInData["Gender"] = "Female";
-    }  
+    }
 
     if (cmsDb->insertData(signInData, "User_Info")) {
         qDebug() << "Successfull";
