@@ -22,8 +22,6 @@ public:
 private slots:
     void showTime();  // Declare showTime function
 
-    //void on_test_clicked();
-
     void on_loginButton_clicked();
 
     void on_new_account_clicked();
@@ -31,6 +29,8 @@ private slots:
     void on_sign_in_clicked();
 
     void on_back_login_clicked();
+
+    void update_room_status();
 
 private:
     Ui::MainWindow *ui;

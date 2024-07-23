@@ -79,16 +79,169 @@ void UserWindow::getSchedule() {
         .arg(dayName)
         .toStdString();
 
-    // qDebug() << condition;
-
     scheduleData = cmsDb->getData("Schedule", condition);
 
     for (const auto& pair : scheduleData) {
-        qDebug() << pair.first;
-        for (size_t i = 0; i < pair.second.size(); i++) {
-            qDebug() << pair.second.at(i);
+
+        if (pair.first == "room_id") {
+            userWindow->setRooms(pair.second);
         }
-        // qDebug() << pair.second;
+        if (pair.first == "group_id") {
+            userWindow->setGroups(pair.second);
+        }
+        if (pair.first == "subject_id") {
+            userWindow->setSubjects(pair.second);
+        }
+
     }
 
+}
+
+void UserWindow::setRooms(std::vector<std::string> roomsVec) {
+
+    for (size_t i = 0; i < roomsVec.size(); i++) {
+
+        switch (std::stoi(roomsVec.at(i))) {
+            case ROOM_106:
+                rooms.push_back(ROOM_106);
+                break;
+            case ROOM_107:
+                rooms.push_back(ROOM_107);
+                break;
+            case ROOM_108:
+                rooms.push_back(ROOM_108);
+                break;
+            case ROOM_109:
+                rooms.push_back(ROOM_109);
+                break;
+            case ROOM_207:
+                rooms.push_back(ROOM_207);
+                break;
+            case ROOM_208:
+                rooms.push_back(ROOM_208);
+                break;
+            case ROOM_209:
+                rooms.push_back(ROOM_209);
+                break;
+            default:
+                break;
+        }
+
+    }
+
+}
+
+void UserWindow::setGroups(std::vector<std::string> groupsVec) {
+
+    for (size_t i = 0; i < groupsVec.size(); i++) {
+
+        switch(std::stoi(groupsVec.at(i))) {
+            case BI:
+                groups.push_back(BI);
+                break;
+            case BT:
+                groups.push_back(BT);
+                break;
+            case CM_AP:
+                groups.push_back(CM_AP);
+                break;
+            case CS:
+                groups.push_back(CS);
+                break;
+            case ES:
+                groups.push_back(ES);
+                break;
+            default:
+                break;
+        }
+    }
+
+}
+
+void UserWindow::setSubjects(std::vector<std::string> subjectsVec) {
+    
+    for (size_t i = 0; i < subjectsVec.size(); i++) {
+       
+        switch (std::stoi(subjectsVec.at(i))) {
+            case COMP116:
+                subjects.push_back(COMP116); 
+                break;
+            case COMP117:
+                subjects.push_back(COMP117); 
+                break;
+            case MATH103:
+                subjects.push_back(MATH103); 
+                break;
+            case MATH102:
+                subjects.push_back(MATH102); 
+                break;
+            case MATH104:
+                subjects.push_back(MATH104); 
+                break;
+            case PHYS102:
+                subjects.push_back(PHYS102); 
+                break;
+            case PHYS105:
+                subjects.push_back(PHYS105); 
+                break;
+            case EDRG102:
+                subjects.push_back(EDRG102); 
+                break;
+            case EDRG103:
+                subjects.push_back(EDRG103); 
+                break;
+            case ENGT105:
+                subjects.push_back(ENGT105); 
+                break;
+            case ENVE101:
+                subjects.push_back(ENVE101); 
+                break;
+            case ENGG112:
+                subjects.push_back(ENGG112); 
+                break;
+            case CHEM102:
+                subjects.push_back(CHEM102); 
+                break;
+            case CHEM103:
+                subjects.push_back(CHEM103); 
+                break;
+            case BINF101:
+                subjects.push_back(BINF101); 
+                break;
+            case BINF102:
+                subjects.push_back(BINF102); 
+                break;
+            case BIOT101:
+                subjects.push_back(BIOT101); 
+                break;
+            case BIOT102:
+                subjects.push_back(BIOT102); 
+                break;
+            case ENVS101:
+                subjects.push_back(ENVS101); 
+                break;
+            case ENVS102:
+                subjects.push_back(ENVS102); 
+                break;
+            case ENVS141:
+                subjects.push_back(ENVS141); 
+                break;
+            default:
+                break;
+        }
+
+    }
+
+}
+
+std::vector<Room> UserWindow::getRooms() {
+    return rooms;
+}
+
+std::vector<Group> UserWindow::getGroups() {
+    return groups;
+}
+
+std::vector<Subject> UserWindow::getSubjects() {
+    return subjects;
 }
