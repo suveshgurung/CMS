@@ -31,6 +31,11 @@ MainWindow::MainWindow(QWidget *parent)
 
     timeEdit->setMinimumTime(QTime(0, 0, 0));
     timeEdit->setMaximumTime(QTime(23, 59, 59));
+
+    QDateTime dateTime = QDateTime::currentDateTime();
+    QString dateTimeText = dateTime.toString("ddd MMM dd");
+    ui->date->setText(dateTimeText);
+
     // QMainWindow mainWindow;
     // mainWindow.resize(1920, 1080);
     // QStackedWidget stackedWidget(&mainWindow);
@@ -66,11 +71,14 @@ MainWindow::MainWindow(QWidget *parent)
 void MainWindow::showTime(){
     QTime time=QTime::currentTime();
     QString time_text=time.toString("hh : mm : ss");
+    ui->time->setText(time_text);
     if(time.second()%2==0){
         time_text[3]=' ';
         time_text[8]=' ';
     }
     // ui->Digital_Clock->setText(time_text);
+
+
 }
 
 MainWindow::~MainWindow()
