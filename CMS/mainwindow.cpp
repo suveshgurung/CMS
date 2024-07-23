@@ -137,7 +137,8 @@ void MainWindow::on_loginButton_clicked()
             userWindow->setUserId(userId.at(index));
 
             userWindow->getSchedule();
-            ui->stackedWidget->setCurrentIndex(2);
+            update_room_status();
+            ui->stackedWidget->setCurrentIndex(3);
         } else {
             QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
         }
@@ -207,3 +208,37 @@ void MainWindow::on_back_login_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
+void MainWindow::update_room_status() {
+    
+    std::vector<Room> rooms = userWindow->getRooms();
+
+    for (size_t i = 0; i < rooms.size(); i++) {
+
+        switch (rooms.at(i)) {
+            case ROOM_106:
+                ui->room_106->setStyleSheet("background-color: rgb(224, 27, 36);");
+                break;
+            case ROOM_107:
+                ui->room_107->setStyleSheet("background-color: rgb(224, 27, 36);");
+                break;
+            case ROOM_108:
+                ui->room_108->setStyleSheet("background-color: rgb(224, 27, 36);");
+                break;
+            case ROOM_109:
+                ui->room_109->setStyleSheet("background-color: rgb(224, 27, 36);");
+                break;
+            case ROOM_207:
+                ui->room_207->setStyleSheet("background-color: rgb(224, 27, 36);");
+                break;
+            case ROOM_208:
+                ui->room_208->setStyleSheet("background-color: rgb(224, 27, 36);");
+                break;
+            case ROOM_209:
+                ui->room_209->setStyleSheet("background-color: rgb(224, 27, 36);");
+                break;
+            default:
+                break;
+        }
+
+    }
+}

@@ -30,6 +30,8 @@ private slots:
 
     void on_back_login_clicked();
 
+    void update_room_status();
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
