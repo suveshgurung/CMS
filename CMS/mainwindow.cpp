@@ -21,8 +21,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // logoWidget = new LogoWidget(this);
-    //
     QTimer *timer=new QTimer(this);
     connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
     timer->start();
@@ -34,6 +32,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     QDateTime dateTime = QDateTime::currentDateTime();
     QString dateTimeText = dateTime.toString("ddd MMM dd");
+    ui->date_4->setText(dateTimeText);
     ui->date->setText(dateTimeText);
 
     // QMainWindow mainWindow;
@@ -71,6 +70,7 @@ MainWindow::MainWindow(QWidget *parent)
 void MainWindow::showTime(){
     QTime time=QTime::currentTime();
     QString time_text=time.toString("hh : mm : ss");
+    ui->time_2->setText(time_text);
     ui->time->setText(time_text);
     if(time.second()%2==0){
         time_text[3]=' ';

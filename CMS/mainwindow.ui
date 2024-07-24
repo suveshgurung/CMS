@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1920</width>
-    <height>1080</height>
+    <width>1942</width>
+    <height>1152</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,6 +17,12 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
+      <property name="minimumSize">
+       <size>
+        <width>1920</width>
+        <height>1080</height>
+       </size>
+      </property>
       <property name="mouseTracking">
        <bool>true</bool>
       </property>
@@ -30,13 +36,10 @@
        <string/>
       </property>
       <property name="styleSheet">
-       <string notr="true">QWidget{
-max-height:1080px;
-max-width:1920px;
-}</string>
+       <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="login_page">
        <widget class="QFrame" name="login_frame">
@@ -463,7 +466,7 @@ font-size:17px;
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color: white;
+    background-color: rgb(146,194,204);
     font-size: 17px;
     color: black;
     border: none;
@@ -571,9 +574,10 @@ QPushButton:hover {
             <string notr="true">
 
 QPushButton {
-background-color: #0fa591;
+background-color: rgb(30, 188, 75);
 color:white;
 border-radius:2px;
+font-size:17px;
         }
 
 
@@ -666,6 +670,2008 @@ font-weight:bold;</string>
             <string>CLASSROOM MANAGEMENT SYSTEM</string>
            </property>
           </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="book_page">
+       <property name="styleSheet">
+        <string notr="true">QWidget{
+background-color:white;
+}</string>
+       </property>
+       <widget class="QFrame" name="room_panel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1901</width>
+          <height>1021</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+	border:none;
+	border-radius:2px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="sidebar_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>311</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background-color:white;
+border:2.2px solid  rgb(162, 166, 143);
+border-top:10px;
+border-left:10px;
+border-bottom:10px;
+border-radius:10px;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="frame_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>30</y>
+             <width>151</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(0, 0, 0);
+font-size:22px;</string>
+           </property>
+           <property name="text">
+            <string>JOHN DOE</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_19">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>60</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:green;
+font-weight:bold;</string>
+           </property>
+           <property name="text">
+            <string>COMP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_20">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>0</y>
+             <width>91</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-image: url(:/resource/assets/Cms.png);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/Cms.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="dynamic_time_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="time_2">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>2:00 PM</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="time_icon_4">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_4">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>7/22/2024</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_icon_4">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>60</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/calendar.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="navigation_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="pushButton_14">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_15">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(146,194,204);
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>BOOKING</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_16">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>SCHEDULE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="log_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>430</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="pushButton_17">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+QPushButton {
+background-color: rgb(30, 188, 75);
+color:white;
+border-radius:2px;
+font-size:17px;
+        }
+
+
+
+QPushButton:hover {
+          background-color: #0fa191;
+			color:white;
+        }</string>
+           </property>
+           <property name="text">
+            <string>LOGOUT</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>780</y>
+            <width>251</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Classroom Management System</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="header_2">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>0</y>
+           <width>1581</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>0</y>
+            <width>1181</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:30px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>CLASSROOM MANAGEMENT SYSTEM</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="Floor_frame">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>90</y>
+           <width>1531</width>
+           <height>461</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+    background-color: rgba(244, 244, 245, 255);
+    border-radius: 11px;
+    border: 1px solid transparent;  /* You can change this to a visible color if needed */
+}
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="floor_title">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>0</y>
+            <width>1181</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:20px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>First Floor</string>
+          </property>
+         </widget>
+         <widget class="QFrame" name="room_frame">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>1511</width>
+            <height>411</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QFrame" name="room_card_14">
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_25">
+              <item>
+               <widget class="QFrame" name="frame_52">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:25px;
+	padding:0px;
+background-color:transparent;
+	
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_96">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>27</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+background-color:#ef4444;
+padding:5px;
+width:auto;
+color:white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Not Available</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_53">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+padding:0px;
+margin:0px;
+
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_97">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color:white;
+	border-radius:5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_54">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:40px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_98">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:black;
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Room 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_99">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>CHEM 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_100">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>9:00 - 11:00</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="room_card_13">
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_24">
+              <item>
+               <widget class="QFrame" name="frame_49">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:25px;
+	padding:0px;
+background-color:transparent;
+	
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_91">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>27</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+background-color:rgba(34,197,94,255);
+padding:5px;
+width:auto;
+color:white;
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Available</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_50">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+padding:0px;
+margin:0px;
+
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_92">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color:white;
+	border-radius:5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_51">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:40px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_93">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:black;
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Room 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_94">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>CHEM 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_95">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>9:00 - 11:00</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="room_card_12">
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_23">
+              <item>
+               <widget class="QFrame" name="frame_46">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:25px;
+	padding:0px;
+background-color:transparent;
+	
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_86">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>27</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+background-color:#ef4444;
+padding:5px;
+width:auto;
+color:white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Not Available</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_47">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+padding:0px;
+margin:0px;
+
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_87">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color:white;
+	border-radius:5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_48">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:40px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_88">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:black;
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Room 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_89">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>CHEM 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_90">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>9:00 - 11:00</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="room_card">
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="QFrame" name="frame_2">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:25px;
+	padding:0px;
+background-color:transparent;
+	
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_8">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>27</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+background-color:#ef4444;
+padding:5px;
+width:auto;
+color:white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Not Available</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_6">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+padding:0px;
+margin:0px;
+
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_9">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color:white;
+	border-radius:5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_8">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:40px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_10">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:black;
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Room 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_12">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>CHEM 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_16">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>9:00 - 11:00</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_15">
+         <property name="geometry">
+          <rect>
+           <x>370</x>
+           <y>50</y>
+           <width>1181</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-size:20px;
+color:black;
+font-weight:bold;</string>
+         </property>
+         <property name="text">
+          <string>Block 6</string>
+         </property>
+        </widget>
+        <widget class="QFrame" name="Floor_frame_2">
+         <property name="geometry">
+          <rect>
+           <x>330</x>
+           <y>560</y>
+           <width>1531</width>
+           <height>461</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+    background-color: rgba(244, 244, 245, 255);
+    border-radius: 11px;
+    border: 1px solid transparent;  /* You can change this to a visible color if needed */
+}
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="floor_title_3">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>0</y>
+            <width>1181</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:20px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>Second Floor</string>
+          </property>
+         </widget>
+         <widget class="QFrame" name="room_frame_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>1511</width>
+            <height>411</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QFrame" name="room_card_15">
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_26">
+              <item>
+               <widget class="QFrame" name="frame_55">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:25px;
+	padding:0px;
+background-color:transparent;
+	
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_101">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>27</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+background-color:rgba(34,197,94,255);
+padding:5px;
+width:auto;
+color:white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Available</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_56">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+padding:0px;
+margin:0px;
+
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_102">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color:white;
+	border-radius:5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_57">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:40px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_103">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:black;
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Room 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_104">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>CHEM 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_105">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>9:00 - 11:00</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="room_card_16">
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_27">
+              <item>
+               <widget class="QFrame" name="frame_58">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:25px;
+	padding:0px;
+background-color:transparent;
+	
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_106">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>27</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+background-color:rgba(34,197,94,255);
+padding:5px;
+width:auto;
+color:white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Available</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_59">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+padding:0px;
+margin:0px;
+
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_107">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color:white;
+	border-radius:5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_60">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:40px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_108">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:black;
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Room 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_109">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>CHEM 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_110">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>9:00 - 11:00</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="room_card_17">
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_28">
+              <item>
+               <widget class="QFrame" name="frame_61">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:25px;
+	padding:0px;
+background-color:transparent;
+	
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_111">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>27</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+background-color:#ef4444;
+padding:5px;
+width:auto;
+color:white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Not Available</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_62">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+padding:0px;
+margin:0px;
+
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_112">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color:white;
+	border-radius:5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_63">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:40px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_113">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:black;
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Room 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_114">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>CHEM 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_115">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>9:00 - 11:00</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="room_card_18">
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+	background-color:white;
+	border-radius:10px;
+	padding:10px;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_29">
+              <item>
+               <widget class="QFrame" name="frame_64">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:25px;
+	padding:0px;
+background-color:transparent;
+	
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_116">
+                 <property name="geometry">
+                  <rect>
+                   <x>230</x>
+                   <y>0</y>
+                   <width>91</width>
+                   <height>27</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+background-color:rgba(34,197,94,255);
+padding:5px;
+width:auto;
+color:white;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Available</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_65">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+padding:0px;
+margin:0px;
+
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_117">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	background-color:white;
+	border-radius:5px;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_66">
+                <property name="styleSheet">
+                 <string notr="true">QFrame{
+	max-height:40px;
+}</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QLabel" name="label_118">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:black;
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Room 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_119">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>CHEM 101</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_120">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>321</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>9:00 - 11:00</string>
+                 </property>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </widget>
        </widget>
@@ -1137,8 +3143,8 @@ background-color: rgb(0, 100, 0);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1920</width>
-     <height>25</height>
+     <width>1942</width>
+     <height>21</height>
     </rect>
    </property>
   </widget>

@@ -4,5 +4,6 @@
         <file>assets/calendar.png</file>
         <file>assets/clock.png</file>
         <file>assets/Cms.png</file>
+        <file>assets/room.jpg</file>
     </qresource>
 </RCC>
