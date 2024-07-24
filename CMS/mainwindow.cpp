@@ -14,8 +14,6 @@
 #include <QPixmap>
 #include <QLabel>
 #include <QHBoxLayout>
-#include <cstddef>
-#include <string>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
