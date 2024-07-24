@@ -15,14 +15,13 @@
 #include <QLabel>
 #include <QHBoxLayout>
 #include <cstddef>
+#include <string>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    // logoWidget = new LogoWidget(this);
-    //
     QTimer *timer=new QTimer(this);
     connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
     timer->start();
@@ -94,57 +93,44 @@ void MainWindow::on_loginButton_clicked()
     }
 
     std::unordered_map<std::string, std::vector<std::string>> userData;
-    std::vector<std::string> userEmails;
-    std::vector<std::string> userPasswords;
-    std::vector<int> userId;
+    int userId;
     bool isUserValid = false;
-    int index = 0;
+
+    std::string condition = QString("WHERE Email='%1'")
+        .arg(email)
+        .toStdString();
 
     // retrieve data from the database.
-    userData = cmsDb->getData("User_Info");
+    userData = cmsDb->getData("User_Info", condition);
     for (const auto& key : userData) {
-        for (const auto& value : key.second) {
-            
-            if (key.first == "Email") {
-                userEmails.push_back(value);
-            }
+
+        if (key.second.size() == 0) {
+            QMessageBox::information(this, "button clicked", "User not found!!!");
+            return;
+        } else {
+
             if (key.first == "Password") {
-                userPasswords.push_back(value);
+                if (key.second.at(0) == password.toStdString()) {
+                    isUserValid = true;
+                } else {
+                    QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
+                }
             }
             if (key.first == "User_ID") {
-                userId.push_back(std::stoi(value));
+                userId = std::stoi(key.second.at(0));
             }
 
         }
     }
 
-    // check if the user email exists.
-    for (size_t i = 0; i < userEmails.size(); i++) {
-        if (userEmails.at(i) == email.toStdString()) {
-            isUserValid = true;
-            index = i;
-
-            break;
-        }
-    }
-
-    // check if the user entered correct password.
     if (isUserValid) {
-        
-        if (userPasswords.at(index) == password.toStdString()) {
-            user->setUserId(userId.at(index));
-            
-            userWindow->setUserId(userId.at(index));
+        user->setUserId(userId);
 
-            userWindow->getSchedule();
-            update_room_status();
-            ui->stackedWidget->setCurrentIndex(3);
-        } else {
-            QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
-        }
-    } else {
-        QMessageBox::information(this, "button clicked", "User not found!!!");
-        return;
+        userWindow->setUserId(userId);
+
+        userWindow->getSchedule();
+        update_room_status();
+        ui->stackedWidget->setCurrentIndex(3);
     }
 
 }
