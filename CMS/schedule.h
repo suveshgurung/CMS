@@ -92,6 +92,7 @@ public:
     UserWindow(); 
     ~UserWindow();
 
+    // methods to get data of the schedule.
     int getDay();
     void getSchedule();
     void setRooms(std::vector<std::string> roomsVec);
