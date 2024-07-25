@@ -14,6 +14,7 @@
 #include <QPixmap>
 #include <QLabel>
 #include <QHBoxLayout>
+#include <string>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -112,6 +113,7 @@ void MainWindow::on_loginButton_clicked()
                     isUserValid = true;
                 } else {
                     QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
+                    return;
                 }
             }
             if (key.first == "User_ID") {
@@ -225,4 +227,44 @@ void MainWindow::update_room_status() {
         }
 
     }
+}
+
+void MainWindow::book_room() {
+    
+    QTime startTime = ui->start_time->time();
+    QTime endTime = ui->end_time->time();
+    QString selectedSubject = ui->subject_selection->currentText();
+
+    // get and format the time according to the database structure.
+    QString startTimeStr = startTime.toString("hh:mm:ss");
+    QString endTimeStr = endTime.toString("hh:mm:ss");
+
+    std::string startTimeHour = startTimeStr.toStdString().substr(0, 2);
+    std::string startTimeMinute = startTimeStr.toStdString().substr(3, 2);
+    std::string endTimeHour = endTimeStr.toStdString().substr(0, 2);
+    std::string endTimeMinute = endTimeStr.toStdString().substr(3, 2);
+
+    QString dbStartTime = QString::fromStdString(startTimeHour) + ":" + QString::fromStdString(startTimeMinute);
+    QString dbEndTime = QString::fromStdString(endTimeHour) + ":" + QString::fromStdString(endTimeMinute);
+
+    std::unordered_map<std::string, std::string> bookingData;
+
+    bookingData["day_id"] = std::to_string(userWindow->getDay());
+    bookingData["subject_id"] = selectedSubject.toStdString();
+    bookingData["group_id"] = "2";
+    bookingData["room_id"] = "5";
+    bookingData["start_time"] = dbStartTime.toStdString();
+    bookingData["end_time"] = dbEndTime.toStdString();
+    bookingData["default_schedule"] = "n";
+
+    if (cmsDb->insertData(bookingData, "Schedule")) {
+        qDebug() << "Successfull";
+    } else {
+        qDebug() << "ONOOOO";
+    }
+}
+
+void MainWindow::on_wow_clicked()
+{
+    book_room();
 }
