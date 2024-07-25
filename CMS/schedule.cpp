@@ -31,6 +31,7 @@ UserWindow::UserWindow() {
     date = currDate.toString();
     time = currTime.toString();
 
+    // get only the hour part of the time.
     std::string tempTime = time.toStdString().substr(0, 2);
     hour = std::stoi(tempTime);
 
@@ -69,19 +70,79 @@ int UserWindow::getDay() {
 
 void UserWindow::getSchedule() {
 
-    std::unordered_map<std::string, std::vector<std::string>> scheduleData;
+    std::unordered_map<std::string, std::vector<std::string>> defaultScheduleData;
+    std::unordered_map<std::string, std::vector<std::string>> bookedScheduleData;
+    std::unordered_map<std::string, std::vector<std::string>> combinedScheduleData;
     QString startTime = QString::number(hour) + ":00";
     QString endTime = QString::number(hour+1) + ":00";
 
-    std::string condition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3'")
+    // get the default schedule.
+    std::string defaultCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='3' AND default_schedule='y'")
+        // .arg(startTime)
+        // .arg(endTime)
+        // .arg(dayName)
+        .toStdString();
+
+    defaultScheduleData = cmsDb->getData("Schedule", defaultCondition);
+
+    
+    // get the booked schedule.
+    std::string bookedCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='3' AND default_schedule='n'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
         .toStdString();
 
-    scheduleData = cmsDb->getData("Schedule", condition);
+    bookedScheduleData = cmsDb->getData("Schedule", bookedCondition);
 
-    for (const auto& pair : scheduleData) {
+
+    for (const auto& pair : defaultScheduleData) {
+        if (pair.first == "room_id" || pair.first == "group_id" || pair.first == "subject_id") {
+            combinedScheduleData[pair.first] = std::vector<std::string>();
+        }
+    }
+
+    for (const auto& pair : defaultScheduleData) {
+
+        if (pair.first == "room_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "group_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "subject_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+
+    }
+
+    for (const auto& pair : bookedScheduleData) {
+
+        if (pair.first == "room_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "group_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "subject_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+
+    }
+
+    for (const auto& pair : combinedScheduleData) {
 
         if (pair.first == "room_id") {
             userWindow->setRooms(pair.second);
