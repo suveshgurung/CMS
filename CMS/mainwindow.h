@@ -32,6 +32,10 @@ private slots:
 
     void update_room_status();
 
+    void book_room();
+
+    void on_wow_clicked();
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
