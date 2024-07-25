@@ -77,17 +77,17 @@ void UserWindow::getSchedule() {
     QString endTime = QString::number(hour+1) + ":00";
 
     // get the default schedule.
-    std::string defaultCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='3' AND default_schedule='y'")
-        // .arg(startTime)
-        // .arg(endTime)
-        // .arg(dayName)
+    std::string defaultCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='y'")
+        .arg(startTime)
+        .arg(endTime)
+        .arg(dayName)
         .toStdString();
 
     defaultScheduleData = cmsDb->getData("Schedule", defaultCondition);
 
     
     // get the booked schedule.
-    std::string bookedCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='3' AND default_schedule='n'")
+    std::string bookedCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='n'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
@@ -96,12 +96,14 @@ void UserWindow::getSchedule() {
     bookedScheduleData = cmsDb->getData("Schedule", bookedCondition);
 
 
+    // initialize the combined schedule unordered_map.
     for (const auto& pair : defaultScheduleData) {
         if (pair.first == "room_id" || pair.first == "group_id" || pair.first == "subject_id") {
             combinedScheduleData[pair.first] = std::vector<std::string>();
         }
     }
 
+    // add data of the default schedule to the combined schedule.
     for (const auto& pair : defaultScheduleData) {
 
         if (pair.first == "room_id") {
@@ -122,6 +124,7 @@ void UserWindow::getSchedule() {
 
     }
 
+    // add data of the booked schedule to the combined schedule.
     for (const auto& pair : bookedScheduleData) {
 
         if (pair.first == "room_id") {
@@ -142,6 +145,7 @@ void UserWindow::getSchedule() {
 
     }
 
+    // set the global data members of the class.
     for (const auto& pair : combinedScheduleData) {
 
         if (pair.first == "room_id") {
