@@ -13,6 +13,43 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">/* Dark Mode Style */
+QWidget[theme=&quot;dark&quot;] {
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+
+QPushButton[theme=&quot;dark&quot;] {
+    background-color: rgb(70, 70, 70);
+    border: 2px solid rgb(90, 90, 90);
+    color: white;
+}
+
+QPushButton[theme=&quot;dark&quot;]:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+/* Light Mode Style (Default) */
+QWidget[theme=&quot;light&quot;] {
+    background-color: white;
+    color: black;
+}
+
+QPushButton[theme=&quot;light&quot;] {
+    background-color: rgb(0, 122, 0);
+    border: 2px solid rgb(0, 102, 0);
+    color: white;
+}
+
+QPushButton[theme=&quot;light&quot;]:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid rgb(0, 122, 0);
+}
+
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
@@ -33,7 +70,7 @@
        <string notr="true">background-color: rgb(232, 232, 232);</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="login_page">
        <widget class="QFrame" name="login_frame">
@@ -559,63 +596,18 @@ color: rgb(48, 138, 255)</string>
        </widget>
       </widget>
       <widget class="QWidget" name="page">
-       <widget class="QFrame" name="horizontalFrame">
-        <property name="geometry">
-         <rect>
-          <x>-1</x>
-          <y>-1</y>
-          <width>1980</width>
-          <height>151</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);</string>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
-         <item>
-          <widget class="QLabel" name="Headline">
-           <property name="font">
-            <font>
-             <family>Segoe Script</family>
-             <pointsize>11</pointsize>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Classroom Management System</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QPushButton" name="pushButton">
-        <property name="geometry">
-         <rect>
-          <x>1800</x>
-          <y>150</y>
-          <width>93</width>
-          <height>29</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
-background-color: rgb(0, 100, 0);</string>
-        </property>
-        <property name="text">
-         <string>Search</string>
-        </property>
-       </widget>
        <widget class="QFrame" name="frame">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>150</y>
-          <width>81</width>
-          <height>1080</height>
+          <x>-300</x>
+          <y>-220</y>
+          <width>2161</width>
+          <height>1231</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(151, 245, 239);</string>
+         <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(245, 245, 245);</string>
         </property>
         <property name="frameShape">
          <enum>QFrame::StyledPanel</enum>
@@ -623,44 +615,492 @@ background-color: rgb(0, 100, 0);</string>
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-       </widget>
-       <widget class="QFrame" name="frame_2">
-        <property name="geometry">
-         <rect>
-          <x>80</x>
-          <y>150</y>
-          <width>81</width>
-          <height>1080</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-       </widget>
-       <widget class="QFrame" name="frame_3">
-        <property name="geometry">
-         <rect>
-          <x>1630</x>
-          <y>150</y>
-          <width>81</width>
-          <height>1080</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(204, 197, 103);</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
+        <widget class="QFrame" name="SectionFrame">
+         <property name="geometry">
+          <rect>
+           <x>900</x>
+           <y>260</y>
+           <width>561</width>
+           <height>411</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(234, 234, 234);
+background-color: rgb(242, 255, 251);
+background-color: rgb(243, 255, 253);
+background-color: rgb(216, 230, 255);
+
+    border: 2px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;         
+
+border-color: rgb(255, 255, 255);        
+    background-color: white;              
+    padding: 10px;            
+box-shadow: 10px 10px 5px lightblue
+
+
+
+
+
+
+
+
+
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>561</width>
+            <height>71</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI Variable Display Semib</family>
+            <pointsize>20</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+background-color: rgb(233, 255, 251);</string>
+          </property>
+          <property name="text">
+           <string>Select a room</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>90</y>
+            <width>111</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);
+
+</string>
+          </property>
+          <property name="text">
+           <string>Date</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>90</y>
+            <width>101</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Time</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>150</y>
+            <width>131</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+ focus{ border: 2px solid rgb(0, 150, 0);
+    background-color: rgb(230, 255, 230);}</string>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QTimeEdit" name="QTime">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>150</y>
+            <width>141</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;</string>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>150</y>
+            <width>131</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Room 101</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 102</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 103</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 104</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 105</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 106</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 201</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 201</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 202</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 203</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 204</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 205</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Room 206</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>90</y>
+            <width>91</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Room No.</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>260</y>
+            <width>541</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Click to search room</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: rgb(0, 122, 0);
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 170, 127);
+}
+QPushButton {
+    background-color: rgb(0, 122, 0);
+    color: white;
+    border: 2px solid rgb(0, 102, 0);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+
+
+    border: 2px solid rgb(0, 122, 0);
+    cursor: pointer;
+}</string>
+          </property>
+          <property name="text">
+           <string>Search</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>90</y>
+            <width>51</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="dateIcon.qrc">:/date/dates.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>90</y>
+            <width>51</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="time.qrc">:/timee/clock.256x256.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="header">
+         <property name="geometry">
+          <rect>
+           <x>290</x>
+           <y>220</y>
+           <width>1701</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame#header {
+    background-color: rgb(0, 122, 0);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(0, 102, 0);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="geometry">
+           <rect>
+            <x>1490</x>
+            <y>10</y>
+            <width>93</width>
+            <height>29</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Help</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QLabel" name="label_11">
+         <property name="geometry">
+          <rect>
+           <x>910</x>
+           <y>700</y>
+           <width>551</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(216, 230, 255);
+background-color: rgb(255, 255, 255);
+background-color: rgb(243, 255, 253);
+background-color: rgb(242, 255, 251);
+    background-color: white;    </string>
+         </property>
+         <property name="text">
+          <string>S.N                          Room No.                            Block                             Time</string>
+         </property>
+        </widget>
+        <widget class="QFrame" name="footer">
+         <property name="geometry">
+          <rect>
+           <x>300</x>
+           <y>1190</y>
+           <width>1711</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame#footer {
+    background-color: rgb(240, 240, 240);
+    color: grey;
+    padding: 10px;
+    font-size: 12px;
+    border-top: 1px solid rgb(200, 200, 200);
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="geometry">
+          <rect>
+           <x>910</x>
+           <y>740</y>
+           <width>551</width>
+           <height>351</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTableWidget {
+    border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+}
+
+QTableWidget::item {
+    padding: 5px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+QTableWidget::item:alternate {
+    background-color: rgb(245, 245, 245);
+}
+
+QTableWidget::item:hover {
+    background-color: rgb(230, 255, 230);
+}
+</string>
+         </property>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>940</x>
+           <y>750</y>
+           <width>131</width>
+           <height>331</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_2">
+         <property name="geometry">
+          <rect>
+           <x>1240</x>
+           <y>750</y>
+           <width>131</width>
+           <height>331</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_3">
+         <property name="geometry">
+          <rect>
+           <x>1090</x>
+           <y>750</y>
+           <width>131</width>
+           <height>331</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
        </widget>
       </widget>
      </widget>
@@ -676,9 +1116,37 @@ background-color: rgb(0, 100, 0);</string>
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionMy_Bookings"/>
+   </widget>
+   <addaction name="menuOptions"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionMy_Bookings">
+   <property name="text">
+    <string>My Bookings</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="dateIcon.qrc"/>
+  <include location="time.qrc"/>
+  <include location="time.qrc"/>
+ </resources>
  <connections/>
 </ui>

@@ -5,7 +5,8 @@
 #include <QSqlDatabase>
 #include <QSqlQuery>
 #include <QSqlTableModel>
-#include "logowidget.h"
+
+
 
 namespace Ui {
 class MainWindow;
@@ -32,11 +33,18 @@ private slots:
 
     void on_back_login_clicked();
 
+// private slots:
+//     void on_toggleButton_clicked();
+// private:
+
+//     void applyStyleSheet();
+
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
     QSqlTableModel *model;
-    LogoWidget *logoWidget;
+    // LogoWidget *logoWidget;
 };
 
 #endif // MAINWINDOW_H

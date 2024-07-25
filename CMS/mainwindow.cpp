@@ -15,14 +15,20 @@
 #include <QLabel>
 #include <QHBoxLayout>
 #include <cstddef>
+#include <QGraphicsDropShadowEffect>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    // logoWidget = new LogoWidget(this);
-    //
+    QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect();
+    shadow->setBlurRadius(15);
+    shadow->setOffset(5, 5);
+    shadow->setColor(QColor(0, 0, 0, 160));
+
+    ui->SectionFrame->setGraphicsEffect(shadow);
+
     QTimer *timer=new QTimer(this);
     connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
     timer->start();
@@ -39,29 +45,40 @@ MainWindow::MainWindow(QWidget *parent)
     // QWidget featureWidget(&stackedWidget);
     // QLabel label("Feature Widget", &featureWidget);
     // label.setAlignment(Qt::AlignCenter);
-    //
+
     // stackedWidget.addWidget(&featureWidget);
     // stackedWidget.setCurrentWidget(&featureWidget);
-    //
+
     // mainWindow.setCentralWidget(&stackedWidget);
     // mainWindow.show();
-    QPushButton *findDate = new QPushButton("Find");
+    // QPushButton *findDate = new QPushButton("Find");
 
-    // Apply a stylesheet with a hover effect
-    findDate->setStyleSheet(
-        "QPushButton {"
-        "border: 2px solid black;"
-        "border-radius: 10px;" // Curved border
-        "padding: 10px;"
-        "background-color: lightgreen;"
-        "}"
-        "QPushButton:hover {"
-        "background-color: darkgreen;"
-        "color: white;"
-        "}"
-    );
+    // // Apply a stylesheet with a hover effect
+    // findDate->setStyleSheet(
+    //     "QPushButton {"
+    //     "border: 2px solid black;"
+    //     "border-radius: 10px;" // Curved border
+    //     "padding: 10px;"
+    //     "background-color: lightgreen;"
+    //     "}"
+    //     "QPushButton:hover {"
+    //     "background-color: darkgreen;"
+    //     "color: white;"
+    //     "}"
+    // );
+
+
+        // ui->setupUi(this);
+
+        // // Set and apply the initial theme (dark)
+        // this->setProperty("theme", "dark");
+        // this->setStyleSheet(this->styleSheet());  // Apply the initial theme
+
 
 }
+
+
+
 
 void MainWindow::showTime(){
     QTime time=QTime::currentTime();
@@ -78,6 +95,26 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+// void MainWindow::on_toggleButton_clicked()
+// {
+//     // Toggle the theme
+//     bool darkMode = this->property("theme") == "light";
+//     QString theme = darkMode ? "dark" : "light";
+
+//     // Set and apply the new theme
+//     this->setProperty("theme", theme);
+//     this->setStyleSheet(this->styleSheet());  // Update the stylesheet
+// }
+
+// void MainWindow::applyStyleSheet()
+// {
+//     // Apply the stylesheet to the entire application
+//     QFile file(":/styles/style.qss");
+//     if (file.open(QFile::ReadOnly)) {
+//         QString styleSheet = QLatin1String(file.readAll());
+//         this->setStyleSheet(styleSheet);
+//     }
+// }
 
 
 void MainWindow::on_loginButton_clicked()
