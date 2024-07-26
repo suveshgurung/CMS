@@ -29,6 +29,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->SectionFrame->setGraphicsEffect(shadow);
 
+    ui->image->setGraphicsEffect(shadow);
+     ui->Table->setGraphicsEffect(shadow);
+
     QTimer *timer=new QTimer(this);
     connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
     timer->start();

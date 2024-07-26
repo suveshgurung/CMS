@@ -48,6 +48,93 @@ QPushButton[theme=&quot;light&quot;]:hover {
     border: 2px solid rgb(0, 122, 0);
 }
 
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;ui version=&quot;4.0&quot;&gt;
+ &lt;widget name=&quot;__qt_fake_top_level&quot;&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;line_3&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;1090&lt;/x&gt;
+     &lt;y&gt;750&lt;/y&gt;
+     &lt;width&gt;131&lt;/width&gt;
+     &lt;height&gt;331&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;Line&quot; name=&quot;line&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;940&lt;/x&gt;
+     &lt;y&gt;750&lt;/y&gt;
+     &lt;width&gt;131&lt;/width&gt;
+     &lt;height&gt;331&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;orientation&quot;&gt;
+    &lt;enum&gt;Qt::Vertical&lt;/enum&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QTableWidget&quot; name=&quot;tableWidget&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;910&lt;/x&gt;
+     &lt;y&gt;740&lt;/y&gt;
+     &lt;width&gt;551&lt;/width&gt;
+     &lt;height&gt;351&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;QTableWidget {
+    border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+}
+
+QTableWidget::item {
+    padding: 5px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+QTableWidget::item:alternate {
+    background-color: rgb(245, 245, 245);
+}
+
+QTableWidget::item:hover {
+    background-color: rgb(230, 255, 230);
+}
+
+
+&lt;/string&gt;
+   &lt;/property&gt;
+  &lt;/widget&gt;
+  &lt;widget class=&quot;QFrame&quot; name=&quot;SectionFrame&quot;&gt;
+   &lt;property name=&quot;geometry&quot;&gt;
+    &lt;rect&gt;
+     &lt;x&gt;900&lt;/x&gt;
+     &lt;y&gt;260&lt;/y&gt;
+     &lt;width&gt;561&lt;/width&gt;
+     &lt;height&gt;411&lt;/height&gt;
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;styleSheet&quot;&gt;
+    &lt;string notr=&quot;true&quot;&gt;background-color: rgb(234, 234, 234);
+background-color: rgb(242, 255, 251);
+background-color: rgb(243, 255, 253);
+background-color: rgb(216, 230, 255);
+
+    border: 2px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;         
+
+border-color: rgb(255, 255, 255);        
+    background-color: white;              
+    padding: 10px;            
+box-shadow: 10px 10px 5px lightblue
+
+
+
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -596,7 +683,7 @@ color: rgb(48, 138, 255)</string>
        </widget>
       </widget>
       <widget class="QWidget" name="page">
-       <widget class="QFrame" name="frame">
+       <widget class="QFrame" name="mainWindow">
         <property name="geometry">
          <rect>
           <x>-300</x>
@@ -605,23 +692,29 @@ color: rgb(48, 138, 255)</string>
           <height>1231</height>
          </rect>
         </property>
+        <property name="maximumSize">
+         <size>
+          <width>2161</width>
+          <height>1231</height>
+         </size>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255);
-background-color: rgb(245, 245, 245);</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
+background-color: rgb(245, 245, 245);
+
+    background-color: #f0f0f5;
+
+
+
+</string>
         </property>
         <widget class="QFrame" name="SectionFrame">
          <property name="geometry">
           <rect>
-           <x>900</x>
-           <y>260</y>
-           <width>561</width>
-           <height>411</height>
+           <x>720</x>
+           <y>590</y>
+           <width>631</width>
+           <height>331</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -632,8 +725,8 @@ background-color: rgb(216, 230, 255);
 
     border: 2px solid rgba(0, 0, 0, 0.3); 
     border-radius: 10px;         
-
-border-color: rgb(255, 255, 255);        
+      
+border-color: rgb(0, 125, 0);
     background-color: white;              
     padding: 10px;            
 box-shadow: 10px 10px 5px lightblue
@@ -660,20 +753,30 @@ box-shadow: 10px 10px 5px lightblue
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>561</width>
+            <width>631</width>
             <height>71</height>
            </rect>
           </property>
           <property name="font">
            <font>
             <family>Segoe UI Variable Display Semib</family>
-            <pointsize>20</pointsize>
+            <pointsize>-1</pointsize>
             <bold>true</bold>
            </font>
           </property>
           <property name="styleSheet">
            <string notr="true">border-color: rgb(255, 255, 255);
-background-color: rgb(233, 255, 251);</string>
+background-color: rgb(233, 255, 251);
+
+    font-size: 24px;
+    color: #333;
+    background-color: #d9edf7;
+    padding: 10px;
+    border-radius: 5px;
+
+border-radius: 15px;
+border-color: rgb(0, 118, 0);
+</string>
           </property>
           <property name="text">
            <string>Select a room</string>
@@ -686,8 +789,8 @@ background-color: rgb(233, 255, 251);</string>
           <property name="geometry">
            <rect>
             <x>60</x>
-            <y>90</y>
-            <width>111</width>
+            <y>80</y>
+            <width>91</width>
             <height>51</height>
            </rect>
           </property>
@@ -707,8 +810,8 @@ border-color: rgb(255, 255, 255);
          <widget class="QLabel" name="label_6">
           <property name="geometry">
            <rect>
-            <x>230</x>
-            <y>90</y>
+            <x>200</x>
+            <y>80</y>
             <width>101</width>
             <height>51</height>
            </rect>
@@ -727,8 +830,87 @@ border-color: rgb(255, 255, 255);</string>
          <widget class="QDateEdit" name="dateEdit">
           <property name="geometry">
            <rect>
-            <x>50</x>
-            <y>150</y>
+            <x>0</x>
+            <y>140</y>
+            <width>131</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Select the date</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+ focus{ border: 2px solid rgb(0, 150, 0);
+    background-color: rgb(230, 255, 230);}
+
+
+
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+drop-down {
+ border: 0px;
+}
+
+QDateEdit {
+  border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #fff;}</string>
+          </property>
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QTimeEdit" name="QTime">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>140</y>
+            <width>141</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Select the time</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+
+
+
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}</string>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>140</y>
             <width>131</width>
             <height>41</height>
            </rect>
@@ -739,48 +921,11 @@ border-color: rgb(255, 255, 255);</string>
     border-radius: 5px;
     padding: 5px;
     font-size: 14px;
- focus{ border: 2px solid rgb(0, 150, 0);
-    background-color: rgb(230, 255, 230);}</string>
-          </property>
-          <property name="calendarPopup">
-           <bool>true</bool>
-          </property>
-         </widget>
-         <widget class="QTimeEdit" name="QTime">
-          <property name="geometry">
-           <rect>
-            <x>220</x>
-            <y>150</y>
-            <width>141</width>
-            <height>41</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">border-color: rgb(255, 255, 255);
-   border: 2px solid rgb(0, 122, 0);
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 14px;</string>
-          </property>
-          <property name="readOnly">
-           <bool>false</bool>
-          </property>
-         </widget>
-         <widget class="QComboBox" name="comboBox">
-          <property name="geometry">
-           <rect>
-            <x>390</x>
-            <y>150</y>
-            <width>131</width>
-            <height>41</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">border-color: rgb(255, 255, 255);
-   border: 2px solid rgb(0, 122, 0);
-    border-radius: 5px;
-    padding: 5px;
-    font-size: 14px;</string>
+
+
+drop-down {
+    border: 0px;
+}</string>
           </property>
           <item>
            <property name="text">
@@ -851,8 +996,8 @@ border-color: rgb(255, 255, 255);</string>
          <widget class="QLabel" name="label_7">
           <property name="geometry">
            <rect>
-            <x>400</x>
-            <y>90</y>
+            <x>350</x>
+            <y>80</y>
             <width>91</width>
             <height>41</height>
            </rect>
@@ -868,9 +1013,9 @@ border-color: rgb(255, 255, 255);</string>
          <widget class="QPushButton" name="pushButton">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>260</y>
-            <width>541</width>
+            <x>0</x>
+            <y>250</y>
+            <width>631</width>
             <height>41</height>
            </rect>
           </property>
@@ -898,7 +1043,21 @@ QPushButton:hover {
 
     border: 2px solid rgb(0, 122, 0);
     cursor: pointer;
-}</string>
+}
+
+
+
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+
+</string>
           </property>
           <property name="text">
            <string>Search</string>
@@ -907,8 +1066,8 @@ QPushButton:hover {
          <widget class="QLabel" name="label_9">
           <property name="geometry">
            <rect>
-            <x>30</x>
-            <y>90</y>
+            <x>10</x>
+            <y>80</y>
             <width>51</width>
             <height>51</height>
            </rect>
@@ -931,11 +1090,14 @@ border-color: rgb(255, 255, 255);
          <widget class="QLabel" name="label_8">
           <property name="geometry">
            <rect>
-            <x>190</x>
-            <y>90</y>
+            <x>160</x>
+            <y>80</y>
             <width>51</width>
             <height>51</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);</string>
           </property>
           <property name="text">
            <string/>
@@ -946,6 +1108,54 @@ border-color: rgb(255, 255, 255);
           <property name="scaledContents">
            <bool>true</bool>
           </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>80</y>
+            <width>101</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Block No.</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox_3">
+          <property name="geometry">
+           <rect>
+            <x>490</x>
+            <y>140</y>
+            <width>121</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+
+
+drop-down {
+    border: 0px;
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Block No. 6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Block No. 9</string>
+           </property>
+          </item>
          </widget>
         </widget>
         <widget class="QFrame" name="header">
@@ -976,11 +1186,17 @@ border-color: rgb(255, 255, 255);
          <widget class="QPushButton" name="pushButton_2">
           <property name="geometry">
            <rect>
-            <x>1490</x>
+            <x>1300</x>
             <y>10</y>
             <width>93</width>
             <height>29</height>
            </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);
+hover {
+    background-color: rgb(85, 170, 127);
+}</string>
           </property>
           <property name="text">
            <string>Help</string>
@@ -990,21 +1206,25 @@ border-color: rgb(255, 255, 255);
         <widget class="QLabel" name="label_11">
          <property name="geometry">
           <rect>
-           <x>910</x>
-           <y>700</y>
-           <width>551</width>
-           <height>41</height>
+           <x>1360</x>
+           <y>600</y>
+           <width>571</width>
+           <height>51</height>
           </rect>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(216, 230, 255);
+border-color: rgb(0, 117, 0);
+border-color: rgb(0, 127, 0);
 background-color: rgb(255, 255, 255);
 background-color: rgb(243, 255, 253);
 background-color: rgb(242, 255, 251);
-    background-color: white;    </string>
+    background-color: white;    
+border-radius: 15px;
+border-color: rgb(239, 245, 255);</string>
          </property>
          <property name="text">
-          <string>S.N                          Room No.                            Block                             Time</string>
+          <string>S.N                          Room No.                          Block                            Time</string>
          </property>
         </widget>
         <widget class="QFrame" name="footer">
@@ -1018,6 +1238,7 @@ background-color: rgb(242, 255, 251);
          </property>
          <property name="styleSheet">
           <string notr="true">QFrame#footer {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
     background-color: rgb(240, 240, 240);
     color: grey;
     padding: 10px;
@@ -1032,13 +1253,13 @@ background-color: rgb(242, 255, 251);
           <enum>QFrame::Raised</enum>
          </property>
         </widget>
-        <widget class="QTableWidget" name="tableWidget">
+        <widget class="QTableWidget" name="Table">
          <property name="geometry">
           <rect>
-           <x>910</x>
-           <y>740</y>
-           <width>551</width>
-           <height>351</height>
+           <x>1360</x>
+           <y>650</y>
+           <width>571</width>
+           <height>271</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -1059,29 +1280,20 @@ QTableWidget::item:alternate {
 QTableWidget::item:hover {
     background-color: rgb(230, 255, 230);
 }
+
+border-radius: 10px;    
+
+
 </string>
          </property>
         </widget>
         <widget class="Line" name="line">
          <property name="geometry">
           <rect>
-           <x>940</x>
-           <y>750</y>
+           <x>1560</x>
+           <y>660</y>
            <width>131</width>
-           <height>331</height>
-          </rect>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-        <widget class="Line" name="line_2">
-         <property name="geometry">
-          <rect>
-           <x>1240</x>
-           <y>750</y>
-           <width>131</width>
-           <height>331</height>
+           <height>251</height>
           </rect>
          </property>
          <property name="orientation">
@@ -1091,14 +1303,89 @@ QTableWidget::item:hover {
         <widget class="Line" name="line_3">
          <property name="geometry">
           <rect>
-           <x>1090</x>
-           <y>750</y>
+           <x>1430</x>
+           <y>660</y>
            <width>131</width>
-           <height>331</height>
+           <height>251</height>
           </rect>
          </property>
          <property name="orientation">
           <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="image">
+         <property name="geometry">
+          <rect>
+           <x>720</x>
+           <y>290</y>
+           <width>1211</width>
+           <height>301</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #fff; /* White border */
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+ border-color: green;
+background-image: url(&quot;C:\\Users\\acer 5\\Desktop\\KU\\1st year 2nd sem\\Semester Project\\CMS_2\\CMS\\longLibary.png&quot;);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 15px; /* Adjust the value as needed */
+
+
+
+
+
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="subtle.qrc">:/subtlee/people.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="Line" name="line_4">
+         <property name="geometry">
+          <rect>
+           <x>1700</x>
+           <y>660</y>
+           <width>131</width>
+           <height>251</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_19">
+         <property name="geometry">
+          <rect>
+           <x>770</x>
+           <y>270</y>
+           <width>571</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Stencil</family>
+           <bold>false</bold>
+           <kerning>true</kerning>
+          </font>
+         </property>
+         <property name="text">
+          <string>Classroom Management System</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
          </property>
         </widget>
        </widget>
@@ -1123,7 +1410,13 @@ QTableWidget::item:hover {
     <addaction name="separator"/>
     <addaction name="actionMy_Bookings"/>
    </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+   </widget>
    <addaction name="menuOptions"/>
+   <addaction name="menuSettings"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QToolBar" name="toolBar">
@@ -1138,6 +1431,10 @@ QTableWidget::item:hover {
    </attribute>
   </widget>
   <action name="actionMy_Bookings">
+   <property name="icon">
+    <iconset resource="booking.qrc">
+     <normaloff>:/boo/bookingIcon.png</normaloff>:/boo/bookingIcon.png</iconset>
+   </property>
    <property name="text">
     <string>My Bookings</string>
    </property>
@@ -1147,6 +1444,8 @@ QTableWidget::item:hover {
   <include location="dateIcon.qrc"/>
   <include location="time.qrc"/>
   <include location="time.qrc"/>
+  <include location="booking.qrc"/>
+  <include location="subtle.qrc"/>
  </resources>
  <connections/>
 </ui>
