@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/subtlee">
         <file>email-pattern.png</file>
+        <file>people.png</file>
     </qresource>
 </RCC>
