@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/KU">
+        <file>KUVC.png</file>
+        <file>library.png</file>
+        <file>longLibary.png</file>
+        <file>people.png</file>
+    </qresource>
+</RCC>
