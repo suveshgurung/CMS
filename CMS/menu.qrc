@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/menuu">
+        <file>menuIcon.png</file>
+    </qresource>
+</RCC>
