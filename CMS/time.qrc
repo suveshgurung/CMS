@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/timee">
+        <file>time.qrc</file>
+        <file>clock.256x256.png</file>
+    </qresource>
+</RCC>
