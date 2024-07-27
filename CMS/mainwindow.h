@@ -26,11 +26,23 @@ private slots:
 
     void on_loginButton_clicked();
 
+
     void on_new_account_clicked();
 
     void on_sign_in_clicked();
 
     void on_back_login_clicked();
+
+    void on_logout_button_clicked();
+    void on_home_clicked();
+    void on_booking_clicked();
+    void on_schedule_clicked();
+
+    void handleLogout();
+    void handleHome();
+    void handleSchedule();
+    void handleBooking();
+
 
 private:
     Ui::MainWindow *ui;

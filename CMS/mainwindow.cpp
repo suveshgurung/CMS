@@ -34,6 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
     QString dateTimeText = dateTime.toString("ddd MMM dd");
     ui->date_4->setText(dateTimeText);
     ui->date->setText(dateTimeText);
+    ui->date_5->setText(dateTimeText);
 
     // QMainWindow mainWindow;
     // mainWindow.resize(1920, 1080);
@@ -65,6 +66,73 @@ MainWindow::MainWindow(QWidget *parent)
         "}"
     );
 
+
+    QString usernameText = "Himesh Dulal"; // firstname + lastname retrieved from db
+    QString departmentText = "COMP"; // department name using a function
+
+    // Page number for development phase
+    QStackedWidget *stackedWidget = ui->stackedWidget;
+    int currentIndex = stackedWidget->currentIndex();
+    ui->index->setText(QString::number(currentIndex));
+
+    // Set the department text for specific UI elements
+    ui->username->setText(usernameText);
+    ui->department->setText(departmentText);
+
+    // Loop to set the text of multiple username and department elements
+    for (int i = 1; i <= 10; i++) {
+        QString elementName = "username_" + QString::number(i);
+        QString d_elementName = "department_" + QString::number(i);
+        QString i_elementName = "index_" + QString::number(i);
+
+        QLabel *departmentLabel = findChild<QLabel*>(d_elementName);
+        QLabel *usernameLabel = findChild<QLabel*>(elementName);
+        QLabel *indexLabel = findChild<QLabel*>(i_elementName);
+
+        if (indexLabel) {
+            indexLabel->setText(QString::number(currentIndex));
+        }
+
+        if (usernameLabel) {
+            usernameLabel->setText(usernameText);
+        }
+
+        if (departmentLabel) {
+            departmentLabel->setText(departmentText);
+        }
+    }
+
+    //loop for stackedWidget UI "SIDEBAR UI"
+    for (int i = 1; i <= 5; ++i) {
+        QString buttonName = "logout_button_" + QString::number(i);
+        QString home_buttonName="home_"+QString::number(i);
+         QString schedule_buttonName="schedule_"+QString::number(i);
+           QString booking_buttonName="booking_"+QString::number(i);
+
+        QPushButton *h_button = findChild<QPushButton*>(home_buttonName);
+        QPushButton *button = findChild<QPushButton*>(buttonName);
+         QPushButton *sh_button = findChild<QPushButton*>(schedule_buttonName);
+          QPushButton *b_button = findChild<QPushButton*>(booking_buttonName);
+
+        if (button) {
+            connect(button, &QPushButton::clicked, this, &MainWindow::handleLogout);
+        }
+        if(h_button)
+        {
+            connect(h_button, &QPushButton::clicked, this, &MainWindow::handleHome);
+        }
+        if(sh_button)
+        {
+            connect(sh_button, &QPushButton::clicked, this, &MainWindow::handleSchedule);
+        }
+        if(b_button)
+        {
+            connect(b_button, &QPushButton::clicked, this, &MainWindow::handleBooking);
+        }
+    }
+
+
+
 }
 
 void MainWindow::showTime(){
@@ -72,6 +140,7 @@ void MainWindow::showTime(){
     QString time_text=time.toString("hh : mm : ss");
     ui->time_2->setText(time_text);
     ui->time->setText(time_text);
+    ui->time_4->setText(time_text);
     if(time.second()%2==0){
         time_text[3]=' ';
         time_text[8]=' ';
@@ -157,9 +226,70 @@ void MainWindow::on_loginButton_clicked()
 }
 
 
-void MainWindow::on_new_account_clicked()
+
+void MainWindow::handleLogout()
+{
+
+    QPushButton *clickedButton = qobject_cast<QPushButton*>(sender());
+    if (clickedButton) {
+        on_logout_button_clicked();
+    }
+}
+
+void MainWindow::handleSchedule()
+{
+    QPushButton *clickedButton = qobject_cast<QPushButton*>(sender());
+    if (clickedButton) {
+        on_schedule_clicked();
+    }
+}
+
+void MainWindow::handleHome()
+{
+     QPushButton *clickedButton = qobject_cast<QPushButton*>(sender());
+    if (clickedButton) {
+        on_home_clicked();
+    }
+}
+
+void MainWindow::handleBooking()
+{
+    QPushButton *clickedButton = qobject_cast<QPushButton*>(sender());
+    if (clickedButton) {
+        on_booking_clicked();
+    }
+}
+
+
+
+void MainWindow::on_schedule_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
+}
+
+void MainWindow::on_home_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+void MainWindow::on_booking_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+
+
+void MainWindow::on_logout_button_clicked()
+{
+
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void MainWindow::on_new_account_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(4);
 }
 
 
