@@ -9,12 +9,21 @@
 	"INCLUDE_DIR" : "C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMS_autogen/include",
 	"INPUTS" : 
 	[
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/gif.jpg",
 		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/image.jpg",
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/gg.jpg",
 		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/imgg.jpg",
 		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/img.jpg",
 		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/img2.jpg",
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/Knowledge-amico.png",
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/Knowledge.png",
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/logo.png",
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/bg.jpg",
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/logo-removebg-preview.png",
 		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/img4-removebg-preview.png",
-		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/img3.jpg"
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/img3.jpg",
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/studentportrait.jpg",
+		"C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/school.jpg"
 	],
 	"LOCK_FILE" : "C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/CMS_autogen.dir/AutoRcc_image_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

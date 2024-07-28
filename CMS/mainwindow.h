@@ -22,11 +22,11 @@ public:
     ~MainWindow();
 
 private slots:
-    void showTime();  // Declare showTime function
+    //void showTime();  // Declare showTime function
 
     //void on_test_clicked();
 
-    void on_loginButton_clicked();
+    //void on_loginButton_clicked();
 
     void on_new_account_clicked();
 
@@ -34,9 +34,29 @@ private slots:
 
     void on_back_login_clicked();
 
-    void on_loginButton_2_clicked();
+    void on_loginButton_clicked();
 
-    void on_new_account_3_clicked();
+    void on_register_redirect_clicked();
+
+    void on_login_redirect_clicked();
+
+    void on_Backlogin_clicked();
+
+    void on_backlogin_clicked();
+
+    void on_sign_upbutton_clicked();
+
+    void on_login_redirect_2_clicked();
+
+    void on_signup_clicked();
+
+    void on_signup_redirect_clicked();
+
+   // void on_pushButton_4_clicked();
+
+    void on_pushButton_5_clicked();
+
+    void on_back_button_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -379,6 +379,6 @@ C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/mainwindow.h
  mdp:C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/mainwindow.h
 C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/window.h
 C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/dbConnection.cpp
+C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/main.cpp
 C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/mainwindow.cpp
  uic:ui_mainwindow.h
-C:/Users/Koju/OneDrive/Desktop/2nd_Semester_Project/CMS/main.cpp

@@ -60,16 +60,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 }
 
-void MainWindow::showTime(){
-    QTime time=QTime::currentTime();
-    QString time_text=time.toString("hh : mm : ss");
-    if(time.second()%2==0){
-        time_text[3]=' ';
-        time_text[8]=' ';
-    }
-    ui->Digital_Clock->setText(time_text);
 
-}
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -92,11 +83,7 @@ MainWindow::~MainWindow()
 //    cmsDb->insertData(test, "user_info");
 //}
 
-void MainWindow::on_loginButton_clicked()
-{
-    QMessageBox:: information(this, "button clicked", "Logged In Successfully");
-    ui->stackedWidget->setCurrentIndex(2);
-}
+
 
 
 void MainWindow::on_new_account_clicked()
@@ -117,10 +104,10 @@ void MainWindow::on_back_login_clicked()
 }
 
 
-void MainWindow::on_loginButton_2_clicked()
+void MainWindow::on_loginButton_clicked()
 {
     QMessageBox:: information(this, "button clicked", "Logged In Successfully");
-    ui->stackedWidget->setCurrentIndex(2);
+    ui->stackedWidget->setCurrentIndex(4);
         // Get the text from the username and password fields
         //QString username = username_3->text();
         //QString password = password_3->text();
@@ -139,8 +126,42 @@ void MainWindow::on_loginButton_2_clicked()
 
 
 
-void MainWindow::on_new_account_3_clicked()
+void MainWindow::on_register_redirect_clicked()
 {
-     ui->stackedWidget->setCurrentIndex(1);
+     ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+
+
+void MainWindow::on_login_redirect_clicked()
+{
+     ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+
+void MainWindow::on_login_redirect_2_clicked()
+{
+   ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_signup_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+
+void MainWindow::on_signup_redirect_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+
+void MainWindow::on_back_button_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
