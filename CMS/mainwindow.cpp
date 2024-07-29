@@ -337,32 +337,32 @@ void MainWindow::update_room_status() {
 
         switch (rooms.at(i)) {
             case ROOM_106:
-                ui->room_106_status->setStyleSheet("background-color:green;padding:5px;width:auto;color:white;");
-                ui->room_106_status->setText("Available");
+                ui->room_106_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_106_status->setText("Not Available");
                 break;
             case ROOM_107:
-                ui->room_107_status->setStyleSheet("background-color:green;padding:5px;width:auto;color:white;");
-                ui->room_107_status->setText("Available");
+                ui->room_107_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_107_status->setText("Not Available");
                 break;
             case ROOM_108:
-                ui->room_108_status->setStyleSheet("background-color:green;padding:5px;width:auto;color:white;");
-                ui->room_108_status->setText("Available");
+                ui->room_108_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_108_status->setText("Not Available");
                 break;
             case ROOM_109:
-                ui->room_109_status->setStyleSheet("background-color:green;padding:5px;width:auto;color:white;");
-                ui->room_109_status->setText("Available");
+                ui->room_109_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_109_status->setText("Not Available");
                 break;
             case ROOM_207:
-                ui->room_207_status->setStyleSheet("background-color:green;padding:5px;width:auto;color:white;");
-                ui->room_207_status->setText("Available");
+                ui->room_207_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_207_status->setText("Not Available");
                 break;
             case ROOM_208:
-                ui->room_208_status->setStyleSheet("background-color:green;padding:5px;width:auto;color:white;");
-                ui->room_208_status->setText("Available");
+                ui->room_208_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_208_status->setText("Not Available");
                 break;
             case ROOM_209:
-                ui->room_209_status->setStyleSheet("background-color:green;padding:5px;width:auto;color:white;");
-                ui->room_209_status->setText("Available");
+                ui->room_209_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_209_status->setText("Not Available");
                 break;
             default:
                 break;

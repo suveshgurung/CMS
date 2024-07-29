@@ -1917,14 +1917,14 @@ background-color:transparent;
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel{
-background-color:#ef4444;
+background-color:green;
 padding:5px;
 width:auto;
 color:white;
 }</string>
                  </property>
                  <property name="text">
-                  <string>Not Available</string>
+                  <string>     Available</string>
                  </property>
                 </widget>
                </widget>
@@ -2104,14 +2104,14 @@ background-color:transparent;
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel{
-background-color:#ef4444;
+background-color:green;
 padding:5px;
 width:auto;
 color:white;
 }</string>
                  </property>
                  <property name="text">
-                  <string>Not Available</string>
+                  <string>     Available</string>
                  </property>
                 </widget>
                </widget>
@@ -2291,14 +2291,14 @@ background-color:transparent;
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel{
-background-color:#ef4444;
+background-color:green;
 padding:5px;
 width:auto;
 color:white;
 }</string>
                  </property>
                  <property name="text">
-                  <string>Not Available</string>
+                  <string>     Available</string>
                  </property>
                 </widget>
                </widget>
@@ -2478,14 +2478,14 @@ background-color:transparent;
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel{
-background-color:#ef4444;
+background-color:green;
 padding:5px;
 width:auto;
 color:white;
 }</string>
                  </property>
                  <property name="text">
-                  <string>Not Available</string>
+                  <string>     Available</string>
                  </property>
                 </widget>
                </widget>
@@ -2743,14 +2743,14 @@ background-color:transparent;
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel{
-background-color:#ef4444;
+background-color:green;
 padding:5px;
 width:auto;
 color:white;
 }</string>
                  </property>
                  <property name="text">
-                  <string>Not Available</string>
+                  <string>     Available</string>
                  </property>
                 </widget>
                </widget>
@@ -2930,14 +2930,14 @@ background-color:transparent;
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel{
-background-color:#ef4444;
+background-color:green;
 padding:5px;
 width:auto;
 color:white;
 }</string>
                  </property>
                  <property name="text">
-                  <string>Not Available</string>
+                  <string>     Available</string>
                  </property>
                 </widget>
                </widget>
@@ -3117,14 +3117,14 @@ background-color:transparent;
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel{
-background-color:#ef4444;
+background-color:green;
 padding:5px;
 width:auto;
 color:white;
 }</string>
                  </property>
                  <property name="text">
-                  <string>Not Available</string>
+                  <string>     Available</string>
                  </property>
                 </widget>
                </widget>
