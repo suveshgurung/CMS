@@ -274,45 +274,37 @@ void MainWindow::on_logout_button_clicked()
 void MainWindow::on_sign_in_clicked()
 {
 
-    // QString fname = ui->sign_in_fname->text();
-    // QString mname = ui->sign_in_mname->text();
-    // QString lname = ui->sign_in_lname->text();
-    // QString email = ui->sign_in_email->text();
-    // QString phoneNumber = ui->sign_in_phoneNumber->text();
-    // QString department = ui->sign_in_department->text();
-    // QString password = ui->sign_in_password->text();
-    // bool male = ui->sign_in_male->isChecked();
-    // bool female = ui->sign_in_female->isChecked();
+    QString fname = ui->first_name_7->text();
+    QString mname = ui->middle_name_7->text();
+    QString lname = ui->last_name_7->text();
+    QString email = ui->email_7->text();
+    QString phoneNumber = ui->phone_number_7->text();
+    QString department = ui->department_comboBox_7->currentText();
+    QString password = ui->password_7->text();
 
-    // if (fname == "" || lname == "" || email == "" || phoneNumber == "" || department == "" || password == "" || (!male && !female)) {
-    //     QMessageBox::information(this, "button clicked", "Please enter all the required fileds!!!");
-    //     return;
-    // }
+    if (fname == "" || lname == "" || email == "" || phoneNumber == "" || department == "" || password == "") {
+        QMessageBox::information(this, "button clicked", "Please enter all the required fileds!!!");
+        return;
+    }
 
-    // std::unordered_map<std::string, std::string> signInData;
+    std::unordered_map<std::string, std::string> signInData;
 
-    // signInData["First_Name"] = fname.toStdString();
-    // if (mname != "") {
-    //     signInData["Middle_Name"] = mname.toStdString();
-    // }
-    // signInData["Last_Name"] = lname.toStdString();
-    // signInData["Email"] = email.toStdString();
-    // signInData["Department"] = department.toStdString();
-    // signInData["Phone_Number"] = phoneNumber.toStdString();
-    // signInData["Password"] = password.toStdString();
-    // if (male) {
-    //     signInData["Gender"] = "Male";
-    // } else if (female) {
-    //     signInData["Gender"] = "Female";
-    // }
+    signInData["First_Name"] = fname.toStdString();
+    if (mname != "") {
+        signInData["Middle_Name"] = mname.toStdString();
+    }
+    signInData["Last_Name"] = lname.toStdString();
+    signInData["Email"] = email.toStdString();
+    signInData["Department"] = department.toStdString();
+    signInData["Phone_Number"] = phoneNumber.toStdString();
+    signInData["Password"] = password.toStdString();
 
-    // if (cmsDb->insertData(signInData, "User_Info")) {
-    //     qDebug() << "Successfull";
-    // } else {
-    //     qDebug() << "Unsuccessful";
-    // }
-
-    QMessageBox::information(this, "button clicked", "SignedIn Successfully");
+    if (cmsDb->insertData(signInData, "User_Info")) {
+        QMessageBox::information(this, "button clicked", "SignedIn Successfully");
+    } else {
+        QMessageBox::information(this, "button clicked", "SignIn Unsuccessfull");
+        return;
+    }
 
     ui->stackedWidget->setCurrentIndex(3);
 }
