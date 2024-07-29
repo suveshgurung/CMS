@@ -159,59 +159,57 @@ MainWindow::~MainWindow()
 void MainWindow::on_loginButton_clicked()
 {
 
-    QMessageBox::information(this, "button clicked", "Logged In Successfully");
-    ui->stackedWidget->setCurrentIndex(4);
     // retrieve info from the frontend.
-    // QString email = ui->login_email->text();
-    // QString password = ui->login_password->text();
+    QString email = ui->login_email_2->text();
+    QString password = ui->login_password_2->text();
 
-    // // check for empty fields.
-    // if (email == "" || password == "") {
-    //     QMessageBox::information(this, "button clicked", "Email or password is missing!!!");
-    //     return;
-    // }
+    // check for empty fields.
+    if (email == "" || password == "") {
+        QMessageBox::information(this, "button clicked", "Email or password is missing!!!");
+        return;
+    }
 
-    // std::unordered_map<std::string, std::vector<std::string>> userData;
-    // int userId;
-    // bool isUserValid = false;
-    //
-    // std::string condition = QString("WHERE Email='%1'")
-    //     .arg(email)
-    //     .toStdString();
-    //
-    // // retrieve data from the database.
-    // userData = cmsDb->getData("User_Info", condition);
-    // for (const auto& key : userData) {
-    //
-    //     if (key.second.size() == 0) {
-    //         QMessageBox::information(this, "button clicked", "User not found!!!");
-    //         return;
-    //     } else {
-    //
-    //         if (key.first == "Password") {
-    //             if (key.second.at(0) == password.toStdString()) {
-    //                 isUserValid = true;
-    //             } else {
-    //                 QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
-    //                 return;
-    //             }
-    //         }
-    //         if (key.first == "User_ID") {
-    //             userId = std::stoi(key.second.at(0));
-    //         }
-    //     }
-    // }
-    //
-    //
-    // if (isUserValid) {
-    //     user->setUserId(userId);
-    //
-    //     userWindow->setUserId(userId);
-    //
-    //     userWindow->getSchedule();
-    //     update_room_status();
-    //     ui->stackedWidget->setCurrentIndex(3);
-    // }
+    std::unordered_map<std::string, std::vector<std::string>> userData;
+    int userId;
+    bool isUserValid = false;
+
+    std::string condition = QString("WHERE Email='%1'")
+        .arg(email)
+        .toStdString();
+
+    // retrieve data from the database.
+    userData = cmsDb->getData("User_Info", condition);
+    for (const auto& key : userData) {
+
+        if (key.second.size() == 0) {
+            QMessageBox::information(this, "button clicked", "User not found!!!");
+            return;
+        } else {
+
+            if (key.first == "Password") {
+                if (key.second.at(0) == password.toStdString()) {
+                    isUserValid = true;
+                } else {
+                    QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
+                    return;
+                }
+            }
+            if (key.first == "User_ID") {
+                userId = std::stoi(key.second.at(0));
+            }
+        }
+    }
+
+
+    if (isUserValid) {
+        user->setUserId(userId);
+
+        userWindow->setUserId(userId);
+
+        userWindow->getSchedule();
+        // update_room_status();
+        ui->stackedWidget->setCurrentIndex(4);
+    }
 
 }
 
