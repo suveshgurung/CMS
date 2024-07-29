@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>5</number>
       </property>
       <widget class="QWidget" name="login_page">
        <widget class="QFrame" name="login_frame">
@@ -2573,7 +2573,7 @@ QLabel{
         </widget>
        </widget>
       </widget>
-      <widget class="QWidget" name="login_page_3">
+      <widget class="QWidget" name="explore_page">
        <widget class="QFrame" name="frame_2">
         <property name="geometry">
          <rect>
@@ -2645,7 +2645,7 @@ border: 2px solid black;</string>
            </property>
            <property name="styleSheet">
             <string notr="true">border-color:transparent;
-image: url(:/new/prefix1/img4-removebg-preview.png);</string>
+image: url(:/resource/assets/img4-removebg-preview.png);</string>
            </property>
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
@@ -2975,7 +2975,7 @@ QRadioButton::indicator {
            <string notr="true">border-radius:0px;
 border: 4px solid transparent;
 
-image: url(:/new/prefix1/Knowledge-amico.png);
+image:url(:/resource/assets/Knowledge-amico.png);
 background-color: rgb(255, 255, 255);
 box-shadow: 15px 15px 35px rgb(27, 27, 27); 
 </string>
@@ -3379,7 +3379,7 @@ color: rgb(17, 17, 4);</string>
             </rect>
            </property>
            <property name="styleSheet">
-            <string notr="true">image: url(:/new/prefix1/img4-removebg-preview.png);
+            <string notr="true">image: url(:/resource/assets/img4-removebg-preview.png);
 border-color:transparent;
 </string>
            </property>
@@ -3441,6 +3441,585 @@ border-color:transparent;
            </property>
           </widget>
           <widget class="QFrame" name="line_8">
+           <property name="geometry">
+            <rect>
+             <x>-10</x>
+             <y>80</y>
+             <width>21</width>
+             <height>511</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 12px solid transparent;
+border-left-color: #6bd388;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="login_page_2">
+       <widget class="QFrame" name="frame_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1921</width>
+          <height>1131</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame{
+border:none;
+
+ background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 #17c854, stop:1 #0e3e4a);
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="sign_upFrame_4">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>160</y>
+           <width>961</width>
+           <height>661</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+    border: 2px solid rgb(74, 74, 74); /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 10px; /* Padding inside the frame */
+}
+QFrame#myCustomFrame {
+    border: 2px dashed #2ecc71;
+    background-color: #ffffff;
+}
+
+QFrame QLineEdit {
+   border-color : rgb(94, 94, 94);
+	border-radius : 13px;
+	color : rgb(159, 159, 159);
+	padding : 15px;
+}
+
+QFrame QLabel {
+    color: #2c3e50;
+}
+QFrame QPushButton {
+background-color: rgb(70, 185, 74);
+border-radius: 7px;
+color:rgb(251, 255, 249)
+}
+QRadioButton {
+    spacing: 5px;
+    color: #333; /* Text color */
+    font: bold 14px &quot;Arial&quot;; /* Font size and type */
+}
+
+QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="pictureframe_8">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>501</width>
+            <height>661</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius:0px;
+border: 4px solid transparent;
+
+image:url(:/resource/assets/Knowledge-amico.png);
+background-color: rgb(255, 255, 255);
+box-shadow: 15px 15px 35px rgb(27, 27, 27); 
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+         <widget class="QFrame" name="textframe_8">
+          <property name="geometry">
+           <rect>
+            <x>500</x>
+            <y>0</y>
+            <width>461</width>
+            <height>661</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius:0px;
+border-color: transparent;
+background-color: rgb(255, 255, 255);
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="interactionframe_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>120</y>
+             <width>481</width>
+             <height>541</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: transparent;
+background-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLineEdit" name="middle_name_8">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>90</y>
+              <width>161</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border-color: rgb(15, 15, 15);
+border:1px solid black;
+border-radius: 7px;
+padding:14px;
+color:rgb(21, 21, 21);</string>
+            </property>
+            <property name="placeholderText">
+             <string>Middle Name</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="email_8">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>160</y>
+              <width>331</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border-color: rgb(15, 15, 15);
+border:1px solid black;
+border-radius: 7px;
+padding:14px;
+color:rgb(21, 21, 21);</string>
+            </property>
+            <property name="placeholderText">
+             <string>Your email address</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="phone_number_8">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>230</y>
+              <width>331</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border-color: rgb(15, 15, 15);
+border:1px solid black;
+border-radius: 7px;
+padding:14px;
+color:rgb(21, 21, 21);</string>
+            </property>
+            <property name="placeholderText">
+             <string>Phone Number</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="password_8">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>370</y>
+              <width>331</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border-color: rgb(15, 15, 15);
+border:1px solid black;
+border-radius: 7px;
+padding:14px;
+color:rgb(21, 21, 21);</string>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+            <property name="placeholderText">
+             <string>Create a password</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="department_comboBox_8">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>300</y>
+              <width>331</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border-color: rgb(15, 15, 15);
+border:1px solid black;
+border-radius: 7px;
+padding:14px;
+color:rgb(21, 21, 21);</string>
+            </property>
+            <property name="currentText">
+             <string notr="true"/>
+            </property>
+            <property name="placeholderText">
+             <string>Department</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>Department</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Computer Science</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Applied Physics</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Bio-Tech</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Bioinformatics</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Environmental Science</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Computational Mathematics</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="login_redirect_10">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>480</y>
+              <width>141</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <bold>true</bold>
+              <underline>true</underline>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+		color:rgb(13, 199, 9);
+	background-color: transparent;
+        }
+QPushButton:hover {
+            color: rgb(7, 157, 4)
+        }
+ </string>
+            </property>
+            <property name="text">
+             <string>Log In</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_37">
+            <property name="geometry">
+             <rect>
+              <x>140</x>
+              <y>480</y>
+              <width>141</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>9</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:transparent;</string>
+            </property>
+            <property name="text">
+             <string>Already Signed Up?</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="signup_8">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>440</y>
+              <width>331</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>11</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(6, 182, 56);
+color:rgb(255, 255, 255);
+border-radius:5px;</string>
+            </property>
+            <property name="text">
+             <string>Sign Up</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="last_name_8">
+            <property name="geometry">
+             <rect>
+              <x>240</x>
+              <y>90</y>
+              <width>161</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border-color: rgb(15, 15, 15);
+border:1px solid black;
+border-radius: 7px;
+padding:14px;
+color:rgb(21, 21, 21);</string>
+            </property>
+            <property name="placeholderText">
+             <string>Last Name</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="first_name_8">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>20</y>
+              <width>331</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+border-color: rgb(15, 15, 15);
+border:1px solid black;
+border-radius: 7px;
+padding:14px;
+color:rgb(21, 21, 21);</string>
+            </property>
+            <property name="placeholderText">
+             <string>First Name</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="label_43">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>481</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>20</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border:0px;
+color: rgb(17, 17, 4);</string>
+           </property>
+           <property name="text">
+            <string>Create an account</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QFrame" name="logo_frame_8">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>10</y>
+             <width>51</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">image: url(:/resource/assets/img4-removebg-preview.png);
+border-color:transparent;
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_44">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>20</y>
+             <width>61</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>10</pointsize>
+             <italic>true</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>CMS</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_45">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>80</y>
+             <width>451</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>SansSerif</family>
+             <pointsize>10</pointsize>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: transparent;</string>
+           </property>
+           <property name="text">
+            <string>Embark on a journey of knowledge and growth.</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QFrame" name="line_9">
            <property name="geometry">
             <rect>
              <x>-10</x>
