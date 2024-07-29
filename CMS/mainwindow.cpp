@@ -207,7 +207,7 @@ void MainWindow::on_loginButton_clicked()
         userWindow->setUserId(userId);
 
         userWindow->getSchedule();
-        // update_room_status();
+        update_room_status();
         ui->stackedWidget->setCurrentIndex(4);
     }
 
@@ -329,40 +329,47 @@ void MainWindow::on_signup_redirect_clicked()
     ui->stackedWidget->setCurrentIndex(2);
 }
 
-// void MainWindow::update_room_status() {
-//     
-//     std::vector<Room> rooms = userWindow->getRooms();
-//
-//     for (size_t i = 0; i < rooms.size(); i++) {
-//
-//         switch (rooms.at(i)) {
-//             case ROOM_106:
-//                 ui->room_106->setStyleSheet("background-color: rgb(224, 27, 36);");
-//                 break;
-//             case ROOM_107:
-//                 ui->room_107->setStyleSheet("background-color: rgb(224, 27, 36);");
-//                 break;
-//             case ROOM_108:
-//                 ui->room_108->setStyleSheet("background-color: rgb(224, 27, 36);");
-//                 break;
-//             case ROOM_109:
-//                 ui->room_109->setStyleSheet("background-color: rgb(224, 27, 36);");
-//                 break;
-//             case ROOM_207:
-//                 ui->room_207->setStyleSheet("background-color: rgb(224, 27, 36);");
-//                 break;
-//             case ROOM_208:
-//                 ui->room_208->setStyleSheet("background-color: rgb(224, 27, 36);");
-//                 break;
-//             case ROOM_209:
-//                 ui->room_209->setStyleSheet("background-color: rgb(224, 27, 36);");
-//                 break;
-//             default:
-//                 break;
-//         }
-//
-//     }
-// }
+void MainWindow::update_room_status() {
+    
+    std::vector<Room> rooms = userWindow->getRooms();
+
+    for (size_t i = 0; i < rooms.size(); i++) {
+
+        switch (rooms.at(i)) {
+            case ROOM_106:
+                ui->room_106_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_106_status->setText("Not Available");
+                break;
+            case ROOM_107:
+                ui->room_107_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_107_status->setText("Not Available");
+                break;
+            case ROOM_108:
+                ui->room_108_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_108_status->setText("Not Available");
+                break;
+            case ROOM_109:
+                ui->room_109_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_109_status->setText("Not Available");
+                break;
+            case ROOM_207:
+                ui->room_207_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_207_status->setText("Not Available");
+                break;
+            case ROOM_208:
+                ui->room_208_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_208_status->setText("Not Available");
+                break;
+            case ROOM_209:
+                ui->room_209_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+                ui->room_209_status->setText("Not Available");
+                break;
+            default:
+                break;
+        }
+
+    }
+}
 
 // void MainWindow::book_room() {
 //     

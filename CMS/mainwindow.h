@@ -44,8 +44,8 @@ private slots:
     void on_login_redirect_2_clicked();
     void on_signup_redirect_clicked();
 
-    // void update_room_status();
-    //
+    void update_room_status();
+
     // void book_room();
     //
     // void on_wow_clicked();
