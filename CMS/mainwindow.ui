@@ -1906,12 +1906,12 @@ background-color:transparent;
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <widget class="QLabel" name="status">
+                <widget class="QLabel" name="room_106_status">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
+                   <x>210</x>
                    <y>0</y>
-                   <width>91</width>
+                   <width>111</width>
                    <height>27</height>
                   </rect>
                  </property>
@@ -2006,7 +2006,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>Room 101</string>
+                  <string>Room 106</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="class_name">
@@ -2093,12 +2093,12 @@ background-color:transparent;
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <widget class="QLabel" name="status_4">
+                <widget class="QLabel" name="room_107_status">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
+                   <x>210</x>
                    <y>0</y>
-                   <width>91</width>
+                   <width>111</width>
                    <height>27</height>
                   </rect>
                  </property>
@@ -2193,7 +2193,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>Room 101</string>
+                  <string>Room 107</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="class_name_4">
@@ -2280,12 +2280,12 @@ background-color:transparent;
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <widget class="QLabel" name="status_3">
+                <widget class="QLabel" name="room_108_status">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
+                   <x>210</x>
                    <y>0</y>
-                   <width>91</width>
+                   <width>111</width>
                    <height>27</height>
                   </rect>
                  </property>
@@ -2380,7 +2380,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>Room 101</string>
+                  <string>Room 108</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="class_name_3">
@@ -2467,12 +2467,12 @@ background-color:transparent;
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <widget class="QLabel" name="status_2">
+                <widget class="QLabel" name="room_109_status">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
+                   <x>210</x>
                    <y>0</y>
-                   <width>91</width>
+                   <width>111</width>
                    <height>27</height>
                   </rect>
                  </property>
@@ -2567,7 +2567,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>Room 101</string>
+                  <string>Room 109</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="class_name_2">
@@ -2732,12 +2732,12 @@ background-color:transparent;
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <widget class="QLabel" name="status_5">
+                <widget class="QLabel" name="room_207_status">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
+                   <x>210</x>
                    <y>0</y>
-                   <width>91</width>
+                   <width>111</width>
                    <height>27</height>
                   </rect>
                  </property>
@@ -2832,7 +2832,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>Room 101</string>
+                  <string>Room 207</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="class_name_5">
@@ -2919,12 +2919,12 @@ background-color:transparent;
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <widget class="QLabel" name="status_8">
+                <widget class="QLabel" name="room_208_status">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
+                   <x>210</x>
                    <y>0</y>
-                   <width>91</width>
+                   <width>111</width>
                    <height>27</height>
                   </rect>
                  </property>
@@ -3019,7 +3019,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>Room 101</string>
+                  <string>Room 208</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="class_name_8">
@@ -3106,12 +3106,12 @@ background-color:transparent;
                 <property name="frameShadow">
                  <enum>QFrame::Raised</enum>
                 </property>
-                <widget class="QLabel" name="status_7">
+                <widget class="QLabel" name="room_209_status">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
+                   <x>210</x>
                    <y>0</y>
-                   <width>91</width>
+                   <width>111</width>
                    <height>27</height>
                   </rect>
                  </property>
@@ -3206,7 +3206,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>Room 101</string>
+                  <string>Room 209</string>
                  </property>
                 </widget>
                 <widget class="QLabel" name="class_name_7">
