@@ -159,59 +159,57 @@ MainWindow::~MainWindow()
 void MainWindow::on_loginButton_clicked()
 {
 
-    QMessageBox::information(this, "button clicked", "Logged In Successfully");
-    ui->stackedWidget->setCurrentIndex(4);
     // retrieve info from the frontend.
-    // QString email = ui->login_email->text();
-    // QString password = ui->login_password->text();
+    QString email = ui->login_email_2->text();
+    QString password = ui->login_password_2->text();
 
-    // // check for empty fields.
-    // if (email == "" || password == "") {
-    //     QMessageBox::information(this, "button clicked", "Email or password is missing!!!");
-    //     return;
-    // }
+    // check for empty fields.
+    if (email == "" || password == "") {
+        QMessageBox::information(this, "button clicked", "Email or password is missing!!!");
+        return;
+    }
 
-    // std::unordered_map<std::string, std::vector<std::string>> userData;
-    // int userId;
-    // bool isUserValid = false;
-    //
-    // std::string condition = QString("WHERE Email='%1'")
-    //     .arg(email)
-    //     .toStdString();
-    //
-    // // retrieve data from the database.
-    // userData = cmsDb->getData("User_Info", condition);
-    // for (const auto& key : userData) {
-    //
-    //     if (key.second.size() == 0) {
-    //         QMessageBox::information(this, "button clicked", "User not found!!!");
-    //         return;
-    //     } else {
-    //
-    //         if (key.first == "Password") {
-    //             if (key.second.at(0) == password.toStdString()) {
-    //                 isUserValid = true;
-    //             } else {
-    //                 QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
-    //                 return;
-    //             }
-    //         }
-    //         if (key.first == "User_ID") {
-    //             userId = std::stoi(key.second.at(0));
-    //         }
-    //     }
-    // }
-    //
-    //
-    // if (isUserValid) {
-    //     user->setUserId(userId);
-    //
-    //     userWindow->setUserId(userId);
-    //
-    //     userWindow->getSchedule();
-    //     update_room_status();
-    //     ui->stackedWidget->setCurrentIndex(3);
-    // }
+    std::unordered_map<std::string, std::vector<std::string>> userData;
+    int userId;
+    bool isUserValid = false;
+
+    std::string condition = QString("WHERE Email='%1'")
+        .arg(email)
+        .toStdString();
+
+    // retrieve data from the database.
+    userData = cmsDb->getData("User_Info", condition);
+    for (const auto& key : userData) {
+
+        if (key.second.size() == 0) {
+            QMessageBox::information(this, "button clicked", "User not found!!!");
+            return;
+        } else {
+
+            if (key.first == "Password") {
+                if (key.second.at(0) == password.toStdString()) {
+                    isUserValid = true;
+                } else {
+                    QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
+                    return;
+                }
+            }
+            if (key.first == "User_ID") {
+                userId = std::stoi(key.second.at(0));
+            }
+        }
+    }
+
+
+    if (isUserValid) {
+        user->setUserId(userId);
+
+        userWindow->setUserId(userId);
+
+        userWindow->getSchedule();
+        // update_room_status();
+        ui->stackedWidget->setCurrentIndex(4);
+    }
 
 }
 
@@ -276,45 +274,37 @@ void MainWindow::on_logout_button_clicked()
 void MainWindow::on_sign_in_clicked()
 {
 
-    // QString fname = ui->sign_in_fname->text();
-    // QString mname = ui->sign_in_mname->text();
-    // QString lname = ui->sign_in_lname->text();
-    // QString email = ui->sign_in_email->text();
-    // QString phoneNumber = ui->sign_in_phoneNumber->text();
-    // QString department = ui->sign_in_department->text();
-    // QString password = ui->sign_in_password->text();
-    // bool male = ui->sign_in_male->isChecked();
-    // bool female = ui->sign_in_female->isChecked();
+    QString fname = ui->first_name_7->text();
+    QString mname = ui->middle_name_7->text();
+    QString lname = ui->last_name_7->text();
+    QString email = ui->email_7->text();
+    QString phoneNumber = ui->phone_number_7->text();
+    QString department = ui->department_comboBox_7->currentText();
+    QString password = ui->password_7->text();
 
-    // if (fname == "" || lname == "" || email == "" || phoneNumber == "" || department == "" || password == "" || (!male && !female)) {
-    //     QMessageBox::information(this, "button clicked", "Please enter all the required fileds!!!");
-    //     return;
-    // }
+    if (fname == "" || lname == "" || email == "" || phoneNumber == "" || department == "" || password == "") {
+        QMessageBox::information(this, "button clicked", "Please enter all the required fileds!!!");
+        return;
+    }
 
-    // std::unordered_map<std::string, std::string> signInData;
+    std::unordered_map<std::string, std::string> signInData;
 
-    // signInData["First_Name"] = fname.toStdString();
-    // if (mname != "") {
-    //     signInData["Middle_Name"] = mname.toStdString();
-    // }
-    // signInData["Last_Name"] = lname.toStdString();
-    // signInData["Email"] = email.toStdString();
-    // signInData["Department"] = department.toStdString();
-    // signInData["Phone_Number"] = phoneNumber.toStdString();
-    // signInData["Password"] = password.toStdString();
-    // if (male) {
-    //     signInData["Gender"] = "Male";
-    // } else if (female) {
-    //     signInData["Gender"] = "Female";
-    // }
+    signInData["First_Name"] = fname.toStdString();
+    if (mname != "") {
+        signInData["Middle_Name"] = mname.toStdString();
+    }
+    signInData["Last_Name"] = lname.toStdString();
+    signInData["Email"] = email.toStdString();
+    signInData["Department"] = department.toStdString();
+    signInData["Phone_Number"] = phoneNumber.toStdString();
+    signInData["Password"] = password.toStdString();
 
-    // if (cmsDb->insertData(signInData, "User_Info")) {
-    //     qDebug() << "Successfull";
-    // } else {
-    //     qDebug() << "Unsuccessful";
-    // }
-
-    QMessageBox::information(this, "button clicked", "SignedIn Successfully");
+    if (cmsDb->insertData(signInData, "User_Info")) {
+        QMessageBox::information(this, "button clicked", "SignedIn Successfully");
+    } else {
+        QMessageBox::information(this, "button clicked", "SignIn Unsuccessfull");
+        return;
+    }
 
     ui->stackedWidget->setCurrentIndex(3);
 }
