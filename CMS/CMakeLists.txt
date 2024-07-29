@@ -31,10 +31,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         window.h
         dateIcon.qrc
         time.qrc
-        menu.qrc
+
         booking.qrc
-        subtle.qrc
-        KUvc.qrc
+
+
 
 
 

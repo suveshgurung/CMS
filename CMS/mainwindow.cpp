@@ -28,8 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     shadow->setColor(QColor(0, 0, 0, 160));
 
     ui->SectionFrame->setGraphicsEffect(shadow);
-
-    ui->image->setGraphicsEffect(shadow);
+    // ui->image->setGraphicsEffect(shadow);
      ui->Table->setGraphicsEffect(shadow);
 
     QTimer *timer=new QTimer(this);
