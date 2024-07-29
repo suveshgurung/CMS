@@ -171,47 +171,47 @@ void MainWindow::on_loginButton_clicked()
     //     return;
     // }
 
-    std::unordered_map<std::string, std::vector<std::string>> userData;
-    int userId;
-    bool isUserValid = false;
-
-    std::string condition = QString("WHERE Email='%1'")
-        .arg(email)
-        .toStdString();
-
-    // retrieve data from the database.
-    userData = cmsDb->getData("User_Info", condition);
-    for (const auto& key : userData) {
-
-        if (key.second.size() == 0) {
-            QMessageBox::information(this, "button clicked", "User not found!!!");
-            return;
-        } else {
-
-            if (key.first == "Password") {
-                if (key.second.at(0) == password.toStdString()) {
-                    isUserValid = true;
-                } else {
-                    QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
-                    return;
-                }
-            }
-            if (key.first == "User_ID") {
-                userId = std::stoi(key.second.at(0));
-            }
-        }
-    }
-
-
-    if (isUserValid) {
-        user->setUserId(userId);
-
-        userWindow->setUserId(userId);
-
-        userWindow->getSchedule();
-        update_room_status();
-        ui->stackedWidget->setCurrentIndex(3);
-    }
+    // std::unordered_map<std::string, std::vector<std::string>> userData;
+    // int userId;
+    // bool isUserValid = false;
+    //
+    // std::string condition = QString("WHERE Email='%1'")
+    //     .arg(email)
+    //     .toStdString();
+    //
+    // // retrieve data from the database.
+    // userData = cmsDb->getData("User_Info", condition);
+    // for (const auto& key : userData) {
+    //
+    //     if (key.second.size() == 0) {
+    //         QMessageBox::information(this, "button clicked", "User not found!!!");
+    //         return;
+    //     } else {
+    //
+    //         if (key.first == "Password") {
+    //             if (key.second.at(0) == password.toStdString()) {
+    //                 isUserValid = true;
+    //             } else {
+    //                 QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
+    //                 return;
+    //             }
+    //         }
+    //         if (key.first == "User_ID") {
+    //             userId = std::stoi(key.second.at(0));
+    //         }
+    //     }
+    // }
+    //
+    //
+    // if (isUserValid) {
+    //     user->setUserId(userId);
+    //
+    //     userWindow->setUserId(userId);
+    //
+    //     userWindow->getSchedule();
+    //     update_room_status();
+    //     ui->stackedWidget->setCurrentIndex(3);
+    // }
 
 }
 
@@ -339,77 +339,77 @@ void MainWindow::on_signup_redirect_clicked()
     ui->stackedWidget->setCurrentIndex(2);
 }
 
-void MainWindow::update_room_status() {
-    
-    std::vector<Room> rooms = userWindow->getRooms();
+// void MainWindow::update_room_status() {
+//     
+//     std::vector<Room> rooms = userWindow->getRooms();
+//
+//     for (size_t i = 0; i < rooms.size(); i++) {
+//
+//         switch (rooms.at(i)) {
+//             case ROOM_106:
+//                 ui->room_106->setStyleSheet("background-color: rgb(224, 27, 36);");
+//                 break;
+//             case ROOM_107:
+//                 ui->room_107->setStyleSheet("background-color: rgb(224, 27, 36);");
+//                 break;
+//             case ROOM_108:
+//                 ui->room_108->setStyleSheet("background-color: rgb(224, 27, 36);");
+//                 break;
+//             case ROOM_109:
+//                 ui->room_109->setStyleSheet("background-color: rgb(224, 27, 36);");
+//                 break;
+//             case ROOM_207:
+//                 ui->room_207->setStyleSheet("background-color: rgb(224, 27, 36);");
+//                 break;
+//             case ROOM_208:
+//                 ui->room_208->setStyleSheet("background-color: rgb(224, 27, 36);");
+//                 break;
+//             case ROOM_209:
+//                 ui->room_209->setStyleSheet("background-color: rgb(224, 27, 36);");
+//                 break;
+//             default:
+//                 break;
+//         }
+//
+//     }
+// }
 
-    for (size_t i = 0; i < rooms.size(); i++) {
-
-        switch (rooms.at(i)) {
-            case ROOM_106:
-                ui->room_106->setStyleSheet("background-color: rgb(224, 27, 36);");
-                break;
-            case ROOM_107:
-                ui->room_107->setStyleSheet("background-color: rgb(224, 27, 36);");
-                break;
-            case ROOM_108:
-                ui->room_108->setStyleSheet("background-color: rgb(224, 27, 36);");
-                break;
-            case ROOM_109:
-                ui->room_109->setStyleSheet("background-color: rgb(224, 27, 36);");
-                break;
-            case ROOM_207:
-                ui->room_207->setStyleSheet("background-color: rgb(224, 27, 36);");
-                break;
-            case ROOM_208:
-                ui->room_208->setStyleSheet("background-color: rgb(224, 27, 36);");
-                break;
-            case ROOM_209:
-                ui->room_209->setStyleSheet("background-color: rgb(224, 27, 36);");
-                break;
-            default:
-                break;
-        }
-
-    }
-}
-
-void MainWindow::book_room() {
-    
-    QTime startTime = ui->start_time->time();
-    QTime endTime = ui->end_time->time();
-    QString selectedSubject = ui->subject_selection->currentText();
-
-    // get and format the time according to the database structure.
-    QString startTimeStr = startTime.toString("hh:mm:ss");
-    QString endTimeStr = endTime.toString("hh:mm:ss");
-
-    std::string startTimeHour = startTimeStr.toStdString().substr(0, 2);
-    std::string startTimeMinute = startTimeStr.toStdString().substr(3, 2);
-    std::string endTimeHour = endTimeStr.toStdString().substr(0, 2);
-    std::string endTimeMinute = endTimeStr.toStdString().substr(3, 2);
-
-    QString dbStartTime = QString::fromStdString(startTimeHour) + ":" + QString::fromStdString(startTimeMinute);
-    QString dbEndTime = QString::fromStdString(endTimeHour) + ":" + QString::fromStdString(endTimeMinute);
-
-    std::unordered_map<std::string, std::string> bookingData;
-
-    bookingData["day_id"] = std::to_string(userWindow->getDay());
-    bookingData["subject_id"] = selectedSubject.toStdString();
-    bookingData["group_id"] = "2";
-    bookingData["room_id"] = "5";
-    bookingData["start_time"] = dbStartTime.toStdString();
-    bookingData["end_time"] = dbEndTime.toStdString();
-    bookingData["default_schedule"] = "n";
-
-    if (cmsDb->insertData(bookingData, "Schedule")) {
-        qDebug() << "Successfull";
-    } else {
-        qDebug() << "ONOOOO";
-    }
-}
-
-void MainWindow::on_wow_clicked()
-{
-    book_room();
-}
+// void MainWindow::book_room() {
+//     
+//     QTime startTime = ui->start_time->time();
+//     QTime endTime = ui->end_time->time();
+//     QString selectedSubject = ui->subject_selection->currentText();
+//
+//     // get and format the time according to the database structure.
+//     QString startTimeStr = startTime.toString("hh:mm:ss");
+//     QString endTimeStr = endTime.toString("hh:mm:ss");
+//
+//     std::string startTimeHour = startTimeStr.toStdString().substr(0, 2);
+//     std::string startTimeMinute = startTimeStr.toStdString().substr(3, 2);
+//     std::string endTimeHour = endTimeStr.toStdString().substr(0, 2);
+//     std::string endTimeMinute = endTimeStr.toStdString().substr(3, 2);
+//
+//     QString dbStartTime = QString::fromStdString(startTimeHour) + ":" + QString::fromStdString(startTimeMinute);
+//     QString dbEndTime = QString::fromStdString(endTimeHour) + ":" + QString::fromStdString(endTimeMinute);
+//
+//     std::unordered_map<std::string, std::string> bookingData;
+//
+//     bookingData["day_id"] = std::to_string(userWindow->getDay());
+//     bookingData["subject_id"] = selectedSubject.toStdString();
+//     bookingData["group_id"] = "2";
+//     bookingData["room_id"] = "5";
+//     bookingData["start_time"] = dbStartTime.toStdString();
+//     bookingData["end_time"] = dbEndTime.toStdString();
+//     bookingData["default_schedule"] = "n";
+//
+//     if (cmsDb->insertData(bookingData, "Schedule")) {
+//         qDebug() << "Successfull";
+//     } else {
+//         qDebug() << "ONOOOO";
+//     }
+// }
+//
+// void MainWindow::on_wow_clicked()
+// {
+//     book_room();
+// }
