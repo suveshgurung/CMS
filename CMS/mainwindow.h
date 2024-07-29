@@ -7,8 +7,9 @@
 #include <QSqlTableModel>
 #include "logowidget.h"
 
-namespace Ui {
-class MainWindow;
+namespace Ui
+{
+    class MainWindow;
 }
 
 class MainWindow : public QMainWindow
@@ -20,21 +21,34 @@ public:
     ~MainWindow();
 
 private slots:
-    void showTime();  // Declare showTime function
+    void showTime(); // Declare showTime function
 
+
+
+    // himesh
+    void on_logout_button_clicked();
+    void on_home_clicked();
+    void on_booking_clicked();
+    void on_schedule_clicked();
+    void handleLogout();
+    void handleHome();
+    void handleSchedule();
+    void handleBooking();
+
+    // aryan
+    void on_sign_in_clicked();
     void on_loginButton_clicked();
 
-    void on_new_account_clicked();
+    void on_register_redirect_clicked();
+    void on_login_redirect_clicked();
+    void on_login_redirect_2_clicked();
+    void on_signup_redirect_clicked();
 
-    void on_sign_in_clicked();
-
-    void on_back_login_clicked();
-
-    void update_room_status();
-
-    void book_room();
-
-    void on_wow_clicked();
+    // void update_room_status();
+    //
+    // void book_room();
+    //
+    // void on_wow_clicked();
 
 private:
     Ui::MainWindow *ui;
