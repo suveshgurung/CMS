@@ -31,6 +31,7 @@ UserWindow::UserWindow() {
     date = currDate.toString();
     time = currTime.toString();
 
+    // get only the hour part of the time.
     std::string tempTime = time.toStdString().substr(0, 2);
     hour = std::stoi(tempTime);
 
@@ -69,26 +70,243 @@ int UserWindow::getDay() {
 
 void UserWindow::getSchedule() {
 
-    std::unordered_map<std::string, std::vector<std::string>> scheduleData;
+    std::unordered_map<std::string, std::vector<std::string>> defaultScheduleData;
+    std::unordered_map<std::string, std::vector<std::string>> bookedScheduleData;
+    std::unordered_map<std::string, std::vector<std::string>> combinedScheduleData;
     QString startTime = QString::number(hour) + ":00";
     QString endTime = QString::number(hour+1) + ":00";
 
-    std::string condition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3'")
+    // get the default schedule.
+    std::string defaultCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='y'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
         .toStdString();
 
-    // qDebug() << condition;
+    defaultScheduleData = cmsDb->getData("Schedule", defaultCondition);
 
-    scheduleData = cmsDb->getData("Schedule", condition);
+    
+    // get the booked schedule.
+    std::string bookedCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='n'")
+        .arg(startTime)
+        .arg(endTime)
+        .arg(dayName)
+        .toStdString();
 
-    for (const auto& pair : scheduleData) {
-        qDebug() << pair.first;
-        for (size_t i = 0; i < pair.second.size(); i++) {
-            qDebug() << pair.second.at(i);
+    bookedScheduleData = cmsDb->getData("Schedule", bookedCondition);
+
+
+    // initialize the combined schedule unordered_map.
+    for (const auto& pair : defaultScheduleData) {
+        if (pair.first == "room_id" || pair.first == "group_id" || pair.first == "subject_id") {
+            combinedScheduleData[pair.first] = std::vector<std::string>();
         }
-        // qDebug() << pair.second;
     }
 
+    // add data of the default schedule to the combined schedule.
+    for (const auto& pair : defaultScheduleData) {
+
+        if (pair.first == "room_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "group_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "subject_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+
+    }
+
+    // add data of the booked schedule to the combined schedule.
+    for (const auto& pair : bookedScheduleData) {
+
+        if (pair.first == "room_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "group_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "subject_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+
+    }
+
+    // set the global data members of the class.
+    for (const auto& pair : combinedScheduleData) {
+
+        if (pair.first == "room_id") {
+            userWindow->setRooms(pair.second);
+        }
+        if (pair.first == "group_id") {
+            userWindow->setGroups(pair.second);
+        }
+        if (pair.first == "subject_id") {
+            userWindow->setSubjects(pair.second);
+        }
+
+    }
+
+}
+
+void UserWindow::setRooms(std::vector<std::string> roomsVec) {
+
+    for (size_t i = 0; i < roomsVec.size(); i++) {
+
+        switch (std::stoi(roomsVec.at(i))) {
+            case ROOM_106:
+                rooms.push_back(ROOM_106);
+                break;
+            case ROOM_107:
+                rooms.push_back(ROOM_107);
+                break;
+            case ROOM_108:
+                rooms.push_back(ROOM_108);
+                break;
+            case ROOM_109:
+                rooms.push_back(ROOM_109);
+                break;
+            case ROOM_207:
+                rooms.push_back(ROOM_207);
+                break;
+            case ROOM_208:
+                rooms.push_back(ROOM_208);
+                break;
+            case ROOM_209:
+                rooms.push_back(ROOM_209);
+                break;
+            default:
+                break;
+        }
+
+    }
+
+}
+
+void UserWindow::setGroups(std::vector<std::string> groupsVec) {
+
+    for (size_t i = 0; i < groupsVec.size(); i++) {
+
+        switch(std::stoi(groupsVec.at(i))) {
+            case BI:
+                groups.push_back(BI);
+                break;
+            case BT:
+                groups.push_back(BT);
+                break;
+            case CM_AP:
+                groups.push_back(CM_AP);
+                break;
+            case CS:
+                groups.push_back(CS);
+                break;
+            case ES:
+                groups.push_back(ES);
+                break;
+            default:
+                break;
+        }
+    }
+
+}
+
+void UserWindow::setSubjects(std::vector<std::string> subjectsVec) {
+    
+    for (size_t i = 0; i < subjectsVec.size(); i++) {
+       
+        switch (std::stoi(subjectsVec.at(i))) {
+            case COMP116:
+                subjects.push_back(COMP116); 
+                break;
+            case COMP117:
+                subjects.push_back(COMP117); 
+                break;
+            case MATH103:
+                subjects.push_back(MATH103); 
+                break;
+            case MATH102:
+                subjects.push_back(MATH102); 
+                break;
+            case MATH104:
+                subjects.push_back(MATH104); 
+                break;
+            case PHYS102:
+                subjects.push_back(PHYS102); 
+                break;
+            case PHYS105:
+                subjects.push_back(PHYS105); 
+                break;
+            case EDRG102:
+                subjects.push_back(EDRG102); 
+                break;
+            case EDRG103:
+                subjects.push_back(EDRG103); 
+                break;
+            case ENGT105:
+                subjects.push_back(ENGT105); 
+                break;
+            case ENVE101:
+                subjects.push_back(ENVE101); 
+                break;
+            case ENGG112:
+                subjects.push_back(ENGG112); 
+                break;
+            case CHEM102:
+                subjects.push_back(CHEM102); 
+                break;
+            case CHEM103:
+                subjects.push_back(CHEM103); 
+                break;
+            case BINF101:
+                subjects.push_back(BINF101); 
+                break;
+            case BINF102:
+                subjects.push_back(BINF102); 
+                break;
+            case BIOT101:
+                subjects.push_back(BIOT101); 
+                break;
+            case BIOT102:
+                subjects.push_back(BIOT102); 
+                break;
+            case ENVS101:
+                subjects.push_back(ENVS101); 
+                break;
+            case ENVS102:
+                subjects.push_back(ENVS102); 
+                break;
+            case ENVS141:
+                subjects.push_back(ENVS141); 
+                break;
+            default:
+                break;
+        }
+
+    }
+
+}
+
+std::vector<Room> UserWindow::getRooms() {
+    return rooms;
+}
+
+std::vector<Group> UserWindow::getGroups() {
+    return groups;
+}
+
+std::vector<Subject> UserWindow::getSubjects() {
+    return subjects;
 }

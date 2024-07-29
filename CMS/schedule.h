@@ -17,7 +17,7 @@ typedef enum {
     ROOM_207,
     ROOM_208,
     ROOM_209,
-}Rooms;
+}Room;
 
 typedef enum  {
     COMP116 = 1,
@@ -41,7 +41,7 @@ typedef enum  {
     ENVS101,
     ENVS102,
     ENVS141
-}Subjects;
+}Subject;
 
 typedef enum {
     BI = 1,
@@ -49,7 +49,7 @@ typedef enum {
     CM_AP,
     CS,
     ES
-}Groups;
+}Group;
 
 typedef enum {
     SUNDAY = 1,
@@ -58,7 +58,7 @@ typedef enum {
     WEDNESDAY,
     THURSDAY,
     FRIDAY
-}Days;
+}Day;
 
 
 
@@ -76,11 +76,11 @@ public:
 };
 
 class UserWindow : public User{
-private:
-    Rooms windowRooms; 
-    Subjects windowSubjects;
-    Groups windowGroups;
-    Days dayName;
+protected:
+    std::vector<Room> rooms;
+    std::vector<Subject> subjects;
+    std::vector<Group> groups;
+    Day dayName;
 
     QDate currDate; 
     QTime currTime;
@@ -92,8 +92,16 @@ public:
     UserWindow(); 
     ~UserWindow();
 
+    // methods to get data of the schedule.
     int getDay();
     void getSchedule();
+    void setRooms(std::vector<std::string> roomsVec);
+    void setGroups(std::vector<std::string> groupsVec);
+    void setSubjects(std::vector<std::string> subjectsVec);
+
+    std::vector<Room> getRooms(); 
+    std::vector<Group> getGroups(); 
+    std::vector<Subject> getSubjects();
 };
 
 extern User* user;
