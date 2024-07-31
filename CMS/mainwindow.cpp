@@ -300,9 +300,9 @@ void MainWindow::on_sign_in_clicked()
     signInData["Password"] = password.toStdString();
 
     if (cmsDb->insertData(signInData, "User_Info")) {
-        QMessageBox::information(this, "button clicked", "SignedIn Successfully");
+        QMessageBox::information(this, "button clicked", "Signed Up Successfully");
     } else {
-        QMessageBox::information(this, "button clicked", "SignIn Unsuccessfull");
+        QMessageBox::information(this, "button clicked", "Sign Up Unsuccessfull");
         return;
     }
 
