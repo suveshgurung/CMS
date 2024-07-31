@@ -50,6 +50,8 @@ private slots:
     //
     // void on_wow_clicked();
 
+    void on_home_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;

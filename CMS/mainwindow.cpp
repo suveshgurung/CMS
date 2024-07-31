@@ -410,3 +410,9 @@ void MainWindow::update_room_status() {
 // {
 //     book_room();
 // }
+
+void MainWindow::on_home_2_clicked()
+{
+
+}
+
