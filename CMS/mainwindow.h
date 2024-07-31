@@ -57,6 +57,11 @@ private:
     QSqlDatabase db;
     QSqlTableModel *model;
     LogoWidget *logoWidget;
+
+protected:
+    std::string firstName;
+    std::string lastName;
+    std::string department;
 };
 
 #endif // MAINWINDOW_H

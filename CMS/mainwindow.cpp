@@ -15,18 +15,19 @@
 #include <QLabel>
 #include <QHBoxLayout>
 #include <string>
+#include <iostream>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 
-    QTimer *timer=new QTimer(this);
-    connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(showTime()));
     timer->start();
+
     QTimeEdit *timeEdit = new QTimeEdit;
     timeEdit->setButtonSymbols(QAbstractSpinBox::UpDownArrows);
-
     timeEdit->setMinimumTime(QTime(0, 0, 0));
     timeEdit->setMaximumTime(QTime(23, 59, 59));
 
@@ -36,20 +37,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->date->setText(dateTimeText);
     ui->date_5->setText(dateTimeText);
 
-    // QMainWindow mainWindow;
-    // mainWindow.resize(1920, 1080);
-    // QStackedWidget stackedWidget(&mainWindow);
-    // stackedWidget.setGeometry(0, 0, 1920, 1080);
-
-    // QWidget featureWidget(&stackedWidget);
-    // QLabel label("Feature Widget", &featureWidget);
-    // label.setAlignment(Qt::AlignCenter);
-    //
-    // stackedWidget.addWidget(&featureWidget);
-    // stackedWidget.setCurrentWidget(&featureWidget);
-    //
-    // mainWindow.setCentralWidget(&stackedWidget);
-    // mainWindow.show();
     QPushButton *findDate = new QPushButton("Find");
 
     // Apply a stylesheet with a hover effect
@@ -65,8 +52,8 @@ MainWindow::MainWindow(QWidget *parent)
         "color: white;"
         "}");
 
-    QString usernameText = "Himesh Dulal"; // firstname + lastname retrieved from db
-    QString departmentText = "COMP";       // department name using a function
+    QString usernameText = QString::fromStdString(firstName) + " " + QString::fromStdString(lastName); // firstname + lastname retrieved from db
+    QString departmentText = QString::fromStdString(department);                                       // department name using a function
 
     // Page number for development phase
     QStackedWidget *stackedWidget = ui->stackedWidget;
@@ -78,8 +65,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->department->setText(departmentText);
 
     // Loop to set the text of multiple username and department elements
-    for (int i = 1; i <= 10; i++)
-    {
+    for (int i = 1; i <= 10; i++) {
         QString elementName = "username_" + QString::number(i);
         QString d_elementName = "department_" + QString::number(i);
         QString i_elementName = "index_" + QString::number(i);
@@ -88,25 +74,21 @@ MainWindow::MainWindow(QWidget *parent)
         QLabel *usernameLabel = findChild<QLabel *>(elementName);
         QLabel *indexLabel = findChild<QLabel *>(i_elementName);
 
-        if (indexLabel)
-        {
+        if (indexLabel) {
             indexLabel->setText(QString::number(currentIndex));
         }
 
-        if (usernameLabel)
-        {
+        if (usernameLabel) {
             usernameLabel->setText(usernameText);
         }
 
-        if (departmentLabel)
-        {
+        if (departmentLabel) {
             departmentLabel->setText(departmentText);
         }
     }
 
-    // loop for stackedWidget UI "SIDEBAR UI"
-    for (int i = 1; i <= 5; ++i)
-    {
+    // Loop for stackedWidget UI "SIDEBAR UI"
+    for (int i = 1; i <= 5; ++i) {
         QString buttonName = "logout_button_" + QString::number(i);
         QString home_buttonName = "home_" + QString::number(i);
         QString schedule_buttonName = "schedule_" + QString::number(i);
@@ -117,24 +99,21 @@ MainWindow::MainWindow(QWidget *parent)
         QPushButton *sh_button = findChild<QPushButton *>(schedule_buttonName);
         QPushButton *b_button = findChild<QPushButton *>(booking_buttonName);
 
-        if (button)
-        {
+        if (button) {
             connect(button, &QPushButton::clicked, this, &MainWindow::handleLogout);
         }
-        if (h_button)
-        {
+        if (h_button) {
             connect(h_button, &QPushButton::clicked, this, &MainWindow::handleHome);
         }
-        if (sh_button)
-        {
+        if (sh_button) {
             connect(sh_button, &QPushButton::clicked, this, &MainWindow::handleSchedule);
         }
-        if (b_button)
-        {
+        if (b_button) {
             connect(b_button, &QPushButton::clicked, this, &MainWindow::handleBooking);
         }
     }
 }
+
 
 void MainWindow::showTime()
 {
@@ -174,8 +153,8 @@ void MainWindow::on_loginButton_clicked()
     bool isUserValid = false;
 
     std::string condition = QString("WHERE Email='%1'")
-        .arg(email)
-        .toStdString();
+                                .arg(email)
+                                .toStdString();
 
     // retrieve data from the database.
     userData = cmsDb->getData("User_Info", condition);
@@ -185,7 +164,6 @@ void MainWindow::on_loginButton_clicked()
             QMessageBox::information(this, "button clicked", "User not found!!!");
             return;
         } else {
-
             if (key.first == "Password") {
                 if (key.second.at(0) == password.toStdString()) {
                     isUserValid = true;
@@ -197,19 +175,30 @@ void MainWindow::on_loginButton_clicked()
             if (key.first == "User_ID") {
                 userId = std::stoi(key.second.at(0));
             }
+            if (key.first == "First_Name") {
+                firstName = key.second.at(0);
+                std::cout<<firstName<<std::endl;
+            }
+            if (key.first == "Last_Name") {
+                lastName = key.second.at(0);
+                  std::cout<<lastName<<std::endl;
+            }
         }
     }
 
-
     if (isUserValid) {
         user->setUserId(userId);
-
         userWindow->setUserId(userId);
-
         userWindow->getSchedule();
         update_room_status();
         ui->stackedWidget->setCurrentIndex(4);
+
+
+        qDebug() << "First Name: " << QString::fromStdString(firstName);
+        qDebug() << "Last Name: " << QString::fromStdString(lastName);
+        qDebug() << "Department: " << QString::fromStdString(department);
     }
+
 
 }
 
