@@ -27,9 +27,14 @@ MainWindow::MainWindow(QWidget *parent)
     shadow->setOffset(5, 5);
     shadow->setColor(QColor(0, 0, 0, 160));
 
-    ui->SectionFrame->setGraphicsEffect(shadow);
-    // ui->image->setGraphicsEffect(shadow);
-     ui->Table->setGraphicsEffect(shadow);
+    ui->Table->setGraphicsEffect(shadow);
+
+    QGraphicsDropShadowEffect *shadow1 = new QGraphicsDropShadowEffect();
+    shadow->setBlurRadius(15);
+    shadow->setOffset(5, 5);
+    shadow->setColor(QColor(0, 0, 0, 160));
+
+    ui->SectionFrame->setGraphicsEffect(shadow1);
 
     QTimer *timer=new QTimer(this);
     connect (timer,SIGNAL(timeout()),this,SLOT(showTime()));

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1729</width>
-    <height>1080</height>
+    <width>1625</width>
+    <height>1031</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -686,10 +686,10 @@ color: rgb(48, 138, 255)</string>
        <widget class="QFrame" name="mainWindow">
         <property name="geometry">
          <rect>
-          <x>-400</x>
-          <y>-220</y>
+          <x>-540</x>
+          <y>-200</y>
           <width>2161</width>
-          <height>1231</height>
+          <height>1221</height>
          </rect>
         </property>
         <property name="maximumSize">
@@ -1224,7 +1224,7 @@ drop-down {
           <rect>
            <x>290</x>
            <y>220</y>
-           <width>1701</width>
+           <width>1851</width>
            <height>41</height>
           </rect>
          </property>
@@ -1281,9 +1281,9 @@ border-color: rgb(239, 245, 255);
          <property name="geometry">
           <rect>
            <x>300</x>
-           <y>1190</y>
+           <y>1185</y>
            <width>1711</width>
-           <height>41</height>
+           <height>31</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -1563,6 +1563,107 @@ QPushButton:hover {
           <string>New Booking</string>
          </property>
         </widget>
+        <widget class="QScrollArea" name="scrollArea_2">
+         <property name="geometry">
+          <rect>
+           <x>540</x>
+           <y>260</y>
+           <width>1601</width>
+           <height>881</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">/* Vertical Scrollbar */
+QScrollBar:vertical {
+    background: #f0f0f0; /* Background color */
+    width: 18px; /* Width of the scrollbar */
+    margin: 0px 0px 0px 0px; /* Margin adjustments */
+}
+
+QScrollBar::handle:vertical {
+    background: #8f8f8f; /* Handle color */
+    min-height: 20px; /* Minimum height for the handle */
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #666666; /* Hover color */
+}
+
+QScrollBar::handle:vertical:pressed {
+    background: #4a4a4a; /* Pressed color */
+}
+
+/* Horizontal Scrollbar */
+QScrollBar:horizontal {
+    background: #f0f0f0; /* Background color */
+    height: 18px; /* Height of the scrollbar */
+    margin: 0px 0px 0px 0px; /* Margin adjustments */
+}
+
+QScrollBar::handle:horizontal {
+    background: #8f8f8f; /* Handle color */
+    min-width: 20px; /* Minimum width for the handle */
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #666666; /* Hover color */
+}
+
+QScrollBar::handle:horizontal:pressed {
+    background: #4a4a4a; /* Pressed color */
+}
+
+
+
+</string>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>-463</x>
+            <y>-24</y>
+            <width>2044</width>
+            <height>2044</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QWidget" name="widget_2" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>2000</width>
+                  <height>2000</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <zorder>scrollArea_2</zorder>
+        <zorder>SectionFrame</zorder>
+        <zorder>header</zorder>
+        <zorder>label_11</zorder>
+        <zorder>footer</zorder>
+        <zorder>Table</zorder>
+        <zorder>line</zorder>
+        <zorder>line_3</zorder>
+        <zorder>line_4</zorder>
+        <zorder>label_19</zorder>
+        <zorder>label_12</zorder>
+        <zorder>label_13</zorder>
+        <zorder>pushButton_3</zorder>
+        <zorder>pushButton_2</zorder>
+        <zorder>pushButton_4</zorder>
        </widget>
       </widget>
      </widget>
@@ -1574,8 +1675,8 @@ QPushButton:hover {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1729</width>
-     <height>26</height>
+     <width>1625</width>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuOptions">
