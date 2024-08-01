@@ -50,11 +50,18 @@ private slots:
     //
     // void on_wow_clicked();
 
+    void on_home_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
     QSqlTableModel *model;
     LogoWidget *logoWidget;
+
+protected:
+    std::string firstName;
+    std::string lastName;
+    std::string department;
 };
 
 #endif // MAINWINDOW_H

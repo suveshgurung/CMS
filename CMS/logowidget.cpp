@@ -1,6 +1,7 @@
 #include "logowidget.h"
 
-LogoWidget::LogoWidget(QWidget *parent) : QWidget(parent) {
+LogoWidget::LogoWidget(QWidget *parent) : QWidget(parent)
+{
     // Create a QVBoxLayout
     QVBoxLayout *layout = new QVBoxLayout(this);
 
@@ -16,11 +17,10 @@ LogoWidget::LogoWidget(QWidget *parent) : QWidget(parent) {
         "height: 71px; "
         "}");
 
-
     verticalFrame = new QLabel(this);
 
     // Set fixed dimensions using stylesheet
-   verticalFrame->setStyleSheet("QLabel { width: 71px; height: 71px; }");
+    verticalFrame->setStyleSheet("QLabel { width: 71px; height: 71px; }");
 
     // Scale the pixmap to fit the QLabel's dimensions
     QPixmap scaledPixmap = pixmap.scaled(71, 71, Qt::KeepAspectRatio, Qt::SmoothTransformation);
