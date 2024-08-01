@@ -18,6 +18,43 @@ void User::setUserId(int id) {
     userId = id;
 }
 
+void User:: setUser(int id, std::string fname, std::string mname, std::string lname, std::string email, std::string department , std::string phone)
+{
+    userId=id;
+    fname=FirstName;
+    mname=MiddleName;
+    lname=LastName;
+    email=email;
+    Department=department;
+    PhoneNumber=phone;
+    std::cout<<"User logged in with proper credentials"<<std::endl;
+}
+
+std::string User::getFirstName() const {
+    return FirstName;
+}
+
+std::string User::getMiddleName() const {
+    return MiddleName;
+}
+
+std::string User::getLastName() const {
+    return LastName;
+}
+
+std::string User::getEmail() const {
+    return email;
+}
+
+std::string User::getDepartment() const {
+    return Department;
+}
+
+std::string User::getPhoneNumber() const {
+    return PhoneNumber;
+}
+
+
 int User::getUserId() {
     return userId;
 }

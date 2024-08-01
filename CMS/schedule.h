@@ -7,6 +7,7 @@
 #include <unordered_map>
 #include <vector>
 #include <string>
+#include <iostream>
 
 // all of these enumeration variables need to be in the order of the database to maintain id linkage.
 typedef enum {
@@ -66,12 +67,29 @@ typedef enum {
 class User{
 protected:
     int userId;
+    std::string FirstName;
+    std::string MiddleName;
+    std::string LastName;
+    std::string email;
+    std::string Department;
+    std::string PhoneNumber;
+
 
 public:
     User();
     ~User();
 
     void setUserId(int id);
+
+    void setUser(int id, std::string fname, std::string mname, std::string lname, std::string email, std::string department , std::string phone);
+
+    std::string getFirstName() const;
+    std::string getMiddleName() const;
+    std::string getLastName() const;
+    std::string getEmail() const;
+    std::string getDepartment() const;
+    std::string getPhoneNumber() const;
+
     int getUserId();
 };
 
