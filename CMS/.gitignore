@@ -77,3 +77,9 @@ CMakeLists.txt.user*
 
 .ninja_deps
 .ninja_log
+CMS
+.cmake
+CMakeCache.txt
+CMakeFiles/
+ParseCache.txt
+build/

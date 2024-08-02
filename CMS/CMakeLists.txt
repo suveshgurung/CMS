@@ -18,7 +18,10 @@ set(PROJECT_SOURCES
         mainwindow.h
         dbConnection.h
         dbConnection.cpp
+        schedule.h
+        schedule.cpp
         mainwindow.ui
+        ${QRC_SOURCES}
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -27,6 +30,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         window.h
         image.qrc
+        resources.qrc
+        logowidget.h
+        logowidget.h logowidget.cpp
+        logowidget.cpp
+        temp.ui
 
     )
 # Define target properties for Android with Qt 6 as:
