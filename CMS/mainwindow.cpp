@@ -52,8 +52,8 @@ MainWindow::MainWindow(QWidget *parent)
         "color: white;"
         "}");
 
-    QString usernameText = QString::fromStdString(firstName) + " " + QString::fromStdString(lastName); // firstname + lastname retrieved from db
-    QString departmentText = QString::fromStdString(department);                                       // department name using a function
+    QString usernameText = "John Pork"; // firstname + lastname retrieved from db
+    QString departmentText = "COMP";                                       // department name using a function
 
     // Page number for development phase
     QStackedWidget *stackedWidget = ui->stackedWidget;
@@ -142,6 +142,10 @@ void MainWindow::on_loginButton_clicked()
     QString email = ui->login_email_2->text();
     QString password = ui->login_password_2->text();
 
+    int uid;
+    QString fname,lname,mail,phone,dept;
+    QString mname="";
+
     // check for empty fields.
     if (email == "" || password == "") {
         QMessageBox::information(this, "button clicked", "Email or password is missing!!!");
@@ -175,28 +179,18 @@ void MainWindow::on_loginButton_clicked()
             if (key.first == "User_ID") {
                 userId = std::stoi(key.second.at(0));
             }
-            if (key.first == "First_Name") {
-                firstName = key.second.at(0);
-                std::cout<<firstName<<std::endl;
-            }
-            if (key.first == "Last_Name") {
-                lastName = key.second.at(0);
-                  std::cout<<lastName<<std::endl;
-            }
+
+
         }
     }
 
     if (isUserValid) {
         user->setUserId(userId);
+        // user->setUser(userId,fname,mname,lname,mail,dept,phone);
         userWindow->setUserId(userId);
         userWindow->getSchedule();
         update_room_status();
         ui->stackedWidget->setCurrentIndex(4);
-
-
-        qDebug() << "First Name: " << QString::fromStdString(firstName);
-        qDebug() << "Last Name: " << QString::fromStdString(lastName);
-        qDebug() << "Department: " << QString::fromStdString(department);
     }
 
 
