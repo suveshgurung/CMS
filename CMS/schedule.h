@@ -105,6 +105,8 @@ protected:
     QTime currTime;
     QString date;
     QString time;
+    QString startTime;
+    QString endTime;
     int hour;
 
     std::string subjectEnumToStr(Subject s);
@@ -115,6 +117,8 @@ public:
 
     // methods to get data of the schedule.
     int getDay();
+    QString getStartTime();
+    QString getEndTime();
     void getSchedule();
     void setRooms(std::vector<std::string> roomsVec);
     void setGroups(std::vector<std::string> groupsVec);
