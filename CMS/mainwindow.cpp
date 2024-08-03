@@ -15,7 +15,6 @@
 #include <QLabel>
 #include <QHBoxLayout>
 #include <string>
-#include <iostream>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -221,7 +220,6 @@ void MainWindow::on_loginButton_clicked()
     if (isUserValid) {
         user->setUserId(userId);
         // user->setUser(userId,fname,mname,lname,mail,dept,phone);
-        userWindow->setUserId(userId);
         userWindow->getSchedule();
         update_room_status();
         ui->stackedWidget->setCurrentIndex(4);
@@ -317,9 +315,9 @@ void MainWindow::on_sign_in_clicked()
     signInData["Password"] = password.toStdString();
 
     if (cmsDb->insertData(signInData, "User_Info")) {
-        QMessageBox::information(this, "button clicked", "SignedIn Successfully");
+        QMessageBox::information(this, "button clicked", "Signed Up Successfully");
     } else {
-        QMessageBox::information(this, "button clicked", "SignIn Unsuccessfull");
+        QMessageBox::information(this, "button clicked", "Sign Up Unsuccessfull");
         return;
     }
 
@@ -349,6 +347,7 @@ void MainWindow::on_signup_redirect_clicked()
 void MainWindow::update_room_status() {
     
     std::vector<Room> rooms = userWindow->getRooms();
+    std::unordered_map<Room, std::string> subjects = userWindow->getSubjectsUM();
 
     for (size_t i = 0; i < rooms.size(); i++) {
 
@@ -356,30 +355,37 @@ void MainWindow::update_room_status() {
             case ROOM_106:
                 ui->room_106_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
                 ui->room_106_status->setText("Not Available");
+                ui->room_106_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
                 break;
             case ROOM_107:
                 ui->room_107_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
                 ui->room_107_status->setText("Not Available");
+                ui->room_107_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
                 break;
             case ROOM_108:
                 ui->room_108_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
                 ui->room_108_status->setText("Not Available");
+                ui->room_108_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
                 break;
             case ROOM_109:
                 ui->room_109_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
                 ui->room_109_status->setText("Not Available");
+                ui->room_109_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
                 break;
             case ROOM_207:
                 ui->room_207_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
                 ui->room_207_status->setText("Not Available");
+                ui->room_207_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
                 break;
             case ROOM_208:
                 ui->room_208_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
                 ui->room_208_status->setText("Not Available");
+                ui->room_208_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
                 break;
             case ROOM_209:
                 ui->room_209_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
                 ui->room_209_status->setText("Not Available");
+                ui->room_209_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
                 break;
             default:
                 break;
@@ -432,4 +438,3 @@ void MainWindow::on_home_2_clicked()
 {
 
 }
-
