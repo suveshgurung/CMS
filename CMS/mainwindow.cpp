@@ -52,8 +52,8 @@ MainWindow::MainWindow(QWidget *parent)
         "color: white;"
         "}");
 
-    QString usernameText = QString::fromStdString(firstName) + " " + QString::fromStdString(lastName); // firstname + lastname retrieved from db
-    QString departmentText = QString::fromStdString(department);                                       // department name using a function
+    QString usernameText =QString::fromStdString (user->getFirstName() ); // firstname + lastname retrieved from db
+    QString departmentText = QString::fromStdString(user->getDepartment());                                       // department name using a function
 
     // Page number for development phase
     QStackedWidget *stackedWidget = ui->stackedWidget;
@@ -142,6 +142,10 @@ void MainWindow::on_loginButton_clicked()
     QString email = ui->login_email_2->text();
     QString password = ui->login_password_2->text();
 
+    int uid;
+    std::string fname,lname,mail,phone,dept;
+    std::string mname="";
+
     // check for empty fields.
     if (email == "" || password == "") {
         QMessageBox::information(this, "button clicked", "Email or password is missing!!!");
@@ -175,28 +179,52 @@ void MainWindow::on_loginButton_clicked()
             if (key.first == "User_ID") {
                 userId = std::stoi(key.second.at(0));
             }
-            if (key.first == "First_Name") {
-                firstName = key.second.at(0);
-                std::cout<<firstName<<std::endl;
+            if(key.first=="First_Name")
+            {
+                fname = (key.second.at(0));
+                std::cout<<"FNAME:"<<fname<<std::endl;
+
             }
-            if (key.first == "Last_Name") {
-                lastName = key.second.at(0);
-                  std::cout<<lastName<<std::endl;
+            if(key.first=="Middle_Name")
+            {
+                    mname=(key.second.at(0));
+                std::cout<<"MNAME:"<<mname<<std::endl;
             }
+            if(key.first=="Last_Name")
+            {
+                lname=key.second.at(0);
+                  std::cout<<"LNAME:"<<lname<<std::endl;
+            }
+            if(key.first=="Email")
+            {
+                mail=key.second.at(0);
+                 std::cout<<"Email:"<<mail<<std::endl;
+            }
+            if(key.first=="Department")
+            {
+                dept=key.second.at(0);
+                std::cout<<"Department:"<<dept<<std::endl;
+            }
+            if(key.first=="Phone_Number")
+            {
+                phone=key.second.at(0);
+
+            }
+
+            user->setUser(userId,fname,mname,lname,mail,dept,phone);
+
+
+
         }
     }
 
     if (isUserValid) {
         user->setUserId(userId);
+        // user->setUser(userId,fname,mname,lname,mail,dept,phone);
         userWindow->setUserId(userId);
         userWindow->getSchedule();
         update_room_status();
         ui->stackedWidget->setCurrentIndex(4);
-
-
-        qDebug() << "First Name: " << QString::fromStdString(firstName);
-        qDebug() << "Last Name: " << QString::fromStdString(lastName);
-        qDebug() << "Department: " << QString::fromStdString(department);
     }
 
 
