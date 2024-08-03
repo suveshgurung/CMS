@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="landing_page"/>
       <widget class="QWidget" name="explore_page">
@@ -2027,7 +2027,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>CHEM 101</string>
+                  <string/>
                  </property>
                 </widget>
                 <widget class="QLabel" name="room_106_class_time">
@@ -2048,7 +2048,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>9:00 - 11:00</string>
+                  <string/>
                  </property>
                 </widget>
                </widget>
@@ -2214,7 +2214,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>CHEM 101</string>
+                  <string/>
                  </property>
                 </widget>
                 <widget class="QLabel" name="room_107_class_time">
@@ -2235,7 +2235,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>9:00 - 11:00</string>
+                  <string/>
                  </property>
                 </widget>
                </widget>
@@ -2401,7 +2401,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>CHEM 101</string>
+                  <string/>
                  </property>
                 </widget>
                 <widget class="QLabel" name="room_108_class_time">
@@ -2422,7 +2422,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>9:00 - 11:00</string>
+                  <string/>
                  </property>
                 </widget>
                </widget>
@@ -2588,7 +2588,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>CHEM 101</string>
+                  <string/>
                  </property>
                 </widget>
                 <widget class="QLabel" name="room_109_class_time">
@@ -2609,7 +2609,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>9:00 - 11:00</string>
+                  <string/>
                  </property>
                 </widget>
                </widget>
@@ -2853,7 +2853,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>CHEM 101</string>
+                  <string/>
                  </property>
                 </widget>
                 <widget class="QLabel" name="room_207_class_time">
@@ -2874,7 +2874,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>9:00 - 11:00</string>
+                  <string/>
                  </property>
                 </widget>
                </widget>
@@ -3040,7 +3040,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>CHEM 101</string>
+                  <string/>
                  </property>
                 </widget>
                 <widget class="QLabel" name="room_208_class_time">
@@ -3061,7 +3061,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>9:00 - 11:00</string>
+                  <string/>
                  </property>
                 </widget>
                </widget>
@@ -3227,7 +3227,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>CHEM 101</string>
+                  <string/>
                  </property>
                 </widget>
                 <widget class="QLabel" name="room_209_class_time">
@@ -3248,7 +3248,7 @@ QLabel{
 }</string>
                  </property>
                  <property name="text">
-                  <string>9:00 - 11:00</string>
+                  <string/>
                  </property>
                 </widget>
                </widget>

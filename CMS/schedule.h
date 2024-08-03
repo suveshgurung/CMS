@@ -123,7 +123,7 @@ public:
     std::vector<Room> getRooms(); 
     std::vector<Group> getGroups(); 
     std::vector<Subject> getSubjects();
-    std::unordered_map<Room, std::string> getSubjectsUM();
+    std::unordered_map<Room, std::string> getSubjectsUM();      // index is "Room" to link the subject being taught to the particular room.
 
     void linkSubjects();
 };
