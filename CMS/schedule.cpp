@@ -27,7 +27,7 @@ void User::setUser(int id, std::string fname, std::string mname, std::string lna
     email=email;
     Department=department;
     PhoneNumber=phone;
-    std::cout<<"User logged in with proper credentials"<<std::endl;
+    // std::cout<<"User logged in with proper credentials"<<std::endl;
 }
 
 std::string User::getFirstName() const {
@@ -105,13 +105,21 @@ int UserWindow::getDay() {
     return dayName;
 }
 
+QString UserWindow::getStartTime() {
+    return startTime;
+}
+
+QString UserWindow::getEndTime() {
+    return endTime;
+}
+
 void UserWindow::getSchedule() {
 
     std::unordered_map<std::string, std::vector<std::string>> defaultScheduleData;
     std::unordered_map<std::string, std::vector<std::string>> bookedScheduleData;
     std::unordered_map<std::string, std::vector<std::string>> combinedScheduleData;
-    QString startTime = QString::number(hour) + ":00";
-    QString endTime = QString::number(hour+1) + ":00";
+    startTime = QString::number(hour) + ":00";
+    endTime = QString::number(hour+1) + ":00";
 
     // get the default schedule.
     std::string defaultCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='y'")
