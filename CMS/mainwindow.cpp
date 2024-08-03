@@ -15,8 +15,6 @@
 #include <QLabel>
 #include <QHBoxLayout>
 #include <string>
-#include <iostream>
-#include <unordered_map>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
