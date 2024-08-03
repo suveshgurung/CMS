@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>6</number>
       </property>
       <widget class="QWidget" name="landing_page"/>
       <widget class="QWidget" name="explore_page">
@@ -4184,6 +4184,517 @@ font-weight:bold;</string>
            </property>
            <property name="text">
             <string>CLASSROOM MANAGEMENT SYSTEM</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="SectionFrame">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>110</y>
+            <width>631</width>
+            <height>391</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(234, 234, 234);
+background-color: rgb(242, 255, 251);
+background-color: rgb(243, 255, 253);
+background-color: rgb(216, 230, 255);
+
+    border: 2px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;         
+      
+border-color: rgb(0, 125, 0);
+    background-color: white;              
+    padding: 10px;            
+box-shadow: 10px 10px 5px black;
+box-shadow: 10px 10px 5px black;
+
+
+
+
+
+
+
+
+
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_11">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>631</width>
+             <height>71</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>14</pointsize>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+font: 11pt &quot;Segoe UI&quot;;
+background-color: rgb(233, 255, 251);
+
+    font-size: 24px;
+    color: #333;
+    background-color: #d9edf7;
+    padding: 10px;
+    border-radius: 5px;
+
+border-radius: 15px;
+border-color: rgb(0, 118, 0);
+
+QLabel {
+  background-color: #DFF2FF; /* Light blue background */
+  color: #003366; /* Dark blue text */
+  font-family: &quot;Segoe UI&quot;; /* Font family */
+  font-size: 14pt; /* Font size to match &quot;Select a room&quot; */
+  font-weight: bold; /* Bold text */
+  padding: 10px; /* Adjust padding for spacing */
+}
+  background-color: #DFF2FF; /* Light blue background */
+  color: #003366; /* Dark blue text */
+  font-family: &quot;Segoe UI&quot;; /* Font family */
+  font-size: 14pt; /* Font size */
+  font-weight: bold; /* Bold text */
+  padding: 5px; /* Padding for spacing */
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>Select a room</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>80</y>
+             <width>91</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);
+  color: #003366; 
+
+</string>
+           </property>
+           <property name="text">
+            <string>Date</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>80</y>
+             <width>101</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);
+  color: #003366; </string>
+           </property>
+           <property name="text">
+            <string>Time</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QDateEdit" name="dateEdit">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>140</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>Select the date</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+ focus{ border: 2px solid rgb(0, 150, 0);
+    background-color: rgb(230, 255, 230);}
+
+
+
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+drop-down {
+ border: 0px;
+}
+
+QDateEdit {
+  border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #fff;}</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QTimeEdit" name="timeEdit">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>140</y>
+             <width>141</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>Select the time</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+
+
+
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}</string>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>140</y>
+             <width>131</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+
+
+drop-down {
+    border: 0px;
+}</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Room 101</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 102</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 103</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 104</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 105</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 106</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 201</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 201</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 202</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 203</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 204</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 205</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Room 206</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_15">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>80</y>
+             <width>91</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);
+  color: #003366; </string>
+           </property>
+           <property name="text">
+            <string>Room No.</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>220</y>
+             <width>631</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="toolTip">
+            <string>Click to search room</string>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(0, 122, 0);
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 170, 127);
+}
+QPushButton {
+    background-color: rgb(0, 122, 0);
+    color: white;
+    border: 2px solid rgb(0, 102, 0);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+
+
+    border: 2px solid rgb(0, 122, 0);
+    cursor: pointer;
+}
+
+
+
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>Search</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>80</y>
+             <width>51</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>:/date/dates.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>80</y>
+             <width>51</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap>:/timee/clock.256x256.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>500</x>
+             <y>80</y>
+             <width>101</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+  color: #003366; </string>
+           </property>
+           <property name="text">
+            <string>Block No.</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_3">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>140</y>
+             <width>121</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+
+
+drop-down {
+    border: 0px;
+}
+  color: #003366; </string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Block No. 6</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Block No. 9</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_19">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>290</y>
+             <width>631</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+  background-color: #DFF2FF; /* Light blue background */
+  color: #003366; /* Dark blue text */
+  font-family: &quot;Segoe UI&quot;; /* Font family */
+  font-size: 9
+\pt; /* Font size */
+  font-weight: bold; /* Bold text */
+  padding: 5px; /* Padding for spacing */
+}
+
+
+
+</string>
+           </property>
+           <property name="text">
+            <string>Instructions:
+- Select date, time, room no, and block
+- Click 'Search' to find available rooms
+</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::PlainText</enum>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
            </property>
           </widget>
          </widget>
