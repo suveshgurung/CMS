@@ -18,7 +18,7 @@ void User::setUserId(int id) {
     userId = id;
 }
 
-void User:: setUser(int id, std::string fname, std::string mname, std::string lname, std::string email, std::string department , std::string phone)
+void User::setUser(int id, std::string fname, std::string mname, std::string lname, std::string email, std::string department , std::string phone)
 {
     userId=id;
     fname=FirstName;
@@ -114,7 +114,7 @@ void UserWindow::getSchedule() {
     QString endTime = QString::number(hour+1) + ":00";
 
     // get the default schedule.
-    std::string defaultCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='y'")
+    std::string defaultCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='4' AND default_schedule='y'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
@@ -196,6 +196,8 @@ void UserWindow::getSchedule() {
         }
 
     }
+
+    linkSubjects();
 
 }
 
@@ -336,6 +338,55 @@ void UserWindow::setSubjects(std::vector<std::string> subjectsVec) {
 
 }
 
+std::string UserWindow::subjectEnumToStr(Subject s) {
+    
+    switch (s) {
+        case COMP116:
+            return "COMP116";
+        case COMP117:
+            return "COMP117";
+        case MATH103:
+            return "MATH103";
+        case MATH102:
+            return "MATH102";
+        case MATH104:
+            return "MATH104";
+        case PHYS102:
+            return "PHYS102";
+        case PHYS105:
+            return "PHYS105";
+        case EDRG102:
+            return "EDRG102";
+        case EDRG103:
+            return "EDRG103";
+        case ENGT105:
+            return "ENGT105";
+        case ENVE101:
+            return "ENVE101";
+        case ENGG112:
+            return "ENGG112";
+        case CHEM102:
+            return "CHEM102";
+        case CHEM103:
+            return "CHEM103";
+        case BINF101:
+            return "BINF101";
+        case BINF102:
+            return "BINF102";
+        case BIOT101:
+            return "BIOT101";
+        case BIOT102:
+            return "BIOT102";
+        case ENVS101:
+            return "ENVS101";
+        case ENVS102:
+            return "ENVS102";
+        case ENVS141:
+            return "ENVS141";
+    }
+
+}
+
 std::vector<Room> UserWindow::getRooms() {
     return rooms;
 }
@@ -346,4 +397,20 @@ std::vector<Group> UserWindow::getGroups() {
 
 std::vector<Subject> UserWindow::getSubjects() {
     return subjects;
+}
+
+std::unordered_map<Room, std::string> UserWindow::getSubjectsUM() {
+    return subjectsUM;
+}
+
+void UserWindow::linkSubjects() {
+    
+    for (size_t i = 0; i < subjects.size(); i++) {
+        subjectsUM[rooms.at(i)] = subjectEnumToStr(subjects.at(i));
+    }
+
+    for (const auto& key : subjectsUM) {
+        qDebug() << key.first;
+        qDebug() << key.second;
+    }
 }

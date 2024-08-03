@@ -98,6 +98,7 @@ protected:
     std::vector<Room> rooms;
     std::vector<Subject> subjects;
     std::vector<Group> groups;
+    std::unordered_map<Room, std::string> subjectsUM;
     Day dayName;
 
     QDate currDate; 
@@ -105,6 +106,8 @@ protected:
     QString date;
     QString time;
     int hour;
+
+    std::string subjectEnumToStr(Subject s);
 
 public:
     UserWindow(); 
@@ -120,6 +123,9 @@ public:
     std::vector<Room> getRooms(); 
     std::vector<Group> getGroups(); 
     std::vector<Subject> getSubjects();
+    std::unordered_map<Room, std::string> getSubjectsUM();
+
+    void linkSubjects();
 };
 
 extern User* user;
