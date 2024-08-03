@@ -27,7 +27,7 @@ void User::setUser(int id, std::string fname, std::string mname, std::string lna
     email=email;
     Department=department;
     PhoneNumber=phone;
-    std::cout<<"User logged in with proper credentials"<<std::endl;
+    // std::cout<<"User logged in with proper credentials"<<std::endl;
 }
 
 std::string User::getFirstName() const {
@@ -122,7 +122,7 @@ void UserWindow::getSchedule() {
     endTime = QString::number(hour+1) + ":00";
 
     // get the default schedule.
-    std::string defaultCondition = QString("WHERE start_time='10:00' AND end_time='11:00' AND day_id='3' AND default_schedule='y'")
+    std::string defaultCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='y'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
