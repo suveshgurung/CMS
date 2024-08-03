@@ -708,12 +708,12 @@ background-color: rgb(245, 245, 245);
 
 </string>
         </property>
-        <widget class="QFrame" name="SectionFrame">
+        <widget class="QFrame" name="selectBox">
          <property name="geometry">
           <rect>
            <x>1000</x>
            <y>320</y>
-           <width>631</width>
+           <width>801</width>
            <height>391</height>
           </rect>
          </property>
@@ -753,7 +753,7 @@ box-shadow: 10px 10px 5px black;
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>631</width>
+            <width>801</width>
             <height>71</height>
            </rect>
           </property>
@@ -832,7 +832,7 @@ border-color: rgb(255, 255, 255);
            <rect>
             <x>200</x>
             <y>80</y>
-            <width>101</width>
+            <width>91</width>
             <height>51</height>
            </rect>
           </property>
@@ -842,13 +842,13 @@ border-color: rgb(255, 255, 255);
   color: #003366; </string>
           </property>
           <property name="text">
-           <string>Time</string>
+           <string>Start time</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QDateEdit" name="dateEdit">
+         <widget class="QDateEdit" name="Date">
           <property name="geometry">
            <rect>
             <x>10</x>
@@ -894,12 +894,12 @@ QDateEdit {
            <bool>true</bool>
           </property>
          </widget>
-         <widget class="QTimeEdit" name="QTime">
+         <widget class="QTimeEdit" name="starttime">
           <property name="geometry">
            <rect>
             <x>170</x>
             <y>140</y>
-            <width>141</width>
+            <width>131</width>
             <height>41</height>
            </rect>
           </property>
@@ -927,10 +927,10 @@ QToolTip {
            <bool>false</bool>
           </property>
          </widget>
-         <widget class="QComboBox" name="comboBox">
+         <widget class="QComboBox" name="RoomNo">
           <property name="geometry">
            <rect>
-            <x>340</x>
+            <x>490</x>
             <y>140</y>
             <width>131</width>
             <height>41</height>
@@ -1017,10 +1017,10 @@ drop-down {
          <widget class="QLabel" name="label_7">
           <property name="geometry">
            <rect>
-            <x>350</x>
+            <x>500</x>
             <y>80</y>
             <width>91</width>
-            <height>41</height>
+            <height>51</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -1032,12 +1032,12 @@ border-color: rgb(255, 255, 255);
            <string>Room No.</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="SearchButton">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>220</y>
-            <width>631</width>
+            <width>801</width>
             <height>41</height>
            </rect>
           </property>
@@ -1134,10 +1134,10 @@ border-color: rgb(255, 255, 255);
          <widget class="QLabel" name="label_17">
           <property name="geometry">
            <rect>
-            <x>500</x>
+            <x>671</x>
             <y>80</y>
-            <width>101</width>
-            <height>41</height>
+            <width>91</width>
+            <height>51</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -1148,12 +1148,12 @@ border-color: rgb(255, 255, 255);
            <string>Block No.</string>
           </property>
          </widget>
-         <widget class="QComboBox" name="comboBox_3">
+         <widget class="QComboBox" name="BlockNo">
           <property name="geometry">
            <rect>
-            <x>490</x>
+            <x>650</x>
             <y>140</y>
-            <width>121</width>
+            <width>131</width>
             <height>41</height>
            </rect>
           </property>
@@ -1181,12 +1181,12 @@ drop-down {
            </property>
           </item>
          </widget>
-         <widget class="QLabel" name="label_10">
+         <widget class="QLabel" name="Instruction">
           <property name="geometry">
            <rect>
             <x>0</x>
             <y>290</y>
-            <width>631</width>
+            <width>801</width>
             <height>101</height>
            </rect>
           </property>
@@ -1218,6 +1218,60 @@ drop-down {
            <bool>true</bool>
           </property>
          </widget>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>80</y>
+            <width>91</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);
+  color: #003366; </string>
+          </property>
+          <property name="text">
+           <string>End Time</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QTimeEdit" name="endTime">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>140</y>
+            <width>131</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="toolTip">
+           <string>Select the time</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-color: rgb(255, 255, 255);
+   border: 2px solid rgb(0, 122, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+
+
+
+QToolTip {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}</string>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+         </widget>
         </widget>
         <widget class="QFrame" name="header">
          <property name="geometry">
@@ -1243,38 +1297,6 @@ drop-down {
          </property>
          <property name="frameShadow">
           <enum>QFrame::Raised</enum>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_11">
-         <property name="geometry">
-          <rect>
-           <x>1000</x>
-           <y>740</y>
-           <width>631</width>
-           <height>51</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(216, 230, 255);
-border-color: rgb(0, 115, 0);
-border-color: rgb(0, 117, 0);
-border-color: rgb(0, 127, 0);
-background-color: rgb(255, 255, 255);
-background-color: rgb(243, 255, 253);
-background-color: rgb(242, 255, 251);
-    background-color: white;    
-border-radius: 15px;
-
-border-color: rgb(0, 125, 0);
-border-color: rgb(239, 245, 255);
-
-    border: 2px solid rgba(0, 0, 0, 0.3); 
-
- border- color: #003366; 
-  color: #003366</string>
-         </property>
-         <property name="text">
-          <string>       S.N                              Room No.                          Block                            Time</string>
          </property>
         </widget>
         <widget class="QFrame" name="footer">
@@ -1303,80 +1325,6 @@ border-color: rgb(239, 245, 255);
           <enum>QFrame::Raised</enum>
          </property>
         </widget>
-        <widget class="QTableWidget" name="Table">
-         <property name="geometry">
-          <rect>
-           <x>1000</x>
-           <y>790</y>
-           <width>631</width>
-           <height>241</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(234, 234, 234);
-background-color: rgb(242, 255, 251);
-background-color: rgb(243, 255, 253);
-background-color: rgb(216, 230, 255);
-
-    border: 2px solid rgba(0, 0, 0, 0.3); 
-    border-radius: 10px;         
-      
-border-color: rgb(0, 125, 0);
-    background-color: white;              
-    padding: 10px;            
-box-shadow: 10px 10px 5px black;
-
-</string>
-         </property>
-        </widget>
-        <widget class="Line" name="line">
-         <property name="geometry">
-          <rect>
-           <x>1240</x>
-           <y>800</y>
-           <width>131</width>
-           <height>211</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-        <widget class="Line" name="line_3">
-         <property name="geometry">
-          <rect>
-           <x>1070</x>
-           <y>800</y>
-           <width>131</width>
-           <height>211</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
-        <widget class="Line" name="line_4">
-         <property name="geometry">
-          <rect>
-           <x>1400</x>
-           <y>800</y>
-           <width>131</width>
-           <height>211</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-        </widget>
         <widget class="QLabel" name="label_19">
          <property name="geometry">
           <rect>
@@ -1402,165 +1350,6 @@ box-shadow: 10px 10px 5px black;
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_12">
-         <property name="geometry">
-          <rect>
-           <x>1030</x>
-           <y>720</y>
-           <width>131</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 600 9pt &quot;Segoe UI Semibold&quot;;
-
-QLabel .green {
-  color: green; /* Green text */
-}
-
-QLabel .red {
-  color: red; /* Red text */
-}
-
-QLabel {
-  background-color: #DFF2FF; /* Light blue background */
-  color: green; /* Green text */
-  font-family: &quot;Segoe UI&quot;; /* Font family */
-  font-size: 12pt; /* Font size */
-  font-weight: normal; /* Normal weight */
-  padding: 10px; /* Padding for spacing */
-}
-
- color: red;
- color: green;</string>
-         </property>
-         <property name="text">
-          <string>Green: Available                </string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_13">
-         <property name="geometry">
-          <rect>
-           <x>1450</x>
-           <y>720</y>
-           <width>131</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 600 9pt &quot;Segoe UI Semibold&quot;;
-
-QLabel .green {
-  color: green; /* Green text */
-}
-
-QLabel .red {
-  color: red; /* Red text */
-}
-
-QLabel {
-  background-color: #DFF2FF; /* Light blue background */
-  color: green; /* Green text */
-  font-family: &quot;Segoe UI&quot;; /* Font family */
-  font-size: 12pt; /* Font size */
-  font-weight: normal; /* Normal weight */
-  padding: 10px; /* Padding for spacing */
-}
-  color: red;
-color: red;
-</string>
-         </property>
-         <property name="text">
-          <string>Red: Booked</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_3">
-         <property name="geometry">
-          <rect>
-           <x>1450</x>
-           <y>1040</y>
-           <width>141</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
-QPushButton {
-background-color:  #003366;
-    color: white;
-    border: 2px solid rgb(0, 102, 0);
-    border-radius: 10px;
-    padding: 5px 10px;
-}
-
-QPushButton:hover {
- background-color: rgb(52, 84, 171);
-}
-</string>
-         </property>
-         <property name="text">
-          <string>Help</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="geometry">
-          <rect>
-           <x>1250</x>
-           <y>1040</y>
-           <width>131</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
-QPushButton {
-background-color: rgb(170, 0, 0);
-    color: white;
-    border: 2px solid rgb(0, 102, 0);
-    border-radius: 10px;
-    padding: 5px 10px;
-}
-
-QPushButton:hover {
-   background-color: rgb(230, 0, 0);
-}</string>
-         </property>
-         <property name="text">
-          <string>Cancel Booking</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_4">
-         <property name="geometry">
-          <rect>
-           <x>1020</x>
-           <y>1040</y>
-           <width>151</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">
-QPushButton {
-    background-color: rgb(0, 122, 0);
-    color: white;
-    border: 2px solid rgb(0, 102, 0);
-    border-radius: 10px;
-    padding: 5px 10px;
-}
-hover {
-    background-color: #333; /* Darker shade */
-    transform: scale(1.05); /* Slightly enlarge */
-}
-
-QPushButton:hover {
-    background-color: rgb(85, 170, 127);
-}
-</string>
-         </property>
-         <property name="text">
-          <string>New Booking</string>
          </property>
         </widget>
         <widget class="QScrollArea" name="scrollArea_2">
@@ -1623,10 +1412,10 @@ QScrollBar::handle:horizontal:pressed {
          <widget class="QWidget" name="scrollAreaWidgetContents">
           <property name="geometry">
            <rect>
-            <x>-463</x>
-            <y>-24</y>
-            <width>2044</width>
-            <height>2044</height>
+            <x>0</x>
+            <y>0</y>
+            <width>2036</width>
+            <height>2036</height>
            </rect>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -1641,6 +1430,303 @@ QScrollBar::handle:horizontal:pressed {
                   <height>2000</height>
                  </size>
                 </property>
+                <widget class="QPushButton" name="pushButton_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>980</x>
+                   <y>760</y>
+                   <width>141</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+QPushButton {
+background-color:  #003366;
+    color: white;
+    border: 2px solid rgb(0, 102, 0);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+ background-color: rgb(52, 84, 171);
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Help</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_13">
+                 <property name="geometry">
+                  <rect>
+                   <x>1060</x>
+                   <y>440</y>
+                   <width>131</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 600 9pt &quot;Segoe UI Semibold&quot;;
+
+QLabel .green {
+  color: green; /* Green text */
+}
+
+QLabel .red {
+  color: red; /* Red text */
+}
+
+QLabel {
+  background-color: #DFF2FF; /* Light blue background */
+  color: green; /* Green text */
+  font-family: &quot;Segoe UI&quot;; /* Font family */
+  font-size: 12pt; /* Font size */
+  font-weight: normal; /* Normal weight */
+  padding: 10px; /* Padding for spacing */
+}
+  color: red;
+color: red;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>Red: Booked</string>
+                 </property>
+                </widget>
+                <widget class="Line" name="line">
+                 <property name="geometry">
+                  <rect>
+                   <x>770</x>
+                   <y>520</y>
+                   <width>131</width>
+                   <height>211</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                </widget>
+                <widget class="Line" name="line_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>600</x>
+                   <y>520</y>
+                   <width>131</width>
+                   <height>211</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                </widget>
+                <widget class="QTableWidget" name="Table">
+                 <property name="geometry">
+                  <rect>
+                   <x>440</x>
+                   <y>510</y>
+                   <width>801</width>
+                   <height>241</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(234, 234, 234);
+background-color: rgb(242, 255, 251);
+background-color: rgb(243, 255, 253);
+background-color: rgb(216, 230, 255);
+
+    border: 2px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;         
+      
+border-color: rgb(0, 125, 0);
+    background-color: white;              
+    padding: 10px;            
+box-shadow: 10px 10px 5px black;
+
+</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_11">
+                 <property name="geometry">
+                  <rect>
+                   <x>440</x>
+                   <y>460</y>
+                   <width>801</width>
+                   <height>51</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(216, 230, 255);
+border-color: rgb(0, 115, 0);
+border-color: rgb(0, 117, 0);
+border-color: rgb(0, 127, 0);
+background-color: rgb(255, 255, 255);
+background-color: rgb(243, 255, 253);
+background-color: rgb(242, 255, 251);
+    background-color: white;    
+border-radius: 15px;
+
+border-color: rgb(0, 125, 0);
+border-color: rgb(239, 245, 255);
+
+    border: 2px solid rgba(0, 0, 0, 0.3); 
+
+ border- color: #003366; 
+  color: #003366</string>
+                 </property>
+                 <property name="text">
+                  <string>       S.N                                                    Room No.                                                  Block                                                                 Time</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="label_12">
+                 <property name="geometry">
+                  <rect>
+                   <x>530</x>
+                   <y>440</y>
+                   <width>131</width>
+                   <height>16</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 600 9pt &quot;Segoe UI Semibold&quot;;
+
+QLabel .green {
+  color: green; /* Green text */
+}
+
+QLabel .red {
+  color: red; /* Red text */
+}
+
+QLabel {
+  background-color: #DFF2FF; /* Light blue background */
+  color: green; /* Green text */
+  font-family: &quot;Segoe UI&quot;; /* Font family */
+  font-size: 12pt; /* Font size */
+  font-weight: normal; /* Normal weight */
+  padding: 10px; /* Padding for spacing */
+}
+
+ color: red;
+ color: green;</string>
+                 </property>
+                 <property name="text">
+                  <string>Green: Available                </string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>550</x>
+                   <y>760</y>
+                   <width>151</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+QPushButton {
+    background-color: rgb(0, 122, 0);
+    color: white;
+    border: 2px solid rgb(0, 102, 0);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+hover {
+    background-color: #333; /* Darker shade */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+QPushButton:hover {
+    background-color: rgb(85, 170, 127);
+}
+</string>
+                 </property>
+                 <property name="text">
+                  <string>New Booking</string>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="pushButton_2">
+                 <property name="geometry">
+                  <rect>
+                   <x>780</x>
+                   <y>760</y>
+                   <width>131</width>
+                   <height>41</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">
+QPushButton {
+background-color: rgb(170, 0, 0);
+    color: white;
+    border: 2px solid rgb(0, 102, 0);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+   background-color: rgb(230, 0, 0);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Cancel Booking</string>
+                 </property>
+                </widget>
+                <widget class="Line" name="line_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>710</x>
+                   <y>520</y>
+                   <width>131</width>
+                   <height>211</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                </widget>
+                <widget class="Line" name="line_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>930</x>
+                   <y>520</y>
+                   <width>131</width>
+                   <height>211</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                </widget>
+                <widget class="Line" name="line_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>500</x>
+                   <y>520</y>
+                   <width>131</width>
+                   <height>211</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                </widget>
                </widget>
               </item>
              </layout>
@@ -1650,20 +1736,10 @@ QScrollBar::handle:horizontal:pressed {
          </widget>
         </widget>
         <zorder>scrollArea_2</zorder>
-        <zorder>SectionFrame</zorder>
+        <zorder>selectBox</zorder>
         <zorder>header</zorder>
-        <zorder>label_11</zorder>
         <zorder>footer</zorder>
-        <zorder>Table</zorder>
-        <zorder>line</zorder>
-        <zorder>line_3</zorder>
-        <zorder>line_4</zorder>
         <zorder>label_19</zorder>
-        <zorder>label_12</zorder>
-        <zorder>label_13</zorder>
-        <zorder>pushButton_3</zorder>
-        <zorder>pushButton_2</zorder>
-        <zorder>pushButton_4</zorder>
        </widget>
       </widget>
      </widget>
