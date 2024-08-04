@@ -51,40 +51,40 @@ MainWindow::MainWindow(QWidget *parent)
         "color: white;"
         "}");
 
-    QString usernameText =QString::fromStdString (user->getFirstName() ); // firstname + lastname retrieved from db
-    QString departmentText = QString::fromStdString(user->getDepartment());                                       // department name using a function
+    // QString usernameText =QString::fromStdString (user->getFirstName() ); // firstname + lastname retrieved from db
+    // QString departmentText = QString::fromStdString(user->getDepartment());                                       // department name using a function
 
-    // Page number for development phase
-    QStackedWidget *stackedWidget = ui->stackedWidget;
-    int currentIndex = stackedWidget->currentIndex();
-    ui->index->setText(QString::number(currentIndex));
+    // // Page number for development phase
+    // QStackedWidget *stackedWidget = ui->stackedWidget;
+    // int currentIndex = stackedWidget->currentIndex();
+    // ui->index->setText(QString::number(currentIndex));
 
-    // Set the department text for specific UI elements
-    ui->username->setText(usernameText);
-    ui->department->setText(departmentText);
+    // // Set the department text for specific UI elements
+    // ui->username->setText(usernameText);
+    // ui->department->setText(departmentText);
 
-    // Loop to set the text of multiple username and department elements
-    for (int i = 1; i <= 10; i++) {
-        QString elementName = "username_" + QString::number(i);
-        QString d_elementName = "department_" + QString::number(i);
-        QString i_elementName = "index_" + QString::number(i);
+    // // Loop to set the text of multiple username and department elements
+    // for (int i = 1; i <= 10; i++) {
+    //     QString elementName = "username_" + QString::number(i);
+    //     QString d_elementName = "department_" + QString::number(i);
+    //     QString i_elementName = "index_" + QString::number(i);
 
-        QLabel *departmentLabel = findChild<QLabel *>(d_elementName);
-        QLabel *usernameLabel = findChild<QLabel *>(elementName);
-        QLabel *indexLabel = findChild<QLabel *>(i_elementName);
+    //     QLabel *departmentLabel = findChild<QLabel *>(d_elementName);
+    //     QLabel *usernameLabel = findChild<QLabel *>(elementName);
+    //     QLabel *indexLabel = findChild<QLabel *>(i_elementName);
 
-        if (indexLabel) {
-            indexLabel->setText(QString::number(currentIndex));
-        }
+    //     if (indexLabel) {
+    //         indexLabel->setText(QString::number(currentIndex));
+    //     }
 
-        if (usernameLabel) {
-            usernameLabel->setText(usernameText);
-        }
+    //     if (usernameLabel) {
+    //         usernameLabel->setText(usernameText);
+    //     }
 
-        if (departmentLabel) {
-            departmentLabel->setText(departmentText);
-        }
-    }
+    //     if (departmentLabel) {
+    //         departmentLabel->setText(departmentText);
+    //     }
+    // }
 
     // Loop for stackedWidget UI "SIDEBAR UI"
     for (int i = 1; i <= 5; ++i) {
@@ -136,97 +136,77 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_loginButton_clicked()
 {
-
-    // retrieve info from the frontend.
     QString email = ui->login_email_2->text();
     QString password = ui->login_password_2->text();
 
-    int uid;
-    std::string fname,lname,mail,phone,dept;
-    std::string mname="";
-
-    // check for empty fields.
-    if (email == "" || password == "") {
-        QMessageBox::information(this, "button clicked", "Email or password is missing!!!");
+    if (email.isEmpty() || password.isEmpty()) {
+        QMessageBox::information(this, "Login Error", "Email or password is missing!!!");
         return;
     }
 
     std::unordered_map<std::string, std::vector<std::string>> userData;
-    int userId;
-    bool isUserValid = false;
+    std::string condition = QString("WHERE Email='%1'").arg(email).toStdString();
 
-    std::string condition = QString("WHERE Email='%1'")
-                                .arg(email)
-                                .toStdString();
-
-    // retrieve data from the database.
     userData = cmsDb->getData("User_Info", condition);
-    for (const auto& key : userData) {
 
-        if (key.second.size() == 0) {
-            QMessageBox::information(this, "button clicked", "User not found!!!");
-            return;
+    if (userData["Email"].empty()) {
+        QMessageBox::information(this, "Login Error", "User not found!!!");
+        return;
+    }
+
+    if (userData["Password"][0] != password.toStdString()) {
+        QMessageBox::information(this, "Login Error", "Incorrect Password!!!");
+        return;
+    }
+
+    int userId = std::stoi(userData["User_ID"][0]);
+    std::string fname = userData["First_Name"][0];
+    std::string mname = userData["Middle_Name"][0];
+    std::string lname = userData["Last_Name"][0];
+    std::string dept = userData["Department"][0];
+
+    // Debugging output
+    qDebug() << "First Name:" << QString::fromStdString(fname);
+    qDebug() << "Middle Name:" << QString::fromStdString(mname);
+    qDebug() << "Last Name:" << QString::fromStdString(lname);
+    qDebug() << "Department:" << QString::fromStdString(dept);
+
+    user->setUser(userId, fname, mname, lname, email.toStdString(), dept, userData["Phone_Number"][0]);
+
+      QString departmentText =QString::fromStdString(dept);
+    QString usernameText =QString::fromStdString(fname)+" "+QString::fromStdString(mname)+" "+QString::fromStdString(lname);
+
+
+    // Debugging output
+    qDebug() << "Username Text:" << usernameText;
+    qDebug() << "Department Text:" << departmentText;
+
+    ui->username->setText(usernameText);
+    ui->department->setText(departmentText);
+
+    for (int i = 1; i <= 10; i++) {
+        QString usernameElementName = "username_" + QString::number(i);
+        QString departmentElementName = "department_" + QString::number(i);
+
+        QLabel *usernameLabel = findChild<QLabel *>(usernameElementName);
+        QLabel *departmentLabel = findChild<QLabel *>(departmentElementName);
+
+        if (usernameLabel) {
+            usernameLabel->setText(usernameText);
         } else {
-            if (key.first == "Password") {
-                if (key.second.at(0) == password.toStdString()) {
-                    isUserValid = true;
-                } else {
-                    QMessageBox::information(this, "button clicked", "Incorrect Password!!!");
-                    return;
-                }
-            }
-            if (key.first == "User_ID") {
-                userId = std::stoi(key.second.at(0));
-            }
-            if(key.first=="First_Name")
-            {
-                fname = (key.second.at(0));
-                std::cout<<"FNAME:"<<fname<<std::endl;
+            qDebug() << "Username Label not found:" << usernameElementName;
+        }
 
-            }
-            if(key.first=="Middle_Name")
-            {
-                    mname=(key.second.at(0));
-                std::cout<<"MNAME:"<<mname<<std::endl;
-            }
-            if(key.first=="Last_Name")
-            {
-                lname=key.second.at(0);
-                  std::cout<<"LNAME:"<<lname<<std::endl;
-            }
-            if(key.first=="Email")
-            {
-                mail=key.second.at(0);
-                 std::cout<<"Email:"<<mail<<std::endl;
-            }
-            if(key.first=="Department")
-            {
-                dept=key.second.at(0);
-                std::cout<<"Department:"<<dept<<std::endl;
-            }
-            if(key.first=="Phone_Number")
-            {
-                phone=key.second.at(0);
-
-            }
-
-            user->setUser(userId,fname,mname,lname,mail,dept,phone);
-
-
-
+        if (departmentLabel) {
+            departmentLabel->setText(departmentText);
+        } else {
+            qDebug() << "Department Label not found:" << departmentElementName;
         }
     }
 
-    if (isUserValid) {
-        user->setUserId(userId);
-        // user->setUser(userId,fname,mname,lname,mail,dept,phone);
-        userWindow->getSchedule();
-        update_room_status();
-        ui->stackedWidget->setCurrentIndex(4);
-    }
-
-
+    ui->stackedWidget->setCurrentIndex(4);
 }
+
 
 void MainWindow::handleLogout()
 {
