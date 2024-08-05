@@ -1,9 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "qlabel.h"
-#include "qlineedit.h"
-#include "qpushbutton.h"
 #include <QMainWindow>
 #include <QSqlDatabase>
 #include <QSqlQuery>
@@ -12,7 +9,7 @@
 
 namespace Ui
 {
-    class MainWindow;
+class MainWindow;
 }
 
 class MainWindow : public QMainWindow
@@ -55,29 +52,11 @@ private slots:
 
     void on_home_2_clicked();
 
-    void on_loginButton_clicked();
+    void on_Getstarted_clicked();
 
-    void on_register_redirect_clicked();
+    void on_login_redirect_3_clicked();
 
-    void on_login_redirect_clicked();
-
-    void on_Backlogin_clicked();
-
-    void on_backlogin_clicked();
-
-    void on_sign_upbutton_clicked();
-
-    void on_login_redirect_2_clicked();
-
-    void on_signup_clicked();
-
-    void on_signup_redirect_clicked();
-
-   // void on_pushButton_4_clicked();
-
-    void on_pushButton_5_clicked();
-
-    void on_back_button_clicked();
+    void on_signup_redirect_2_clicked();
 
 private:
     Ui::MainWindow *ui;

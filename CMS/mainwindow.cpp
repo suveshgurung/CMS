@@ -181,7 +181,7 @@ void MainWindow::on_loginButton_clicked()
             }
             if (key.first == "Last_Name") {
                 lastName = key.second.at(0);
-                  std::cout<<lastName<<std::endl;
+                std::cout<<lastName<<std::endl;
             }
         }
     }
@@ -319,49 +319,49 @@ void MainWindow::on_signup_redirect_clicked()
 }
 
 void MainWindow::update_room_status() {
-    
+
     std::vector<Room> rooms = userWindow->getRooms();
 
     for (size_t i = 0; i < rooms.size(); i++) {
 
         switch (rooms.at(i)) {
-            case ROOM_106:
-                ui->room_106_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-                ui->room_106_status->setText("Not Available");
-                break;
-            case ROOM_107:
-                ui->room_107_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-                ui->room_107_status->setText("Not Available");
-                break;
-            case ROOM_108:
-                ui->room_108_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-                ui->room_108_status->setText("Not Available");
-                break;
-            case ROOM_109:
-                ui->room_109_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-                ui->room_109_status->setText("Not Available");
-                break;
-            case ROOM_207:
-                ui->room_207_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-                ui->room_207_status->setText("Not Available");
-                break;
-            case ROOM_208:
-                ui->room_208_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-                ui->room_208_status->setText("Not Available");
-                break;
-            case ROOM_209:
-                ui->room_209_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-                ui->room_209_status->setText("Not Available");
-                break;
-            default:
-                break;
+        case ROOM_106:
+            ui->room_106_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_106_status->setText("Not Available");
+            break;
+        case ROOM_107:
+            ui->room_107_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_107_status->setText("Not Available");
+            break;
+        case ROOM_108:
+            ui->room_108_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_108_status->setText("Not Available");
+            break;
+        case ROOM_109:
+            ui->room_109_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_109_status->setText("Not Available");
+            break;
+        case ROOM_207:
+            ui->room_207_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_207_status->setText("Not Available");
+            break;
+        case ROOM_208:
+            ui->room_208_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_208_status->setText("Not Available");
+            break;
+        case ROOM_209:
+            ui->room_209_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_209_status->setText("Not Available");
+            break;
+        default:
+            break;
         }
 
     }
 }
 
 // void MainWindow::book_room() {
-//     
+//
 //     QTime startTime = ui->start_time->time();
 //     QTime endTime = ui->end_time->time();
 //     QString selectedSubject = ui->subject_selection->currentText();
@@ -405,65 +405,20 @@ void MainWindow::on_home_2_clicked()
 
 }
 
-
-void MainWindow::on_loginButton_clicked()
+void MainWindow::on_Getstarted_clicked()
 {
-    QMessageBox:: information(this, "button clicked", "Logged In Successfully");
-    ui->stackedWidget->setCurrentIndex(4);
-        // Get the text from the username and password fields
-        //QString username = username_3->text();
-        //QString password = password_3->text();
-
-        // Validate the input
-        //if (username.isEmpty() || password.isEmpty()) {
-            // Display an error message if either field is empty
-        //    errorLabel->setText("Invalid username or password");
-        //    errorLabel->setStyleSheet("QLabel { color : red; }");  // Make error message red
-        //} else {
-            // Proceed with login process
-        //    errorLabel->clear();
-            // Add login handling code here
-        //}
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
 
-
-void MainWindow::on_register_redirect_clicked()
-{
-     ui->stackedWidget->setCurrentIndex(3);
-}
-
-
-
-
-void MainWindow::on_login_redirect_clicked()
-{
-     ui->stackedWidget->setCurrentIndex(2);
-}
-
-
-
-void MainWindow::on_login_redirect_2_clicked()
-{
-   ui->stackedWidget->setCurrentIndex(2);
-}
-
-
-void MainWindow::on_signup_clicked()
-{
-    ui->stackedWidget->setCurrentIndex(2);
-}
-
-
-void MainWindow::on_signup_redirect_clicked()
+void MainWindow::on_login_redirect_3_clicked()
 {
     ui->stackedWidget->setCurrentIndex(3);
 }
 
 
-
-void MainWindow::on_back_button_clicked()
+void MainWindow::on_signup_redirect_2_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(0);
+    ui->stackedWidget->setCurrentIndex(2);
 }
 
