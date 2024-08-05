@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>6</number>
       </property>
       <widget class="QWidget" name="landing_page"/>
       <widget class="QWidget" name="explore_page">
@@ -2962,7 +2962,7 @@ font-size:22px;</string>
            <property name="styleSheet">
             <string notr="true">color:green;
 font-weight:bold;
-font-size:15px;</string>
+font-size:13px;</string>
            </property>
            <property name="text">
             <string>COMP</string>
@@ -3362,7 +3362,7 @@ font-size:22px;</string>
            <property name="styleSheet">
             <string notr="true">color:green;
 font-weight:bold;
-font-size:15px;</string>
+font-size:13px;</string>
            </property>
            <property name="text">
             <string>COMP</string>
@@ -4807,7 +4807,7 @@ font-size:22px;</string>
            <property name="styleSheet">
             <string notr="true">color:green;
 font-weight:bold;
-font-size:15px;</string>
+font-size:13px;</string>
            </property>
            <property name="text">
             <string>COMP</string>
