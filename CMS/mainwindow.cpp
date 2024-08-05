@@ -154,13 +154,13 @@ void MainWindow::on_loginButton_clicked()
 
     userData = cmsDb->getData("User_Info", condition);
 
-    if (userData["Email"].empty())
+    if (userData.empty() || userData["Email"].empty())
     {
         QMessageBox::information(this, "Login Error", "User not found!!!");
         return;
     }
 
-    if (userData["Password"][0] != password.toStdString())
+    if (userData["Password"].empty() || userData["Password"][0] != password.toStdString())
     {
         QMessageBox::information(this, "Login Error", "Incorrect Password!!!");
         return;
@@ -178,17 +178,50 @@ void MainWindow::on_loginButton_clicked()
     qDebug() << "Last Name:" << QString::fromStdString(lname);
     qDebug() << "Department:" << QString::fromStdString(dept);
 
-    user->setUser(userId, fname, mname, lname, email.toStdString(), dept, userData["Phone_Number"][0]);
+    if (user != nullptr)
+    {
+        user->setUser(userId, fname, mname, lname, email.toStdString(), dept, userData["Phone_Number"][0]);
+    }
+    else
+    {
+        QMessageBox::information(this, "Error", "User object is null!!!");
+        return;
+    }
 
     QString departmentText = QString::fromStdString(dept);
-    QString usernameText = QString::fromStdString(fname) + " " + QString::fromStdString(mname) + " " + QString::fromStdString(lname);
+
+    //this because error mname bhayena bhane tesko index access garda program crash khayo
+    QString usernameText;
+    if (!mname.empty())
+    {
+        usernameText = QString::fromStdString(fname) + " " + QString::fromStdString(mname)[0] + "." + " " + QString::fromStdString(lname);
+    }
+    else
+    {
+        usernameText = QString::fromStdString(fname) + " " + QString::fromStdString(lname);
+    }
 
     // Debugging output
     qDebug() << "Username Text:" << usernameText;
     qDebug() << "Department Text:" << departmentText;
 
-    ui->username->setText(usernameText);
-    ui->department->setText(departmentText);
+    if (ui->username != nullptr)
+    {
+        ui->username->setText(usernameText);
+    }
+    else
+    {
+        qDebug() << "Username UI element is null!";
+    }
+
+    if (ui->department != nullptr)
+    {
+        ui->department->setText(departmentText);
+    }
+    else
+    {
+        qDebug() << "Department UI element is null!";
+    }
 
     for (int i = 1; i <= 10; i++)
     {
@@ -217,8 +250,16 @@ void MainWindow::on_loginButton_clicked()
         }
     }
 
-    ui->stackedWidget->setCurrentIndex(4);
+    if (ui->stackedWidget != nullptr && ui->stackedWidget->count() > 4)
+    {
+        ui->stackedWidget->setCurrentIndex(4);
+    }
+    else
+    {
+        qDebug() << "Stacked Widget or Index is invalid!";
+    }
 }
+
 
 void MainWindow::handleLogout()
 {
