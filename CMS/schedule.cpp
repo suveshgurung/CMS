@@ -122,7 +122,7 @@ void UserWindow::getSchedule() {
     endTime = QString::number(hour+1) + ":00";
 
     // get the default schedule.
-    std::string defaultCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='4' AND default_schedule='y'")
+    std::string defaultCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='y'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
