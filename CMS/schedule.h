@@ -98,10 +98,14 @@ protected:
     std::vector<Room> rooms;
     std::vector<Subject> subjects;
     std::vector<Group> groups;
+    std::vector<std::string> startTimeVec;
+    std::vector<std::string> endTimeVec;
     std::unordered_map<Room, std::string> subjectsUM;
+    std::unordered_map<Room, std::string> startTimeUM;
+    std::unordered_map<Room, std::string> endTimeUM;
     Day dayName;
 
-    QDate currDate; 
+    QDate currDate;
     QTime currTime;
     QString date;
     QString time;
@@ -123,13 +127,18 @@ public:
     void setRooms(std::vector<std::string> roomsVec);
     void setGroups(std::vector<std::string> groupsVec);
     void setSubjects(std::vector<std::string> subjectsVec);
+    void setStartTimeVec(std::vector<std::string> vec);
+    void setEndTimeVec(std::vector<std::string> vec);
 
     std::vector<Room> getRooms(); 
     std::vector<Group> getGroups(); 
     std::vector<Subject> getSubjects();
     std::unordered_map<Room, std::string> getSubjectsUM();      // index is "Room" to link the subject being taught to the particular room.
+    std::unordered_map<Room, std::string> getStartTimeUM();
+    std::unordered_map<Room, std::string> getEndTimeUM();
 
     void linkSubjects();
+    void linkTime();
 };
 
 extern User* user;

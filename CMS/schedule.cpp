@@ -122,7 +122,7 @@ void UserWindow::getSchedule() {
     endTime = QString::number(hour+1) + ":00";
 
     // get the default schedule.
-    std::string defaultCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='y'")
+    std::string defaultCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='4' AND default_schedule='y'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
@@ -143,7 +143,7 @@ void UserWindow::getSchedule() {
 
     // initialize the combined schedule unordered_map.
     for (const auto& pair : defaultScheduleData) {
-        if (pair.first == "room_id" || pair.first == "group_id" || pair.first == "subject_id") {
+        if (pair.first == "room_id" || pair.first == "group_id" || pair.first == "subject_id" || pair.first == "start_time_actual" || pair.first == "end_time_actual") {
             combinedScheduleData[pair.first] = std::vector<std::string>();
         }
     }
@@ -162,6 +162,16 @@ void UserWindow::getSchedule() {
             }
         }
         if (pair.first == "subject_id") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "start_time_actual") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "end_time_actual") {
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
@@ -187,6 +197,16 @@ void UserWindow::getSchedule() {
                 combinedScheduleData[pair.first].push_back(val);
             }
         }
+        if (pair.first == "start_time_actual") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
+        if (pair.first == "end_time_actual") {
+            for (const auto& val : pair.second) {
+                combinedScheduleData[pair.first].push_back(val);
+            }
+        }
 
     }
 
@@ -202,10 +222,17 @@ void UserWindow::getSchedule() {
         if (pair.first == "subject_id") {
             userWindow->setSubjects(pair.second);
         }
+        if (pair.first == "start_time_actual") {
+            userWindow->setStartTimeVec(pair.second);
+        }
+        if (pair.first == "end_time_actual") {
+            userWindow->setEndTimeVec(pair.second);
+        }
 
     }
 
     linkSubjects();
+    linkTime();
 
 }
 
@@ -346,6 +373,18 @@ void UserWindow::setSubjects(std::vector<std::string> subjectsVec) {
 
 }
 
+void UserWindow::setStartTimeVec(std::vector<std::string> vec) {
+    for (size_t i = 0; i < vec.size(); i++) {
+        startTimeVec.push_back(vec.at(i));
+    }
+}
+
+void UserWindow::setEndTimeVec(std::vector<std::string> vec) {
+    for (size_t i = 0; i < vec.size(); i++) {
+        endTimeVec.push_back(vec.at(i));
+    }
+}
+
 std::string UserWindow::subjectEnumToStr(Subject s) {
     
     switch (s) {
@@ -411,10 +450,25 @@ std::unordered_map<Room, std::string> UserWindow::getSubjectsUM() {
     return subjectsUM;
 }
 
+std::unordered_map<Room, std::string> UserWindow::getStartTimeUM() {
+    return startTimeUM;
+}
+
+std::unordered_map<Room, std::string> UserWindow::getEndTimeUM() {
+    return endTimeUM;
+}
+
 void UserWindow::linkSubjects() {
     
     for (size_t i = 0; i < subjects.size(); i++) {
         subjectsUM[rooms.at(i)] = subjectEnumToStr(subjects.at(i));
     }
 
+}
+
+void UserWindow::linkTime() {
+    for (size_t i = 0; i < startTimeVec.size(); i++) {
+        startTimeUM[rooms.at(i)] = startTimeVec.at(i);
+        endTimeUM[rooms.at(i)] = endTimeVec.at(i);
+    }
 }
