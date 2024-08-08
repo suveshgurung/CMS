@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="landing_page"/>
       <widget class="QWidget" name="explore_page">
@@ -3117,7 +3117,7 @@ font-size:17px;
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color: white;
+    background-color: rgb(146,194,204);
     font-size: 17px;
     color: black;
     border: none;
@@ -3175,7 +3175,7 @@ QPushButton:hover {
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color: rgb(146,194,204);
+    background-color: white;
     font-size: 17px;
     color: black;
     border: none;
@@ -4991,7 +4991,7 @@ QPushButton:hover {
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color: white;
+    background-color: rgb(146,194,204);
     font-size: 17px;
     color: black;
     border: none;
@@ -5020,7 +5020,7 @@ QPushButton:hover {
            </property>
            <property name="styleSheet">
             <string notr="true">QPushButton {
-    background-color: rgb(146,194,204);
+    background-color: white;
     font-size: 17px;
     color: black;
     border: none;
