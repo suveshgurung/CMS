@@ -114,6 +114,8 @@ protected:
     int hour;
 
     std::string subjectEnumToStr(Subject s);
+    void linkSubjects();
+    void linkTime();
 
 public:
     UserWindow(); 
@@ -137,8 +139,6 @@ public:
     std::unordered_map<Room, std::string> getStartTimeUM();
     std::unordered_map<Room, std::string> getEndTimeUM();
 
-    void linkSubjects();
-    void linkTime();
 };
 
 extern User* user;
