@@ -32,9 +32,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     QDateTime dateTime = QDateTime::currentDateTime();
     QString dateTimeText = dateTime.toString("ddd MMM dd");
-    ui->date_4->setText(dateTimeText);
-    ui->date->setText(dateTimeText);
-    ui->date_5->setText(dateTimeText);
+    // ui->date_4->setText(dateTimeText);
+    // ui->date->setText(dateTimeText);
+    // ui->date_5->setText(dateTimeText);
 
     QPushButton *findDate = new QPushButton("Find");
 
@@ -51,48 +51,16 @@ MainWindow::MainWindow(QWidget *parent)
         "color: white;"
         "}");
 
-    // QString usernameText =QString::fromStdString (user->getFirstName() ); // firstname + lastname retrieved from db
-    // QString departmentText = QString::fromStdString(user->getDepartment());                                       // department name using a function
 
-    // // Page number for development phase
-    // QStackedWidget *stackedWidget = ui->stackedWidget;
-    // int currentIndex = stackedWidget->currentIndex();
-    // ui->index->setText(QString::number(currentIndex));
-
-    // // Set the department text for specific UI elements
-    // ui->username->setText(usernameText);
-    // ui->department->setText(departmentText);
-
-    // // Loop to set the text of multiple username and department elements
-    // for (int i = 1; i <= 10; i++) {
-    //     QString elementName = "username_" + QString::number(i);
-    //     QString d_elementName = "department_" + QString::number(i);
-    //     QString i_elementName = "index_" + QString::number(i);
-
-    //     QLabel *departmentLabel = findChild<QLabel *>(d_elementName);
-    //     QLabel *usernameLabel = findChild<QLabel *>(elementName);
-    //     QLabel *indexLabel = findChild<QLabel *>(i_elementName);
-
-    //     if (indexLabel) {
-    //         indexLabel->setText(QString::number(currentIndex));
-    //     }
-
-    //     if (usernameLabel) {
-    //         usernameLabel->setText(usernameText);
-    //     }
-
-    //     if (departmentLabel) {
-    //         departmentLabel->setText(departmentText);
-    //     }
-    // }
 
     // Loop for stackedWidget UI "SIDEBAR UI"
-    for (int i = 1; i <= 5; ++i)
+    for (int i = 1; i <= 10; ++i)
     {
         QString buttonName = "logout_button_" + QString::number(i);
         QString home_buttonName = "home_" + QString::number(i);
         QString schedule_buttonName = "schedule_" + QString::number(i);
         QString booking_buttonName = "booking_" + QString::number(i);
+
 
         QPushButton *h_button = findChild<QPushButton *>(home_buttonName);
         QPushButton *button = findChild<QPushButton *>(buttonName);
@@ -122,9 +90,34 @@ void MainWindow::showTime()
 {
     QTime time = QTime::currentTime();
     QString time_text = time.toString("hh : mm : ss");
-    ui->time_2->setText(time_text);
-    ui->time->setText(time_text);
-    ui->time_4->setText(time_text);
+     ui->time->setText(time_text);
+
+    QDateTime dateTime = QDateTime::currentDateTime();
+    QString dateTimeText = dateTime.toString("ddd MMM dd");
+    ui->date->setText(dateTimeText);
+
+
+
+    for(int i=1;i<=10;i++)
+    {
+        QString timeName="time_"+QString::number(i);
+         QLabel *time_button = findChild<QLabel *>(timeName);
+
+        QString dateName= "date_"+ QString::number(i);
+         QLabel *date_button = findChild<QLabel *>(dateName);
+
+        if(date_button)
+         {
+             date_button->setText(dateTimeText);
+         }
+
+        if(time_button)
+         {
+             time_button->setText(time_text);
+         }
+
+    }
+
     if (time.second() % 2 == 0)
     {
         time_text[3] = ' ';
