@@ -84,29 +84,90 @@ MainWindow::MainWindow(QWidget *parent)
         }
     }
 
-    //room function call
-    setupRoom101();
-     setupRoom102();
+    // room function call
+    setupRoom106();
+    setupRoom107();
+    setupRoom108();
+    setupRoom109();
+    setupRoom207();
+    setupRoom208();
+    setupRoom209();
 }
 
-//image slider
-void MainWindow::setupRoom101() {
-    QLabel* imageLabel = findChild<QLabel*>("image_holder");
-    QPushButton* leftButton = findChild<QPushButton*>("left_swipe_button");
-    QPushButton* rightButton = findChild<QPushButton*>("right_swipe_button");
+// image slider
+void MainWindow::setupRoom106()
+{
+    QLabel *imageLabel = findChild<QLabel *>("image_holder");
+    QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button");
+    QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button");
 
-    QStringList imagesPage = {":/resource/assets/school.jpg",":/resource/assets/Knowledge.png"};
-    ImageSlider* sliderPage1 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
+    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    ImageSlider *sliderPage1 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
 
-void MainWindow::setupRoom102() {
-    QLabel* imageLabel = findChild<QLabel*>("image_holder_2");
-    QPushButton* leftButton = findChild<QPushButton*>("left_swipe_button_2");
-    QPushButton* rightButton = findChild<QPushButton*>("right_swipe_button_2");
+void MainWindow::setupRoom107()
+{
+    QLabel *imageLabel = findChild<QLabel *>("image_holder_2");
+    QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_2");
+    QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_2");
 
-    QStringList imagesPage = {":/resource/assets/school.jpg",":/resource/assets/Knowledge.png"};
-    ImageSlider* sliderPage2 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
+    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    ImageSlider *sliderPage2 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
+
+void MainWindow::setupRoom108()
+{
+    QLabel *imageLabel = findChild<QLabel *>("image_holder_3");
+    QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_3");
+    QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_3");
+
+    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    ImageSlider *sliderPage3 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
+}
+
+void MainWindow::setupRoom109()
+{
+    QLabel *imageLabel = findChild<QLabel *>("image_holder_4");
+    QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_4");
+    QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_4");
+
+    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    ImageSlider *sliderPage4 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
+}
+
+void MainWindow::setupRoom207()
+{
+    QLabel *imageLabel = findChild<QLabel *>("image_holder_5");
+    QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_5");
+    QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_5");
+
+    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    ImageSlider *sliderPage5 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
+}
+
+void MainWindow::setupRoom208()
+{
+    QLabel *imageLabel = findChild<QLabel *>("image_holder_6");
+    QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_6");
+    QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_6");
+
+    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    ImageSlider *sliderPage6 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
+}
+
+void MainWindow::setupRoom209()
+{
+    QLabel *imageLabel = findChild<QLabel *>("image_holder_7");
+    QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_7");
+    QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_7");
+
+    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    ImageSlider *sliderPage7 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
+}
+
+
+
+
 
 void MainWindow::showTime()
 {

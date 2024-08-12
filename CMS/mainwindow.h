@@ -67,9 +67,13 @@ private:
     QSqlTableModel *model;
     LogoWidget *logoWidget;
 
-    void setupRoom101();
-    void setupRoom102();
-
+    void setupRoom106();
+    void setupRoom107();
+    void setupRoom108();
+    void setupRoom109();
+    void setupRoom207();
+    void setupRoom208();
+    void setupRoom209();
 
 };
 
