@@ -6,6 +6,11 @@
 #include <QSqlQuery>
 #include <QSqlTableModel>
 #include "logowidget.h"
+#include <QMainWindow>
+#include <QLabel>
+#include <QPushButton>
+#include <QVector>
+
 
 namespace Ui
 {
@@ -52,12 +57,23 @@ private slots:
 
     void on_home_2_clicked();
 
+    void showPreviousImage();
+    void showNextImage();
+
+
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
     QSqlTableModel *model;
     LogoWidget *logoWidget;
 
+    void setupRoom106();
+    void setupRoom107();
+    void setupRoom108();
+    void setupRoom109();
+    void setupRoom207();
+    void setupRoom208();
+    void setupRoom209();
 
 };
 

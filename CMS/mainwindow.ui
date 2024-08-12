@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="landing_page"/>
       <widget class="QWidget" name="explore_page">
@@ -4328,7 +4328,7 @@ font-size:15px;
                     <set>Qt::AlignCenter</set>
                    </property>
                   </widget>
-                  <widget class="QDateEdit" name="booking_date">
+                  <widget class="QDateEdit" name="Date_6">
                    <property name="geometry">
                     <rect>
                      <x>10</x>
@@ -4370,7 +4370,7 @@ QDateEdit {
                     <bool>true</bool>
                    </property>
                   </widget>
-                  <widget class="QTimeEdit" name="booking_start_time">
+                  <widget class="QTimeEdit" name="starttime_6">
                    <property name="geometry">
                     <rect>
                      <x>170</x>
@@ -4399,7 +4399,7 @@ QToolTip {
                     <bool>false</bool>
                    </property>
                   </widget>
-                  <widget class="QComboBox" name="booking_room_number">
+                  <widget class="QComboBox" name="RoomNo_6">
                    <property name="geometry">
                     <rect>
                      <x>490</x>
@@ -4503,7 +4503,7 @@ font-size:15px;
                     <string>Room No.</string>
                    </property>
                   </widget>
-                  <widget class="QPushButton" name="booking_search">
+                  <widget class="QPushButton" name="SearchButton_6">
                    <property name="geometry">
                     <rect>
                      <x>30</x>
@@ -4601,7 +4601,7 @@ font-size:15px;
                     <string>Block No.</string>
                    </property>
                   </widget>
-                  <widget class="QComboBox" name="booking_block_number">
+                  <widget class="QComboBox" name="BlockNo_6">
                    <property name="geometry">
                     <rect>
                      <x>650</x>
@@ -4690,7 +4690,7 @@ font-size:15px;
                     <set>Qt::AlignCenter</set>
                    </property>
                   </widget>
-                  <widget class="QTimeEdit" name="booking_end_time">
+                  <widget class="QTimeEdit" name="endTime_6">
                    <property name="geometry">
                     <rect>
                      <x>330</x>
@@ -5089,6 +5089,5984 @@ QPushButton:hover {
           </widget>
          </widget>
          <widget class="QLabel" name="index_5">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>780</y>
+            <width>251</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Classroom Management System</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="room_106_page">
+       <widget class="QFrame" name="frame_9">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1920</width>
+          <height>1080</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color:white;
+border:none;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="main_content_2">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>-10</y>
+           <width>1591</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>1541</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QFrame{
+border-left:2px;
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="header_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>1581</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_15">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>0</y>
+             <width>1161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-size:30px;
+color:black;
+font-weight:bold;</string>
+           </property>
+           <property name="text">
+            <string>CLASSROOM MANAGEMENT SYSTEM</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="room_info">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>120</y>
+            <width>1511</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+background-color:rgba(234, 234, 234,0.4);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="iamge_frame">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QWidget" name="widget" native="true">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>20</y>
+              <width>711</width>
+              <height>411</height>
+             </rect>
+            </property>
+            <widget class="QLabel" name="image_holder">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>711</width>
+               <height>411</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <property name="text">
+              <string>IMAGE CONTAINER</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="right_swipe_button">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>200</y>
+              <width>41</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="left_swipe_button">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>200</y>
+              <width>42</width>
+              <height>42</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="room_details_info">
+           <property name="geometry">
+            <rect>
+             <x>850</x>
+             <y>30</y>
+             <width>641</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="room_number">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:25px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Room 106</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Floor">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Floor : 1</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="capacity">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Capacity: 30</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="room_number_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Current Class</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>170</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Subject:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_name">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>170</y>
+              <width>271</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;
+padding:2px;</string>
+            </property>
+            <property name="text">
+             <string>Introduction to Computer Science</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Time">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>190</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Time:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="start_time">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dash">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>190</y>
+              <width>16</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="end_time">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Available">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>230</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Available to Book</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="availability_status">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>260</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screen">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>300</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Screen:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screentype">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>330</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Projector Screen</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="room_name">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>60</y>
+            <width>1161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:25px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>Room 106 Details</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="sidebar_5">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>311</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background-color:white;
+border:2.2px solid  rgb(162, 166, 143);
+border-top:10px;
+border-left:10px;
+border-bottom:10px;
+border-radius:10px;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="frame_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="username_5">
+           <property name="geometry">
+            <rect>
+             <x>99</x>
+             <y>20</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(0, 0, 0);
+font-size:22px;</string>
+           </property>
+           <property name="text">
+            <string>Suvesh B. Gurung</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="department_5">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>50</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:green;
+font-weight:bold;
+font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>COMP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>91</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-image: url(:/resource/assets/Cms.png);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/Cms.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="dynamic_time_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="time_3">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>2:00 PM</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="time_icon_4">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_6">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>7/22/2024</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_icon_4">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>60</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/calendar.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="navigation_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="home_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(146,194,204);
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="booking_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>BOOKING</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="schedule_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>SCHEDULE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="log_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>430</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="logout_button_6">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+QPushButton {
+background-color: rgb(30, 188, 75);
+color:white;
+border-radius:2px;
+font-size:17px;
+        }
+
+
+
+QPushButton:hover {
+          background-color: #0fa191;
+			color:white;
+        }</string>
+           </property>
+           <property name="text">
+            <string>LOGOUT</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="index_6">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>780</y>
+            <width>251</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Classroom Management System</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="room_107_page">
+       <widget class="QFrame" name="frame_11">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1920</width>
+          <height>1080</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color:white;
+border:none;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="main_content_4">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>-10</y>
+           <width>1591</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>1541</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QFrame{
+border-left:2px;
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="header_5">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>1581</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>0</y>
+             <width>1161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-size:30px;
+color:black;
+font-weight:bold;</string>
+           </property>
+           <property name="text">
+            <string>CLASSROOM MANAGEMENT SYSTEM</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="room_info_2">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>120</y>
+            <width>1511</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+background-color:rgba(234, 234, 234,0.4);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="iamge_frame_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QWidget" name="widget_2" native="true">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>20</y>
+              <width>711</width>
+              <height>411</height>
+             </rect>
+            </property>
+            <widget class="QLabel" name="image_holder_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>711</width>
+               <height>411</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <property name="text">
+              <string>IMAGE CONTAINER</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="right_swipe_button_2">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>200</y>
+              <width>41</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="left_swipe_button_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>200</y>
+              <width>42</width>
+              <height>42</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="room_details_info_2">
+           <property name="geometry">
+            <rect>
+             <x>850</x>
+             <y>30</y>
+             <width>641</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="room_number_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:25px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Room 102</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Floor_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Floor : 1</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="capacity_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Capacity: 60</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="room_number_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Current Class</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>170</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Subject:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_name_2">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>170</y>
+              <width>271</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;
+padding:2px;</string>
+            </property>
+            <property name="text">
+             <string>CHEM 101</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Time_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>190</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Time:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="start_time_2">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dash_2">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>190</y>
+              <width>16</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="end_time_2">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Available_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>230</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Available to Book</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="availability_status_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>260</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screen_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>300</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Screen:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screentype_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>330</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Projector Screen</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="room_name_2">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>60</y>
+            <width>1161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:25px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>Room 102 Details</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="sidebar_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>311</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background-color:white;
+border:2.2px solid  rgb(162, 166, 143);
+border-top:10px;
+border-left:10px;
+border-bottom:10px;
+border-radius:10px;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="frame_12">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="username_6">
+           <property name="geometry">
+            <rect>
+             <x>99</x>
+             <y>20</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(0, 0, 0);
+font-size:22px;</string>
+           </property>
+           <property name="text">
+            <string>Suvesh B. Gurung</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="department_6">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>50</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:green;
+font-weight:bold;
+font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>COMP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>91</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-image: url(:/resource/assets/Cms.png);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/Cms.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="dynamic_time_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="time_5">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>2:00 PM</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="time_icon_5">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_7">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>7/22/2024</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_icon_5">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>60</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/calendar.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="navigation_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="home_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(146,194,204);
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="booking_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>BOOKING</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="schedule_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>SCHEDULE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="log_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>430</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="logout_button_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+QPushButton {
+background-color: rgb(30, 188, 75);
+color:white;
+border-radius:2px;
+font-size:17px;
+        }
+
+
+
+QPushButton:hover {
+          background-color: #0fa191;
+			color:white;
+        }</string>
+           </property>
+           <property name="text">
+            <string>LOGOUT</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="index_7">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>780</y>
+            <width>251</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Classroom Management System</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="room_108_page">
+       <widget class="QFrame" name="frame_13">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1920</width>
+          <height>1080</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color:white;
+border:none;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="main_content_5">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>-10</y>
+           <width>1591</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>1541</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QFrame{
+border-left:2px;
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="header_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>1581</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>0</y>
+             <width>1161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-size:30px;
+color:black;
+font-weight:bold;</string>
+           </property>
+           <property name="text">
+            <string>CLASSROOM MANAGEMENT SYSTEM</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="room_info_3">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>120</y>
+            <width>1511</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+background-color:rgba(234, 234, 234,0.4);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="iamge_frame_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QWidget" name="widget_3" native="true">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>20</y>
+              <width>711</width>
+              <height>411</height>
+             </rect>
+            </property>
+            <widget class="QLabel" name="image_holder_3">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>711</width>
+               <height>411</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <property name="text">
+              <string>IMAGE CONTAINER</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="right_swipe_button_3">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>200</y>
+              <width>41</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="left_swipe_button_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>200</y>
+              <width>42</width>
+              <height>42</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="room_details_info_3">
+           <property name="geometry">
+            <rect>
+             <x>850</x>
+             <y>30</y>
+             <width>641</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="room_number_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:25px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Room 108</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Floor_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Floor : 1</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="capacity_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Capacity: 60</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="room_number_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Current Class</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>170</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Subject:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_name_3">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>170</y>
+              <width>271</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;
+padding:2px;</string>
+            </property>
+            <property name="text">
+             <string>CHEM 101</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Time_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>190</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Time:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="start_time_3">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dash_3">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>190</y>
+              <width>16</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="end_time_3">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Available_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>230</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Available to Book</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="availability_status_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>260</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screen_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>300</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Screen:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screentype_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>330</y>
+              <width>171</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Smart Board Screen</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="room_name_3">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>60</y>
+            <width>1161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:25px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>Room 108 Details</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="sidebar_7">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>311</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background-color:white;
+border:2.2px solid  rgb(162, 166, 143);
+border-top:10px;
+border-left:10px;
+border-bottom:10px;
+border-radius:10px;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="frame_14">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="username_7">
+           <property name="geometry">
+            <rect>
+             <x>99</x>
+             <y>20</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(0, 0, 0);
+font-size:22px;</string>
+           </property>
+           <property name="text">
+            <string>Suvesh B. Gurung</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="department_7">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>50</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:green;
+font-weight:bold;
+font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>COMP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_19">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>91</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-image: url(:/resource/assets/Cms.png);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/Cms.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="dynamic_time_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="time_6">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>2:00 PM</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="time_icon_6">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_8">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>7/22/2024</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_icon_6">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>60</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/calendar.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="navigation_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="home_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(146,194,204);
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="booking_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>BOOKING</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="schedule_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>SCHEDULE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="log_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>430</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="logout_button_8">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+QPushButton {
+background-color: rgb(30, 188, 75);
+color:white;
+border-radius:2px;
+font-size:17px;
+        }
+
+
+
+QPushButton:hover {
+          background-color: #0fa191;
+			color:white;
+        }</string>
+           </property>
+           <property name="text">
+            <string>LOGOUT</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="index_8">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>780</y>
+            <width>251</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Classroom Management System</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="room_109_page">
+       <widget class="QFrame" name="frame_15">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1920</width>
+          <height>1080</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color:white;
+border:none;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="main_content_6">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>-10</y>
+           <width>1591</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>1541</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QFrame{
+border-left:2px;
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="header_7">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>1581</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_20">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>0</y>
+             <width>1161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-size:30px;
+color:black;
+font-weight:bold;</string>
+           </property>
+           <property name="text">
+            <string>CLASSROOM MANAGEMENT SYSTEM</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="room_info_4">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>120</y>
+            <width>1511</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+background-color:rgba(234, 234, 234,0.4);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="iamge_frame_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QWidget" name="widget_4" native="true">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>20</y>
+              <width>711</width>
+              <height>411</height>
+             </rect>
+            </property>
+            <widget class="QLabel" name="image_holder_4">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>711</width>
+               <height>411</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <property name="text">
+              <string>IMAGE CONTAINER</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="right_swipe_button_4">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>200</y>
+              <width>41</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="left_swipe_button_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>200</y>
+              <width>42</width>
+              <height>42</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="room_details_info_4">
+           <property name="geometry">
+            <rect>
+             <x>850</x>
+             <y>30</y>
+             <width>641</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="room_number_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:25px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Room 109</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Floor_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Floor : 1</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="capacity_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Capacity: 60</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="room_number_8">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Current Class</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>170</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Subject:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_name_4">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>170</y>
+              <width>271</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;
+padding:2px;</string>
+            </property>
+            <property name="text">
+             <string>BIO 101</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Time_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>190</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Time:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="start_time_4">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dash_4">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>190</y>
+              <width>16</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="end_time_4">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Available_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>230</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Available to Book</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="availability_status_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>260</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screen_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>300</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Screen:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screentype_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>330</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Projector Screen</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="room_name_4">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>60</y>
+            <width>1161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:25px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>Room 109 Details</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="sidebar_8">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>311</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background-color:white;
+border:2.2px solid  rgb(162, 166, 143);
+border-top:10px;
+border-left:10px;
+border-bottom:10px;
+border-radius:10px;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="frame_16">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="username_8">
+           <property name="geometry">
+            <rect>
+             <x>99</x>
+             <y>20</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(0, 0, 0);
+font-size:22px;</string>
+           </property>
+           <property name="text">
+            <string>Suvesh B. Gurung</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="department_8">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>50</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:green;
+font-weight:bold;
+font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>COMP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_21">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>91</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-image: url(:/resource/assets/Cms.png);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/Cms.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="dynamic_time_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="time_7">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>2:00 PM</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="time_icon_7">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_9">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>7/22/2024</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_icon_7">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>60</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/calendar.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="navigation_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="home_9">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(146,194,204);
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="booking_9">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>BOOKING</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="schedule_9">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>SCHEDULE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="log_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>430</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="logout_button_9">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+QPushButton {
+background-color: rgb(30, 188, 75);
+color:white;
+border-radius:2px;
+font-size:17px;
+        }
+
+
+
+QPushButton:hover {
+          background-color: #0fa191;
+			color:white;
+        }</string>
+           </property>
+           <property name="text">
+            <string>LOGOUT</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="index_9">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>780</y>
+            <width>251</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Classroom Management System</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="room_207_page">
+       <widget class="QFrame" name="frame_17">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1920</width>
+          <height>1080</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color:white;
+border:none;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="main_content_7">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>-10</y>
+           <width>1591</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>1541</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QFrame{
+border-left:2px;
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="header_8">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>1581</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_22">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>0</y>
+             <width>1161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-size:30px;
+color:black;
+font-weight:bold;</string>
+           </property>
+           <property name="text">
+            <string>CLASSROOM MANAGEMENT SYSTEM</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="room_info_5">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>120</y>
+            <width>1511</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+background-color:rgba(234, 234, 234,0.4);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="iamge_frame_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QWidget" name="widget_5" native="true">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>20</y>
+              <width>711</width>
+              <height>411</height>
+             </rect>
+            </property>
+            <widget class="QLabel" name="image_holder_5">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>711</width>
+               <height>411</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <property name="text">
+              <string>IMAGE CONTAINER</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="right_swipe_button_5">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>200</y>
+              <width>41</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="left_swipe_button_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>200</y>
+              <width>42</width>
+              <height>42</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="room_details_info_5">
+           <property name="geometry">
+            <rect>
+             <x>850</x>
+             <y>30</y>
+             <width>641</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="room_number_9">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:25px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Room 207</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Floor_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Floor : 2</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="capacity_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Capacity: 60</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="room_number_10">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Current Class</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>170</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Subject:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_name_5">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>170</y>
+              <width>271</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;
+padding:2px;</string>
+            </property>
+            <property name="text">
+             <string>MATH 101</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Time_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>190</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Time:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="start_time_5">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dash_5">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>190</y>
+              <width>16</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="end_time_5">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Available_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>230</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Available to Book</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="availability_status_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>260</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screen_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>300</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Screen:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screentype_5">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>330</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Projector Screen</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="room_name_5">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>60</y>
+            <width>1161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:25px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>Room 207 Details</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="sidebar_9">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>311</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background-color:white;
+border:2.2px solid  rgb(162, 166, 143);
+border-top:10px;
+border-left:10px;
+border-bottom:10px;
+border-radius:10px;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="frame_18">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="username_9">
+           <property name="geometry">
+            <rect>
+             <x>99</x>
+             <y>20</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(0, 0, 0);
+font-size:22px;</string>
+           </property>
+           <property name="text">
+            <string>Suvesh B. Gurung</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="department_9">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>50</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:green;
+font-weight:bold;
+font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>COMP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_23">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>91</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-image: url(:/resource/assets/Cms.png);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/Cms.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="dynamic_time_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="time_8">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>2:00 PM</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="time_icon_8">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_10">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>7/22/2024</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_icon_8">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>60</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/calendar.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="navigation_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="home_10">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(146,194,204);
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="booking_10">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>BOOKING</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="schedule_10">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>SCHEDULE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="log_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>430</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="logout_button_10">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+QPushButton {
+background-color: rgb(30, 188, 75);
+color:white;
+border-radius:2px;
+font-size:17px;
+        }
+
+
+
+QPushButton:hover {
+          background-color: #0fa191;
+			color:white;
+        }</string>
+           </property>
+           <property name="text">
+            <string>LOGOUT</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="index_10">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>780</y>
+            <width>251</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Classroom Management System</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="room_208_page">
+       <widget class="QFrame" name="frame_19">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1920</width>
+          <height>1080</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color:white;
+border:none;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="main_content_8">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>-10</y>
+           <width>1591</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>1541</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QFrame{
+border-left:2px;
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="header_9">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>1581</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_24">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>0</y>
+             <width>1161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-size:30px;
+color:black;
+font-weight:bold;</string>
+           </property>
+           <property name="text">
+            <string>CLASSROOM MANAGEMENT SYSTEM</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="room_info_6">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>120</y>
+            <width>1511</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+background-color:rgba(234, 234, 234,0.4);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="iamge_frame_6">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QWidget" name="widget_6" native="true">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>20</y>
+              <width>711</width>
+              <height>411</height>
+             </rect>
+            </property>
+            <widget class="QLabel" name="image_holder_6">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>711</width>
+               <height>411</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <property name="text">
+              <string>IMAGE CONTAINER</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="right_swipe_button_6">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>200</y>
+              <width>41</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="left_swipe_button_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>200</y>
+              <width>42</width>
+              <height>42</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="room_details_info_6">
+           <property name="geometry">
+            <rect>
+             <x>850</x>
+             <y>30</y>
+             <width>641</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="room_number_11">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:25px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Room 208</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Floor_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Floor : 2</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="capacity_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Capacity: 60</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="room_number_12">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Current Class</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>170</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Subject:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_name_6">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>170</y>
+              <width>271</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;
+padding:2px;</string>
+            </property>
+            <property name="text">
+             <string>MATH 101</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Time_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>190</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Time:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="start_time_6">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dash_6">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>190</y>
+              <width>16</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="end_time_6">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Available_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>230</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Available to Book</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="availability_status_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>260</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screen_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>300</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Screen:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screentype_6">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>330</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Projector Screen</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="room_name_6">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>60</y>
+            <width>1161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:25px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>Room 208 Details</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="sidebar_10">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>311</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background-color:white;
+border:2.2px solid  rgb(162, 166, 143);
+border-top:10px;
+border-left:10px;
+border-bottom:10px;
+border-radius:10px;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="frame_20">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="username_10">
+           <property name="geometry">
+            <rect>
+             <x>99</x>
+             <y>20</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(0, 0, 0);
+font-size:22px;</string>
+           </property>
+           <property name="text">
+            <string>Suvesh B. Gurung</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="department_10">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>50</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:green;
+font-weight:bold;
+font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>COMP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>91</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-image: url(:/resource/assets/Cms.png);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/Cms.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="dynamic_time_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="time_9">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>2:00 PM</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="time_icon_9">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_11">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>7/22/2024</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_icon_9">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>60</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/calendar.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="navigation_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="home_11">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(146,194,204);
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="booking_11">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>BOOKING</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="schedule_11">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>SCHEDULE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="log_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>430</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="logout_button_11">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+QPushButton {
+background-color: rgb(30, 188, 75);
+color:white;
+border-radius:2px;
+font-size:17px;
+        }
+
+
+
+QPushButton:hover {
+          background-color: #0fa191;
+			color:white;
+        }</string>
+           </property>
+           <property name="text">
+            <string>LOGOUT</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="index_11">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>780</y>
+            <width>251</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="text">
+           <string>Classroom Management System</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="room_209_page">
+       <widget class="QFrame" name="frame_21">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1920</width>
+          <height>1080</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+background-color:white;
+border:none;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QFrame" name="main_content_9">
+         <property name="geometry">
+          <rect>
+           <x>320</x>
+           <y>-10</y>
+           <width>1591</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>1541</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+QFrame{
+border-left:2px;
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="header_10">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>1581</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="label_26">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>0</y>
+             <width>1161</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-size:30px;
+color:black;
+font-weight:bold;</string>
+           </property>
+           <property name="text">
+            <string>CLASSROOM MANAGEMENT SYSTEM</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="room_info_7">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>120</y>
+            <width>1511</width>
+            <height>501</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QFrame{
+background-color:rgba(234, 234, 234,0.4);
+}</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QFrame" name="iamge_frame_7">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>10</y>
+             <width>841</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:black;
+background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QWidget" name="widget_7" native="true">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>20</y>
+              <width>711</width>
+              <height>411</height>
+             </rect>
+            </property>
+            <widget class="QLabel" name="image_holder_7">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>711</width>
+               <height>411</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <property name="text">
+              <string>IMAGE CONTAINER</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="right_swipe_button_7">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>200</y>
+              <width>41</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&gt;</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="left_swipe_button_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>200</y>
+              <width>42</width>
+              <height>42</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color:white;
+border:1px solid grey;
+
+border-radius: 10px;
+max-width:40px;
+max-height:40px;
+font-size:30px;</string>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QFrame" name="room_details_info_7">
+           <property name="geometry">
+            <rect>
+             <x>850</x>
+             <y>30</y>
+             <width>641</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:transparent;</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="room_number_13">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>30</y>
+              <width>141</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:25px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Room 209</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Floor_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>70</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Floor : 2</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="capacity_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>90</y>
+              <width>101</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Capacity: 60</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="room_number_14">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>140</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Current Class</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>170</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Subject:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Subject_name_7">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>170</y>
+              <width>271</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;
+padding:2px;</string>
+            </property>
+            <property name="text">
+             <string>MATH 101</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Time_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>190</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Time:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="start_time_7">
+            <property name="geometry">
+             <rect>
+              <x>90</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dash_7">
+            <property name="geometry">
+             <rect>
+              <x>130</x>
+              <y>190</y>
+              <width>16</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="end_time_7">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>190</y>
+              <width>41</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>7:00 </string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="Available_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>230</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Available to Book</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="availability_status_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>260</y>
+              <width>71</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>No</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screen_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>300</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:20px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Screen:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="screentype_7">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>330</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:black;
+font-size:17px;</string>
+            </property>
+            <property name="text">
+             <string>Projector Screen</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="room_name_7">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>60</y>
+            <width>1161</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:25px;
+color:black;
+font-weight:bold;</string>
+          </property>
+          <property name="text">
+           <string>Room 209 Details</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QFrame" name="sidebar_11">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>311</width>
+           <height>1080</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+background-color:white;
+border:2.2px solid  rgb(162, 166, 143);
+border-top:10px;
+border-left:10px;
+border-bottom:10px;
+border-radius:10px;
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QFrame" name="frame_22">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="username_11">
+           <property name="geometry">
+            <rect>
+             <x>99</x>
+             <y>20</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:rgb(0, 0, 0);
+font-size:22px;</string>
+           </property>
+           <property name="text">
+            <string>Suvesh B. Gurung</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="department_11">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>50</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:green;
+font-weight:bold;
+font-size:15px;</string>
+           </property>
+           <property name="text">
+            <string>COMP</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_27">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>91</width>
+             <height>91</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+background-image: url(:/resource/assets/Cms.png);
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/Cms.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="dynamic_time_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>291</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QLabel" name="time_10">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>20</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>2:00 PM</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="time_icon_10">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_12">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>60</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:black;
+font-size:17px;
+};</string>
+           </property>
+           <property name="text">
+            <string>7/22/2024</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="date_icon_10">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>60</y>
+             <width>21</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="resources.qrc">:/resource/assets/calendar.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="navigation_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="home_12">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: rgb(146,194,204);
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>HOME</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="booking_12">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>50</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>BOOKING</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="schedule_12">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>100</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: white;
+    font-size: 17px;
+    color: black;
+    border: none;
+border-radius:2px;
+    border-bottom: 2px solid rgb(221, 221, 221); /* Adds a bottom border */
+}
+
+QPushButton:hover {
+    background-color: grey;
+    color: white;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>SCHEDULE</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QFrame" name="log_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>430</y>
+            <width>291</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border:none;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="logout_button_12">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>291</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">
+
+QPushButton {
+background-color: rgb(30, 188, 75);
+color:white;
+border-radius:2px;
+font-size:17px;
+        }
+
+
+
+QPushButton:hover {
+          background-color: #0fa191;
+			color:white;
+        }</string>
+           </property>
+           <property name="text">
+            <string>LOGOUT</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QLabel" name="index_12">
           <property name="geometry">
            <rect>
             <x>40</x>

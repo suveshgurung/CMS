@@ -34,6 +34,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         logowidget.h logowidget.cpp
         logowidget.cpp
         temp.ui
+        image_slider.h
+        image_slider.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
