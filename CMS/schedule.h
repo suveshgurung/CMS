@@ -10,7 +10,8 @@
 #include <iostream>
 
 // all of these enumeration variables need to be in the order of the database to maintain id linkage.
-typedef enum {
+typedef enum
+{
     ROOM_106 = 1,
     ROOM_107,
     ROOM_108,
@@ -18,9 +19,10 @@ typedef enum {
     ROOM_207,
     ROOM_208,
     ROOM_209,
-}Room;
+} Room;
 
-typedef enum  {
+typedef enum
+{
     COMP116 = 1,
     COMP117,
     MATH103,
@@ -42,29 +44,30 @@ typedef enum  {
     ENVS101,
     ENVS102,
     ENVS141
-}Subject;
+} Subject;
 
-typedef enum {
+typedef enum
+{
     BI = 1,
     BT,
     CM_AP,
     CS,
     ES
-}Group;
+} Group;
 
-typedef enum {
+typedef enum
+{
     SUNDAY = 1,
     MONDAY,
     TUESDAY,
     WEDNESDAY,
     THURSDAY,
     FRIDAY
-}Day;
-
-
+} Day;
 
 // class to store logged in user info.
-class User{
+class User
+{
 protected:
     int userId;
     std::string FirstName;
@@ -74,14 +77,13 @@ protected:
     std::string Department;
     std::string PhoneNumber;
 
-
 public:
     User();
     ~User();
 
     void setUserId(int id);
 
-    void setUser(int id, std::string fname, std::string mname, std::string lname, std::string email, std::string department , std::string phone);
+    void setUser(int id, std::string fname, std::string mname, std::string lname, std::string email, std::string department, std::string phone);
 
     std::string getFirstName() const;
     std::string getMiddleName() const;
@@ -93,7 +95,8 @@ public:
     int getUserId();
 };
 
-class UserWindow : public User{
+class UserWindow : public User
+{
 protected:
     std::vector<Room> rooms;
     std::vector<Subject> subjects;
@@ -114,11 +117,9 @@ protected:
     int hour;
 
     std::string subjectEnumToStr(Subject s);
-    void linkSubjects();
-    void linkTime();
 
 public:
-    UserWindow(); 
+    UserWindow();
     ~UserWindow();
 
     // methods to get data of the schedule.
@@ -132,16 +133,18 @@ public:
     void setStartTimeVec(std::vector<std::string> vec);
     void setEndTimeVec(std::vector<std::string> vec);
 
-    std::vector<Room> getRooms(); 
-    std::vector<Group> getGroups(); 
+    std::vector<Room> getRooms();
+    std::vector<Group> getGroups();
     std::vector<Subject> getSubjects();
-    std::unordered_map<Room, std::string> getSubjectsUM();      // index is "Room" to link the subject being taught to the particular room.
+    std::unordered_map<Room, std::string> getSubjectsUM(); // index is "Room" to link the subject being taught to the particular room.
     std::unordered_map<Room, std::string> getStartTimeUM();
     std::unordered_map<Room, std::string> getEndTimeUM();
 
+    void linkSubjects();
+    void linkTime();
 };
 
-extern User* user;
-extern UserWindow* userWindow;
+extern User *user;
+extern UserWindow *userWindow;
 
 #endif

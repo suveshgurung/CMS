@@ -11,7 +11,6 @@
 #include <QPushButton>
 #include <QVector>
 
-
 namespace Ui
 {
     class MainWindow;
@@ -27,8 +26,6 @@ public:
 
 private slots:
     void showTime(); // Declare showTime function
-
-
 
     // himesh
     void on_logout_button_clicked();
@@ -57,10 +54,6 @@ private slots:
 
     void on_home_2_clicked();
 
-    void showPreviousImage();
-    void showNextImage();
-
-
 private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
@@ -74,7 +67,6 @@ private:
     void setupRoom207();
     void setupRoom208();
     void setupRoom209();
-
 };
 
 #endif // MAINWINDOW_H
