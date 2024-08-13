@@ -54,7 +54,7 @@ MainWindow::MainWindow(QWidget *parent)
         "}");
 
     // Loop for stackedWidget UI "SIDEBAR UI"
-    for (int i = 1; i <= 10; ++i)
+    for (int i = 1; i <= 20; ++i)
     {
         QString buttonName = "logout_button_" + QString::number(i);
         QString home_buttonName = "home_" + QString::number(i);
@@ -164,10 +164,6 @@ void MainWindow::setupRoom209()
     QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
     ImageSlider *sliderPage7 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
-
-
-
-
 
 void MainWindow::showTime()
 {
@@ -454,6 +450,41 @@ void MainWindow::on_logout_button_clicked()
 {
 
     ui->stackedWidget->setCurrentIndex(3);
+}
+
+void MainWindow::on_room_106_redirect_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(7);
+}
+
+void MainWindow::on_room_107_redirect_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(8);
+}
+
+void MainWindow::on_room_108_redirect_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(9);
+}
+
+void MainWindow::on_room_109_redirect_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(10);
+}
+
+void MainWindow::on_room_207_redirect_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(11);
+}
+
+void MainWindow::on_room_208_redirect_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(12);
+}
+
+void MainWindow::on_room_209_redirect_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(13);
 }
 
 void MainWindow::on_sign_in_clicked()

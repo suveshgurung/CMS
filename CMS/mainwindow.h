@@ -46,6 +46,14 @@ private slots:
     void on_login_redirect_2_clicked();
     void on_signup_redirect_clicked();
 
+    void on_room_106_redirect_clicked();
+     void on_room_107_redirect_clicked();
+      void on_room_108_redirect_clicked();
+       void on_room_109_redirect_clicked();
+        void on_room_207_redirect_clicked();
+         void on_room_208_redirect_clicked();
+          void on_room_209_redirect_clicked();
+
     void update_room_status();
 
     // void book_room();
