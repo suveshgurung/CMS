@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>9</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="landing_page"/>
       <widget class="QWidget" name="explore_page">
@@ -1574,7 +1574,7 @@ margin:0px;
                    <x>0</x>
                    <y>0</y>
                    <width>331</width>
-                   <height>251</height>
+                   <height>241</height>
                   </rect>
                  </property>
                  <property name="styleSheet">
@@ -1591,6 +1591,26 @@ margin:0px;
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
+                 </property>
+                </widget>
+                <widget class="QPushButton" name="room_106_redirect">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>331</width>
+                   <height>321</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background:transparent;
+border:none;
+color:transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>PushButton</string>
                  </property>
                 </widget>
                </widget>
@@ -1636,9 +1656,32 @@ QLabel{
                 <widget class="QLabel" name="room_106_class_name">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>20</y>
-                   <width>321</width>
+                   <width>181</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_time">
+                 <property name="geometry">
+                  <rect>
+                   <x>140</x>
+                   <y>40</y>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -1654,12 +1697,12 @@ QLabel{
                   <string/>
                  </property>
                 </widget>
-                <widget class="QLabel" name="room_106_class_time">
+                <widget class="QLabel" name="room_106_class_name_2">
                  <property name="geometry">
                   <rect>
                    <x>0</x>
-                   <y>40</y>
-                   <width>321</width>
+                   <y>20</y>
+                   <width>141</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -1669,10 +1712,35 @@ QLabel{
 	font-size:15px;
 	color:rgb(83, 83, 83);
 	font-weight:bold;
+
+
 }</string>
                  </property>
                  <property name="text">
-                  <string/>
+                  <string>Current Class:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_3">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Time:</string>
                  </property>
                 </widget>
                </widget>
@@ -1780,6 +1848,26 @@ margin:0px;
                   <bool>true</bool>
                  </property>
                 </widget>
+                <widget class="QPushButton" name="room_107_redirect">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>321</width>
+                   <height>301</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background:transparent;
+border:none;
+color:transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
                </widget>
               </item>
               <item>
@@ -1823,9 +1911,9 @@ QLabel{
                 <widget class="QLabel" name="room_107_class_name">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>20</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -1844,9 +1932,9 @@ QLabel{
                 <widget class="QLabel" name="room_107_class_time">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>40</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -1860,6 +1948,52 @@ QLabel{
                  </property>
                  <property name="text">
                   <string/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_4">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Current Class:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_5">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Time:</string>
                  </property>
                 </widget>
                </widget>
@@ -1967,6 +2101,26 @@ margin:0px;
                   <bool>true</bool>
                  </property>
                 </widget>
+                <widget class="QPushButton" name="room_108_redirect">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>-30</y>
+                   <width>321</width>
+                   <height>341</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background:transparent;
+border:none;
+color:transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
                </widget>
               </item>
               <item>
@@ -2010,9 +2164,9 @@ QLabel{
                 <widget class="QLabel" name="room_108_class_name">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>20</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2031,9 +2185,9 @@ QLabel{
                 <widget class="QLabel" name="room_108_class_time">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>40</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2047,6 +2201,52 @@ QLabel{
                  </property>
                  <property name="text">
                   <string/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_6">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Current Class:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_7">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Time:</string>
                  </property>
                 </widget>
                </widget>
@@ -2154,6 +2354,26 @@ margin:0px;
                   <bool>true</bool>
                  </property>
                 </widget>
+                <widget class="QPushButton" name="room_109_redirect">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>-30</y>
+                   <width>321</width>
+                   <height>341</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background:transparent;
+border:none;
+color:transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
                </widget>
               </item>
               <item>
@@ -2197,9 +2417,9 @@ QLabel{
                 <widget class="QLabel" name="room_109_class_name">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>20</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2218,9 +2438,9 @@ QLabel{
                 <widget class="QLabel" name="room_109_class_time">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>40</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2234,6 +2454,52 @@ QLabel{
                  </property>
                  <property name="text">
                   <string/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_8">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Current Class:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_9">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Time:</string>
                  </property>
                 </widget>
                </widget>
@@ -2419,6 +2685,26 @@ margin:0px;
                   <bool>true</bool>
                  </property>
                 </widget>
+                <widget class="QPushButton" name="room_207_redirect">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>-30</y>
+                   <width>321</width>
+                   <height>371</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background:transparent;
+border:none;
+color:transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
                </widget>
               </item>
               <item>
@@ -2462,9 +2748,9 @@ QLabel{
                 <widget class="QLabel" name="room_207_class_name">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>20</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2483,9 +2769,9 @@ QLabel{
                 <widget class="QLabel" name="room_207_class_time">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>40</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2499,6 +2785,52 @@ QLabel{
                  </property>
                  <property name="text">
                   <string/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_10">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Current Class:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_11">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Time:</string>
                  </property>
                 </widget>
                </widget>
@@ -2606,6 +2938,26 @@ margin:0px;
                   <bool>true</bool>
                  </property>
                 </widget>
+                <widget class="QPushButton" name="room_208_redirect">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>-20</y>
+                   <width>321</width>
+                   <height>371</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background:transparent;
+border:none;
+color:transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
                </widget>
               </item>
               <item>
@@ -2649,9 +3001,9 @@ QLabel{
                 <widget class="QLabel" name="room_208_class_name">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>20</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2670,9 +3022,9 @@ QLabel{
                 <widget class="QLabel" name="room_208_class_time">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>40</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2686,6 +3038,52 @@ QLabel{
                  </property>
                  <property name="text">
                   <string/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_12">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Current Class:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_13">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Time:</string>
                  </property>
                 </widget>
                </widget>
@@ -2793,6 +3191,26 @@ margin:0px;
                   <bool>true</bool>
                  </property>
                 </widget>
+                <widget class="QPushButton" name="room_209_redirect">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>-30</y>
+                   <width>321</width>
+                   <height>371</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton{
+	background:transparent;
+border:none;
+color:transparent;
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>PushButton</string>
+                 </property>
+                </widget>
                </widget>
               </item>
               <item>
@@ -2836,9 +3254,9 @@ QLabel{
                 <widget class="QLabel" name="room_209_class_name">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>20</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2857,9 +3275,9 @@ QLabel{
                 <widget class="QLabel" name="room_209_class_time">
                  <property name="geometry">
                   <rect>
-                   <x>0</x>
+                   <x>140</x>
                    <y>40</y>
-                   <width>321</width>
+                   <width>181</width>
                    <height>21</height>
                   </rect>
                  </property>
@@ -2873,6 +3291,52 @@ QLabel{
                  </property>
                  <property name="text">
                   <string/>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_14">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>20</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Current Class:</string>
+                 </property>
+                </widget>
+                <widget class="QLabel" name="room_106_class_name_15">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>40</y>
+                   <width>141</width>
+                   <height>21</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QLabel{
+	padding:0px;
+	font-size:15px;
+	color:rgb(83, 83, 83);
+	font-weight:bold;
+
+
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Time:</string>
                  </property>
                 </widget>
                </widget>
