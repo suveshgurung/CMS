@@ -46,9 +46,9 @@ private slots:
 
     void update_room_status();
 
-    // void book_room();
-    //
-    // void on_wow_clicked();
+    void book_room();
+
+    void on_booking_search_clicked();
 
     void on_home_2_clicked();
 
