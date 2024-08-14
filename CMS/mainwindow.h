@@ -6,6 +6,10 @@
 #include <QSqlQuery>
 #include <QSqlTableModel>
 #include "logowidget.h"
+#include <QMainWindow>
+#include <QLabel>
+#include <QPushButton>
+#include <QVector>
 
 namespace Ui
 {
@@ -22,8 +26,6 @@ public:
 
 private slots:
     void showTime(); // Declare showTime function
-
-
 
     // himesh
     void on_logout_button_clicked();
@@ -44,6 +46,14 @@ private slots:
     void on_login_redirect_2_clicked();
     void on_signup_redirect_clicked();
 
+    void on_room_106_redirect_clicked();
+     void on_room_107_redirect_clicked();
+      void on_room_108_redirect_clicked();
+       void on_room_109_redirect_clicked();
+        void on_room_207_redirect_clicked();
+         void on_room_208_redirect_clicked();
+          void on_room_209_redirect_clicked();
+
     void update_room_status();
 
     void book_room();
@@ -58,7 +68,13 @@ private:
     QSqlTableModel *model;
     LogoWidget *logoWidget;
 
-
+    void setupRoom106();
+    void setupRoom107();
+    void setupRoom108();
+    void setupRoom109();
+    void setupRoom207();
+    void setupRoom208();
+    void setupRoom209();
 };
 
 #endif // MAINWINDOW_H
