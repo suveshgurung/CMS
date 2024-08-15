@@ -1,5 +1,6 @@
 #include "schedule.h"
 #include "dbConnection.h"
+#include <cstddef>
 
 User* user = nullptr;
 UserWindow* userWindow = nullptr;
@@ -116,7 +117,6 @@ QString UserWindow::getEndTime() {
 
 void UserWindow::getSchedule() {
 
-    qDebug() << "Chikan is lob";
     std::unordered_map<std::string, std::vector<std::string>> defaultScheduleData;
     std::unordered_map<std::string, std::vector<std::string>> bookedScheduleData;
     std::unordered_map<std::string, std::vector<std::string>> combinedScheduleData;
@@ -124,7 +124,7 @@ void UserWindow::getSchedule() {
     endTime = QString::number(hour+1) + ":00";
 
     // get the default schedule.
-    std::string defaultCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='6' AND default_schedule='y'")
+    std::string defaultCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='y'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
@@ -134,7 +134,7 @@ void UserWindow::getSchedule() {
 
     
     // get the booked schedule.
-    std::string bookedCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='6' AND default_schedule='n'")
+    std::string bookedCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='n'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
@@ -154,36 +154,26 @@ void UserWindow::getSchedule() {
     for (const auto& pair : defaultScheduleData) {
 
         if (pair.first == "room_id") {
-            qDebug() << pair.first;
-            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
         }
         if (pair.first == "group_id") {
-            qDebug() << pair.first;
-            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
         }
         if (pair.first == "subject_id") {
-            qDebug() << pair.first;
-            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
         }
         if (pair.first == "start_time_actual") {
-            qDebug() << pair.first;
-            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
         }
         if (pair.first == "end_time_actual") {
-            qDebug() << pair.first;
-            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
@@ -249,6 +239,7 @@ void UserWindow::getSchedule() {
 
 void UserWindow::setRooms(std::vector<std::string> roomsVec) {
 
+
     for (size_t i = 0; i < roomsVec.size(); i++) {
 
         switch (std::stoi(roomsVec.at(i))) {
@@ -292,6 +283,10 @@ void UserWindow::setRooms(std::vector<std::string> roomsVec) {
 void UserWindow::setGroups(std::vector<std::string> groupsVec) {
 
     for (size_t i = 0; i < groupsVec.size(); i++) {
+
+        if (groupsVec.at(i).empty()) {
+            return;
+        }
 
         switch(std::stoi(groupsVec.at(i))) {
             case BI:

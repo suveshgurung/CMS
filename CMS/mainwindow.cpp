@@ -441,6 +441,7 @@ void MainWindow::on_schedule_clicked()
 void MainWindow::on_home_clicked()
 {
     userWindow->getSchedule();
+    update_room_status();
     ui->stackedWidget->setCurrentIndex(4);
 }
 
@@ -976,20 +977,28 @@ void MainWindow::on_book_button_1_clicked()
     QString subject = ui->booking_subject->currentText();
     QDate date = ui->dateEdit->date();
 
+    QStringList startTimeParts = startTime.split(":");
+    QStringList endTimeParts = endTime.split(":");
+    
+    int startTimeHour = startTimeParts[0].toInt();
+    int endTimeHour = endTimeParts[0].toInt();
+
+    int eTimeHour;
+    if (endTimeHour - startTimeHour >= 2) {
+        eTimeHour = startTimeHour + 1;
+    }
+    
+    QString eTime = QString::number(eTimeHour) + ":00";
+
     // get and format the time according to the database structure.
     QString dateStr = date.toString("dddd");
     std::string dayName = dateStr.toStdString();
-
-    qDebug() << startTime;
-    qDebug() << endTime;
-    qDebug() << subject;
-    qDebug() << dayName;
 
     bookingData["day_id"] = QString::number(dayStrToEnum(dayName)).toStdString();
     bookingData["subject_id"] = QString::number(subjectStrToEnum(subject)).toStdString();
     bookingData["room_id"] = QString::number(roomStrToEnum(ui->book1->text())).toStdString();
     bookingData["start_time"] = startTime.toStdString();
-    bookingData["end_time"] = endTime.toStdString();
+    bookingData["end_time"] = eTime.toStdString();
     bookingData["start_time_actual"] = startTime.toStdString();
     bookingData["end_time_actual"] = endTime.toStdString();
     bookingData["date"] = dateStr.toStdString();
@@ -1015,20 +1024,27 @@ void MainWindow::on_book_button_2_clicked()
     QString subject = ui->booking_subject->currentText();
     QDate date = ui->dateEdit->date();
 
+    QStringList startTimeParts = startTime.split(":");
+    QStringList endTimeParts = endTime.split(":");
+    
+    int startTimeHour = startTimeParts[0].toInt();
+    int endTimeHour = endTimeParts[0].toInt();
+
+    if (endTimeHour - startTimeHour >= 2) {
+        int eTimeHour = startTimeHour + 1;
+    }
+    
+    QString eTime = QString::number(endTimeHour) + ":00";
+
     // get and format the time according to the database structure.
     QString dateStr = date.toString("dddd");
     std::string dayName = dateStr.toStdString();
-
-    qDebug() << startTime;
-    qDebug() << endTime;
-    qDebug() << subject;
-    qDebug() << dayName;
 
     bookingData["day_id"] = QString::number(dayStrToEnum(dayName)).toStdString();
     bookingData["subject_id"] = QString::number(subjectStrToEnum(subject)).toStdString();
     bookingData["room_id"] = QString::number(roomStrToEnum(ui->book2->text())).toStdString();
     bookingData["start_time"] = startTime.toStdString();
-    bookingData["end_time"] = endTime.toStdString();
+    bookingData["end_time"] = eTime.toStdString();
     bookingData["start_time_actual"] = startTime.toStdString();
     bookingData["end_time_actual"] = endTime.toStdString();
     bookingData["date"] = dateStr.toStdString();
@@ -1054,20 +1070,27 @@ void MainWindow::on_book_button_3_clicked()
     QString subject = ui->booking_subject->currentText();
     QDate date = ui->dateEdit->date();
 
+    QStringList startTimeParts = startTime.split(":");
+    QStringList endTimeParts = endTime.split(":");
+    
+    int startTimeHour = startTimeParts[0].toInt();
+    int endTimeHour = endTimeParts[0].toInt();
+
+    if (endTimeHour - startTimeHour >= 2) {
+        int eTimeHour = startTimeHour + 1;
+    }
+    
+    QString eTime = QString::number(endTimeHour) + ":00";
+
     // get and format the time according to the database structure.
     QString dateStr = date.toString("dddd");
     std::string dayName = dateStr.toStdString();
-
-    qDebug() << startTime;
-    qDebug() << endTime;
-    qDebug() << subject;
-    qDebug() << dayName;
 
     bookingData["day_id"] = QString::number(dayStrToEnum(dayName)).toStdString();
     bookingData["subject_id"] = QString::number(subjectStrToEnum(subject)).toStdString();
     bookingData["room_id"] = QString::number(roomStrToEnum(ui->book3->text())).toStdString();
     bookingData["start_time"] = startTime.toStdString();
-    bookingData["end_time"] = endTime.toStdString();
+    bookingData["end_time"] = eTime.toStdString();
     bookingData["start_time_actual"] = startTime.toStdString();
     bookingData["end_time_actual"] = endTime.toStdString();
     bookingData["date"] = dateStr.toStdString();
@@ -1094,20 +1117,26 @@ void MainWindow::on_book_button_4_clicked()
     QString subject = ui->booking_subject->currentText();
     QDate date = ui->dateEdit->date();
 
+    QStringList startTimeParts = startTime.split(":");
+    QStringList endTimeParts = endTime.split(":");
+    
+    int startTimeHour = startTimeParts[0].toInt();
+    int endTimeHour = endTimeParts[0].toInt();
+
+    if (endTimeHour - startTimeHour >= 2) {
+        int eTimeHour = startTimeHour + 1;
+    }
+    
+    QString eTime = QString::number(endTimeHour) + ":00";
     // get and format the time according to the database structure.
     QString dateStr = date.toString("dddd");
     std::string dayName = dateStr.toStdString();
-
-    qDebug() << startTime;
-    qDebug() << endTime;
-    qDebug() << subject;
-    qDebug() << dayName;
 
     bookingData["day_id"] = QString::number(dayStrToEnum(dayName)).toStdString();
     bookingData["subject_id"] = QString::number(subjectStrToEnum(subject)).toStdString();
     bookingData["room_id"] = QString::number(roomStrToEnum(ui->book4->text())).toStdString();
     bookingData["start_time"] = startTime.toStdString();
-    bookingData["end_time"] = endTime.toStdString();
+    bookingData["end_time"] = eTime.toStdString();
     bookingData["start_time_actual"] = startTime.toStdString();
     bookingData["end_time_actual"] = endTime.toStdString();
     bookingData["date"] = dateStr.toStdString();
@@ -1134,6 +1163,17 @@ void MainWindow::on_book_button_5_clicked()
     QString subject = ui->booking_subject->currentText();
     QDate date = ui->dateEdit->date();
 
+    QStringList startTimeParts = startTime.split(":");
+    QStringList endTimeParts = endTime.split(":");
+    
+    int startTimeHour = startTimeParts[0].toInt();
+    int endTimeHour = endTimeParts[0].toInt();
+
+    if (endTimeHour - startTimeHour >= 2) {
+        int eTimeHour = startTimeHour + 1;
+    }
+    
+    QString eTime = QString::number(endTimeHour) + ":00";
     // get and format the time according to the database structure.
     QString dateStr = date.toString("dddd");
     std::string dayName = dateStr.toStdString();
@@ -1147,7 +1187,7 @@ void MainWindow::on_book_button_5_clicked()
     bookingData["subject_id"] = QString::number(subjectStrToEnum(subject)).toStdString();
     bookingData["room_id"] = QString::number(roomStrToEnum(ui->book5->text())).toStdString();
     bookingData["start_time"] = startTime.toStdString();
-    bookingData["end_time"] = endTime.toStdString();
+    bookingData["end_time"] = eTime.toStdString();
     bookingData["start_time_actual"] = startTime.toStdString();
     bookingData["end_time_actual"] = endTime.toStdString();
     bookingData["date"] = dateStr.toStdString();
@@ -1174,20 +1214,26 @@ void MainWindow::on_book_button_6_clicked()
     QString subject = ui->booking_subject->currentText();
     QDate date = ui->dateEdit->date();
 
+    QStringList startTimeParts = startTime.split(":");
+    QStringList endTimeParts = endTime.split(":");
+    
+    int startTimeHour = startTimeParts[0].toInt();
+    int endTimeHour = endTimeParts[0].toInt();
+
+    if (endTimeHour - startTimeHour >= 2) {
+        int eTimeHour = startTimeHour + 1;
+    }
+    
+    QString eTime = QString::number(endTimeHour) + ":00";
     // get and format the time according to the database structure.
     QString dateStr = date.toString("dddd");
     std::string dayName = dateStr.toStdString();
-
-    qDebug() << startTime;
-    qDebug() << endTime;
-    qDebug() << subject;
-    qDebug() << dayName;
 
     bookingData["day_id"] = QString::number(dayStrToEnum(dayName)).toStdString();
     bookingData["subject_id"] = QString::number(subjectStrToEnum(subject)).toStdString();
     bookingData["room_id"] = QString::number(roomStrToEnum(ui->book6->text())).toStdString();
     bookingData["start_time"] = startTime.toStdString();
-    bookingData["end_time"] = endTime.toStdString();
+    bookingData["end_time"] = eTime.toStdString();
     bookingData["start_time_actual"] = startTime.toStdString();
     bookingData["end_time_actual"] = endTime.toStdString();
     bookingData["date"] = dateStr.toStdString();
@@ -1214,20 +1260,26 @@ void MainWindow::on_book_button_7_clicked()
     QString subject = ui->booking_subject->currentText();
     QDate date = ui->dateEdit->date();
 
+    QStringList startTimeParts = startTime.split(":");
+    QStringList endTimeParts = endTime.split(":");
+    
+    int startTimeHour = startTimeParts[0].toInt();
+    int endTimeHour = endTimeParts[0].toInt();
+
+    if (endTimeHour - startTimeHour >= 2) {
+        int eTimeHour = startTimeHour + 1;
+    }
+    
+    QString eTime = QString::number(endTimeHour) + ":00";
     // get and format the time according to the database structure.
     QString dateStr = date.toString("dddd");
     std::string dayName = dateStr.toStdString();
-
-    qDebug() << startTime;
-    qDebug() << endTime;
-    qDebug() << subject;
-    qDebug() << dayName;
 
     bookingData["day_id"] = QString::number(dayStrToEnum(dayName)).toStdString();
     bookingData["subject_id"] = QString::number(subjectStrToEnum(subject)).toStdString();
     bookingData["room_id"] = QString::number(roomStrToEnum(ui->book7->text())).toStdString();
     bookingData["start_time"] = startTime.toStdString();
-    bookingData["end_time"] = endTime.toStdString();
+    bookingData["end_time"] = eTime.toStdString();
     bookingData["start_time_actual"] = startTime.toStdString();
     bookingData["end_time_actual"] = endTime.toStdString();
     bookingData["date"] = dateStr.toStdString();
