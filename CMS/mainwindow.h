@@ -63,6 +63,7 @@ private slots:
     void on_booking_search_clicked();
 
     void on_home_2_clicked();
+    // void on_book_button_1_clicked();
 
 private:
     Ui::MainWindow *ui;

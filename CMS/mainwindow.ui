@@ -4227,7 +4227,7 @@ font-weight:bold;</string>
            <rect>
             <x>0</x>
             <y>120</y>
-            <width>561</width>
+            <width>451</width>
             <height>581</height>
            </rect>
           </property>
@@ -4243,7 +4243,7 @@ font-weight:bold;</string>
           <widget class="QLabel" name="information_label">
            <property name="geometry">
             <rect>
-             <x>170</x>
+             <x>120</x>
              <y>10</y>
              <width>221</width>
              <height>51</height>
@@ -4265,7 +4265,7 @@ background-color:transparent;</string>
             <rect>
              <x>10</x>
              <y>70</y>
-             <width>541</width>
+             <width>411</width>
              <height>501</height>
             </rect>
            </property>
@@ -4291,7 +4291,7 @@ background-color:transparent;</string>
              <string notr="true">font-size:18px;
 color:black;
 color:rgb(0, 85, 0);
-font-weight:bold;
+
 text:center;
 background-color:transparent;</string>
             </property>
@@ -4312,7 +4312,7 @@ background-color:transparent;</string>
              <string notr="true">font-size:18px;
 color:black;
 color:rgb(0, 85, 0);
-font-weight:bold;
+
 text:center;
 background-color:transparent;</string>
             </property>
@@ -4332,7 +4332,7 @@ background-color:transparent;</string>
             <property name="styleSheet">
              <string notr="true">font-size:18px;
 color:rgb(0, 85, 0);
-font-weight:bold;
+
 text:center;
 background-color:transparent;</string>
             </property>
@@ -4354,7 +4354,7 @@ background-color:transparent;</string>
 color:black;
 
 text:center;color:rgb(0, 0, 127);
-font-weight:bold;
+
 background-color:transparent;</string>
             </property>
             <property name="text">
@@ -4374,7 +4374,7 @@ background-color:transparent;</string>
              <string notr="true">font-size:18px;
 color:black;
 color:rgb(0, 0, 127);
-font-weight:bold;
+
 text:center;
 background-color:transparent;</string>
             </property>
@@ -4395,8 +4395,8 @@ background-color:transparent;</string>
              <string notr="true">font-size:18px;
 color:black;
 color:rgb(0, 0, 127);
-font-weight:bold;
-text:center;font-weight:bold;
+
+text:center;
 background-color:transparent;</string>
             </property>
             <property name="text">
@@ -4415,7 +4415,7 @@ background-color:transparent;</string>
             <property name="styleSheet">
              <string notr="true">font-size:18px;
 color:rgb(0, 0, 127);
-font-weight:bold;
+
 text:center;
 background-color:transparent;</string>
             </property>
@@ -4568,9 +4568,9 @@ background-color:transparent;</string>
          <widget class="QFrame" name="book_info_user_frame">
           <property name="geometry">
            <rect>
-            <x>570</x>
+            <x>450</x>
             <y>120</y>
-            <width>1011</width>
+            <width>1131</width>
             <height>581</height>
            </rect>
           </property>
@@ -4580,6 +4580,724 @@ background-color:transparent;</string>
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
+          <widget class="QFrame" name="myFrame_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>70</y>
+             <width>1111</width>
+             <height>331</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QFrame{
+    border: 1px solid black;}
+
+
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QFrame" name="frame_25">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>0</y>
+              <width>1061</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">    background-color: rgb(0, 122, 0);
+border:1px solid rgb(148, 297, 167);</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="label_47">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>20</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:white;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string>Subject</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_48">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>20</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:white;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string>Start_time</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_50">
+             <property name="geometry">
+              <rect>
+               <x>410</x>
+               <y>20</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:white;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string>End_time</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_51">
+             <property name="geometry">
+              <rect>
+               <x>560</x>
+               <y>20</y>
+               <width>131</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:white;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string>Room Number</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="time_icon_13">
+             <property name="geometry">
+              <rect>
+               <x>190</x>
+               <y>10</y>
+               <width>31</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:white;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="time_icon_14">
+             <property name="geometry">
+              <rect>
+               <x>370</x>
+               <y>10</y>
+               <width>31</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:white;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="resources.qrc">:/resource/assets/clock.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="frame_38">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>50</y>
+              <width>1061</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="book_subject_1">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_start_time_1">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_end_time_1">
+             <property name="geometry">
+              <rect>
+               <x>410</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_room_number_1">
+             <property name="geometry">
+              <rect>
+               <x>580</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="frame_39">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>90</y>
+              <width>1061</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="book_subject_2">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_start_time_2">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_end_time_2">
+             <property name="geometry">
+              <rect>
+               <x>410</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_room_number_2">
+             <property name="geometry">
+              <rect>
+               <x>580</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="frame_40">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>130</y>
+              <width>1061</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="book_subject_3">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_start_time_3">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_end_time_3">
+             <property name="geometry">
+              <rect>
+               <x>410</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_room_number_3">
+             <property name="geometry">
+              <rect>
+               <x>580</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="frame_41">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>170</y>
+              <width>1061</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="book_subject_4">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_start_time_4">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_end_time_4">
+             <property name="geometry">
+              <rect>
+               <x>410</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_room_number_4">
+             <property name="geometry">
+              <rect>
+               <x>580</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="frame_42">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>210</y>
+              <width>1061</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="book_subject_5">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_start_time_5">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_end_time_5">
+             <property name="geometry">
+              <rect>
+               <x>410</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+            <widget class="QLabel" name="book_room_number_5">
+             <property name="geometry">
+              <rect>
+               <x>580</x>
+               <y>10</y>
+               <width>91</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="frame_43">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>250</y>
+              <width>1061</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="QFrame" name="frame_44">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>290</y>
+              <width>1061</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="book8_2">
+            <property name="geometry">
+             <rect>
+              <x>290</x>
+              <y>340</y>
+              <width>131</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border:none;
+color:black;
+font-size:18px;
+font-weight:bold;</string>
+            </property>
+            <property name="text">
+             <string>Room Number</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_10">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>340</y>
+              <width>241</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton {
+background-color: rgb(30, 188, 75);
+color:white;
+border-radius:2px;
+font-size:17px;
+        }</string>
+            </property>
+            <property name="text">
+             <string>Book</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QLabel" name="information_label_2">
+           <property name="geometry">
+            <rect>
+             <x>490</x>
+             <y>10</y>
+             <width>311</width>
+             <height>51</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font-size:25px;
+color:black;
+font-weight:bold;
+text:center;
+background-color:transparent;</string>
+           </property>
+           <property name="text">
+            <string>YOUR BOOKED CLASSES</string>
+           </property>
+          </widget>
          </widget>
         </widget>
        </widget>
