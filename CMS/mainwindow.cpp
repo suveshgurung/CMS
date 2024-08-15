@@ -27,6 +27,12 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->setupUi(this);
 
+
+    // Assuming you already have a QDateEdit object called 'dateEdit'
+    QDate today = QDate::currentDate();  // Get the current date
+    ui-> dateEdit->setDate(today);            // Set today's date
+
+
     QTimer *timer = new QTimer(this);
     connect(timer, SIGNAL(timeout()), this, SLOT(showTime()));
     timer->start();
@@ -105,7 +111,7 @@ void MainWindow::setupRoom106()
     QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button");
     QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button");
 
-    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    QStringList imagesPage = {":/resource/assets/room.jpg", ":/resource/assets/Knowledge.png"};
     ImageSlider *sliderPage1 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
 
@@ -360,6 +366,19 @@ void MainWindow::on_loginButton_clicked()
     {
         qDebug() << "Department UI element is null!";
     }
+
+    ui->dashboard_username->setText(usernameText);
+    ui->phonenumber->setText( QString::fromStdString(phone));
+    ui->firstname->setText( QString::fromStdString(fname));
+    if(!mname.empty())
+    {
+        ui->middlename->setText(QString::fromStdString(mname));
+    }
+    ui->lastname->setText(QString::fromStdString(lname));
+    ui->mail->setText(QString::fromStdString(mail));
+
+
+
 
     for (int i = 1; i <= 10; i++)
     {
@@ -767,10 +786,10 @@ void MainWindow::book_room() {
     // }
 }
 
-void MainWindow::on_booking_search_clicked()
-{
-    book_room();
-}
+// void MainWindow::on_booking_search_clicked()
+// {
+//     book_room();
+// }
 
 void MainWindow::on_home_2_clicked()
 {
