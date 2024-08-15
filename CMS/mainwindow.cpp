@@ -560,8 +560,8 @@ void MainWindow::update_room_status()
 
     QString timeRange;
 
-    for (size_t i = 0; i < rooms.size(); i++)
-    {
+     for (size_t i = 0; i < rooms.size(); i++)
+          {
 
         switch (rooms.at(i))
         {
@@ -840,3 +840,45 @@ void MainWindow::on_booking_search_clicked()
 void MainWindow::on_home_2_clicked()
 {
 }
+
+// void MainWindow::on_book_button_1_clicked()
+// {
+//
+// }
+//
+//
+// void MainWindow::on_book_button_2_clicked()
+// {
+//
+// }
+//
+//
+// void MainWindow::on_book_button_3_clicked()
+// {
+//
+// }
+//
+//
+// void MainWindow::on_book_button_4_clicked()
+// {
+//
+// }
+//
+//
+// void MainWindow::on_book_button_5_clicked()
+// {
+//
+// }
+//
+//
+// void MainWindow::on_book_button_6_clicked()
+// {
+//
+// }
+//
+//
+// void MainWindow::on_book_button_7_clicked()
+// {
+//
+// }
+//
