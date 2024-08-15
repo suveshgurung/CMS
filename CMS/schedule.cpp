@@ -123,7 +123,7 @@ void UserWindow::getSchedule() {
     endTime = QString::number(hour+1) + ":00";
 
     // get the default schedule.
-    std::string defaultCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='y'")
+    std::string defaultCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='6' AND default_schedule='y'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
@@ -153,26 +153,36 @@ void UserWindow::getSchedule() {
     for (const auto& pair : defaultScheduleData) {
 
         if (pair.first == "room_id") {
+            qDebug() << pair.first;
+            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
         }
         if (pair.first == "group_id") {
+            qDebug() << pair.first;
+            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
         }
         if (pair.first == "subject_id") {
+            qDebug() << pair.first;
+            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
         }
         if (pair.first == "start_time_actual") {
+            qDebug() << pair.first;
+            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
         }
         if (pair.first == "end_time_actual") {
+            qDebug() << pair.first;
+            qDebug() << pair.second;
             for (const auto& val : pair.second) {
                 combinedScheduleData[pair.first].push_back(val);
             }
@@ -261,6 +271,15 @@ void UserWindow::setRooms(std::vector<std::string> roomsVec) {
                 break;
             case ROOM_209:
                 rooms.push_back(ROOM_209);
+                break;
+            case ROOM_202:
+                rooms.push_back(ROOM_202);
+                break;
+            case ROOM_203:
+                rooms.push_back(ROOM_203);
+                break;
+            case ROOM_402:
+                rooms.push_back(ROOM_402);
                 break;
             default:
                 break;
@@ -364,6 +383,30 @@ void UserWindow::setSubjects(std::vector<std::string> subjectsVec) {
             case ENVS141:
                 subjects.push_back(ENVS141); 
                 break;
+            case PHYS102_Practical:
+                subjects.push_back(PHYS102_Practical);
+                break;
+            case PHAR204:
+                subjects.push_back(PHAR204); 
+                break;
+            case PHAR402:
+                subjects.push_back(PHAR402); 
+                break;
+            case CHEM203:
+                subjects.push_back(CHEM203); 
+                break;
+            case MGTS402:
+                subjects.push_back(MGTS402); 
+                break;
+            case CHEM215:
+                subjects.push_back(CHEM215); 
+                break;
+            case MEEEG306:
+                subjects.push_back(MEEEG306); 
+                break;
+            case ENVE303:
+                subjects.push_back(ENVE303); 
+                break;
             default:
                 break;
         }
@@ -428,6 +471,22 @@ std::string UserWindow::subjectEnumToStr(Subject s) {
             return "ENVS102";
         case ENVS141:
             return "ENVS141";
+        case PHYS102_Practical:
+            return "PHYS102_Practical";
+        case PHAR204:
+            return "PHAR204";
+        case CHEM203:
+            return "CHEM203";
+        case PHAR402:
+            return "PHAR402";
+        case MGTS402:
+            return "MGTS402";
+        case CHEM215:
+            return "CHEM215";
+        case MEEEG306:
+            return "MEEEG306";
+        case ENVE303:
+            return "ENVE303";
     }
 
 }

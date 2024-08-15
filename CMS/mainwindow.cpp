@@ -691,9 +691,10 @@ void addAvailableRooms(std::vector<std::string> data, std::vector<Room> &availab
 
 }
 
-void MainWindow::bookedClassesEval(QString start_time, std::string day) {
-    std::string getRoomCondition = QString("WHERE start_time_actual='%1' AND day_id='%2'")
+void MainWindow::bookedClassesEval(QString start_time, QString end_time, std::string day) {
+    std::string getRoomCondition = QString("WHERE (start_time_actual='%1' OR start_time_actual='%2') AND day_id='%3'")
         .arg(start_time)
+        .arg(end_time)
         .arg(QString::number(dayStrToEnum(day)))
         .toStdString();
 
@@ -762,7 +763,7 @@ void MainWindow::book_room() {
 
     // dbStartTime = "9:00";
 
-    bookedClassesEval(startTime, dateStr.toStdString());
+    bookedClassesEval(startTime, endTime, dateStr.toStdString());
 
     // book the selected room.
     std::unordered_map<std::string, std::string> bookingData;
@@ -789,6 +790,22 @@ void MainWindow::book_room() {
 
 void MainWindow::on_booking_search_clicked()
 {
+    ui->book_button_1->setVisible(false);
+    ui->book_button_2->setVisible(false);
+    ui->book_button_3->setVisible(false);
+    ui->book_button_4->setVisible(false);
+    ui->book_button_5->setVisible(false);
+    ui->book_button_6->setVisible(false);
+    ui->book_button_7->setVisible(false);
+
+    ui->book1->setText("");
+    ui->book2->setText("");
+    ui->book3->setText("");
+    ui->book4->setText("");
+    ui->book5->setText("");
+    ui->book6->setText("");
+    ui->book7->setText("");
+
     book_room();
 }
 

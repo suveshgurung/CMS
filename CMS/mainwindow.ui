@@ -5189,12 +5189,142 @@ QDateEdit {
                    </property>
                    <item>
                     <property name="text">
-                     <string>Block 6</string>
+                     <string>COMP116</string>
                     </property>
                    </item>
                    <item>
                     <property name="text">
-                     <string>Block 9</string>
+                     <string>COMP117</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>MATH103</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>MATH102</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>MATH104</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>PHYS102</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>EDRG102</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>EDRG103</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ENGT105</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ENVE101</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ENGG112</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CHEM102</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CHEM103</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>BINF101</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>BINF102</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>BIOT101</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>BIOT102</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ENVS101</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ENVS102</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ENVS141</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>PHAR204</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CHEM203</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>PHAR402</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>MGTS402</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>CHEM215</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>MEEEG306</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ENVE303</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>PHYS105</string>
                     </property>
                    </item>
                   </widget>
@@ -5213,7 +5343,7 @@ font-size:20px;
 border:none;</string>
                    </property>
                    <property name="text">
-                    <string>Block</string>
+                    <string>Subject</string>
                    </property>
                   </widget>
                   <widget class="QPushButton" name="booking_search">

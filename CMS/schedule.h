@@ -19,6 +19,9 @@ typedef enum
     ROOM_207,
     ROOM_208,
     ROOM_209,
+    ROOM_202,
+    ROOM_203,
+    ROOM_402
 } Room;
 
 typedef enum
@@ -43,7 +46,15 @@ typedef enum
     BIOT102,
     ENVS101,
     ENVS102,
-    ENVS141
+    ENVS141,
+    PHYS102_Practical,
+    PHAR204,
+    CHEM203,
+    PHAR402,
+    MGTS402,
+    CHEM215,
+    MEEEG306,
+    ENVE303
 } Subject;
 
 typedef enum
