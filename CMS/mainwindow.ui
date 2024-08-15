@@ -5869,7 +5869,7 @@ font-size:20px;border:none;</string>
                     <string>End Time</string>
                    </property>
                   </widget>
-                  <widget class="QComboBox" name="Block">
+                  <widget class="QComboBox" name="booking_subject">
                    <property name="geometry">
                     <rect>
                      <x>870</x>
