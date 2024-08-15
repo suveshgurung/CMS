@@ -101,7 +101,7 @@ void MainWindow::setupRoom106()
     QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button");
     QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button");
 
-    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    QStringList imagesPage = {":/resource/assets/room.jpg", ":/resource/assets/Knowledge.png"};
     ImageSlider *sliderPage1 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
 
