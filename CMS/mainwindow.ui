@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="landing_page"/>
       <widget class="QWidget" name="explore_page">
@@ -4792,7 +4792,7 @@ font-size:15px;
                     <set>Qt::AlignCenter</set>
                    </property>
                   </widget>
-                  <widget class="QDateEdit" name="Date_6">
+                  <widget class="QDateEdit" name="booking_date">
                    <property name="geometry">
                     <rect>
                      <x>10</x>
@@ -4834,7 +4834,7 @@ QDateEdit {
                     <bool>true</bool>
                    </property>
                   </widget>
-                  <widget class="QTimeEdit" name="starttime_6">
+                  <widget class="QTimeEdit" name="booking_start_time">
                    <property name="geometry">
                     <rect>
                      <x>170</x>
@@ -4863,7 +4863,7 @@ QToolTip {
                     <bool>false</bool>
                    </property>
                   </widget>
-                  <widget class="QComboBox" name="RoomNo_6">
+                  <widget class="QComboBox" name="booking_room_number">
                    <property name="geometry">
                     <rect>
                      <x>490</x>
@@ -4967,7 +4967,7 @@ font-size:15px;
                     <string>Room No.</string>
                    </property>
                   </widget>
-                  <widget class="QPushButton" name="SearchButton_6">
+                  <widget class="QPushButton" name="booking_search">
                    <property name="geometry">
                     <rect>
                      <x>30</x>
@@ -5065,7 +5065,7 @@ font-size:15px;
                     <string>Block No.</string>
                    </property>
                   </widget>
-                  <widget class="QComboBox" name="BlockNo_6">
+                  <widget class="QComboBox" name="booking_block_number">
                    <property name="geometry">
                     <rect>
                      <x>650</x>
@@ -5154,7 +5154,7 @@ font-size:15px;
                     <set>Qt::AlignCenter</set>
                    </property>
                   </widget>
-                  <widget class="QTimeEdit" name="endTime_6">
+                  <widget class="QTimeEdit" name="booking_end_time">
                    <property name="geometry">
                     <rect>
                      <x>330</x>

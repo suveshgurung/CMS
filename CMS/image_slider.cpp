@@ -1,4 +1,4 @@
-#include "image_slider.h".h"
+#include "image_slider.h"
 #include <QPixmap>
 #include <QDebug>
 

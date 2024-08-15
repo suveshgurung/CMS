@@ -58,6 +58,8 @@ private slots:
 
     void book_room();
 
+    void bookedClassesEval(QString start_time, std::string day);
+
     void on_booking_search_clicked();
 
     void on_home_2_clicked();

@@ -146,5 +146,6 @@ public:
 
 extern User *user;
 extern UserWindow *userWindow;
+extern UserWindow *bookingWindow;
 
 #endif
