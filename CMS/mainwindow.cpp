@@ -14,50 +14,31 @@
 #include <QPixmap>
 #include <QLabel>
 #include <QHBoxLayout>
+#include <algorithm>
+#include <cstddef>
 #include <string>
+#include <unordered_map>
+#include <vector>
 #include "image_slider.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
 
+    // Assuming you already have a QDateEdit object called 'dateEdit'
+    QDate today = QDate::currentDate();
+
     ui->setupUi(this);
 
+    ui->book_button_1->setVisible(false);
+    ui->book_button_2->setVisible(false);
+    ui->book_button_3->setVisible(false);
+    ui->book_button_4->setVisible(false);
+    ui->book_button_5->setVisible(false);
+    ui->book_button_6->setVisible(false);
+    ui->book_button_7->setVisible(false);
 
-    // Assuming you already have a QDateEdit object called 'dateEdit'
-    QDate today = QDate::currentDate();  // Get the current date
-    ui-> dateEdit->setDate(today);            // Set today's date
-
-
-    QTimer *timer = new QTimer(this);
-    connect(timer, SIGNAL(timeout()), this, SLOT(showTime()));
-    timer->start();
-
-    QTimeEdit *timeEdit = new QTimeEdit;
-    timeEdit->setButtonSymbols(QAbstractSpinBox::UpDownArrows);
-    timeEdit->setMinimumTime(QTime(0, 0, 0));
-    timeEdit->setMaximumTime(QTime(23, 59, 59));
-
-    QDateTime dateTime = QDateTime::currentDateTime();
-    QString dateTimeText = dateTime.toString("ddd MMM dd");
-    // ui->date_4->setText(dateTimeText);
-    // ui->date->setText(dateTimeText);
-    // ui->date_5->setText(dateTimeText);
-
-    QPushButton *findDate = new QPushButton("Find");
-
-    // Apply a stylesheet with a hover effect
-    findDate->setStyleSheet(
-        "QPushButton {"
-        "border: 2px solid black;"
-        "border-radius: 10px;" // Curved border
-        "padding: 10px;"
-        "background-color: lightgreen;"
-        "}"
-        "QPushButton:hover {"
-        "background-color: darkgreen;"
-        "color: white;"
-        "}");
+    ui->dateEdit->setDate(today);
 
     // Loop for stackedWidget UI "SIDEBAR UI"
     for (int i = 1; i <= 20; ++i)
@@ -686,96 +667,175 @@ int dayStrToEnum(std::string dayName) {
     if (dayName == "Friday") {
         return FRIDAY;
     }
-    qDebug() << "Test";
 
-    return SUNDAY;
+    // indicating no day. 
+    return 0;
 }
 
-int roomStrToEnum(QString roomNum) {
-    if (roomNum == "Room 106") {
-        return ROOM_106;
-    }
-    if (roomNum == "Room 107") {
-        return ROOM_107;
-    }
-    if (roomNum == "Room 108") {
-        return ROOM_108;
-    }
-    if (roomNum == "Room 109") {
-        return ROOM_109;
-    }
-    if (roomNum == "Room 207") {
-        return ROOM_207;
-    }
-    if (roomNum == "Room 208") {
-        return ROOM_208;
-    }
-    if (roomNum == "Room 209") {
-        return ROOM_209;
+QString roomEnumToStr(Room room) {
+
+    switch (room) {
+        case ROOM_106:
+            return "Room 106";
+            break;
+        case ROOM_107:
+            return "Room 107";
+            break;
+        case ROOM_108:
+            return "Room 108";
+            break;
+        case ROOM_109:
+            return "Room 109";
+            break;
+        case ROOM_207:
+            return "Room 207";
+            break;
+        case ROOM_208:
+            return "Room 208";
+            break;
+        case ROOM_209:
+            return "Room 209";
+            break;
     }
 }
 
-// void MainWindow::book_room() {
 
-//     QTime startTime = ui->booking_start_time->time();
-//     QTime endTime = ui->booking_end_time->time();
-//     QDate date = ui->booking_date->date();
-//     QString room = ui->booking_room_number->currentText();
 
-//     // get and format the time according to the database structure.
-//     QString startTimeStr = startTime.toString("hh:mm:ss");
-//     QString endTimeStr = endTime.toString("hh:mm:ss");
-//     QString dateStr = date.toString("dddd");
-//     std::string dayName = dateStr.toStdString();
+void addAvailableRooms(std::vector<std::string> data, std::vector<Room> &availableRoomVec) {
+    std::vector<Room> allRooms = {ROOM_106, ROOM_107, ROOM_108, ROOM_109, ROOM_207, ROOM_208, ROOM_209};
 
-//     std::string startTimeHour = startTimeStr.toStdString().substr(0, 2);
-//     std::string startTimeMinute = startTimeStr.toStdString().substr(3, 2);
-//     std::string endTimeHour = endTimeStr.toStdString().substr(0, 2);
-//     std::string endTimeMinute = endTimeStr.toStdString().substr(3, 2);
+    for (const auto& roomStr : data) {
+        int roomNumber = std::stoi(roomStr);
+        auto it = std::find(allRooms.begin(), allRooms.end(), roomNumber);
 
-//     QString dbStartTime = QString::fromStdString(startTimeHour) + ":" + QString::fromStdString(startTimeMinute);
-//     QString dbEndTime = QString::fromStdString(endTimeHour) + ":" + QString::fromStdString(endTimeMinute);
+        if (it != allRooms.end()) {
+            allRooms.erase(it);
+        }
+    }
 
-//     QSqlQuery query;
+    for (int roomNumber : allRooms) {
+        availableRoomVec.push_back(Room(roomNumber));
+    }
 
-//     // QString insertQuery = QString("INSERT INTO Schedule ('day_id', 'subject_id', 'group_id', 'room_id', 'start_time', 'end_time', 'start_time_actual', 'end_time_actual', 'date', 'default_schedule') VALUES (%1)")
-//     //     .arg(QString::number(dayStrToEnum(dayName)))
-//     //     .arg(1)
-//     //     .arg(3)
-//     //     .arg(QString::number(roomStrToEnum(room)))
-//     //     .arg(dbStartTime)
-//     //     .arg(dbEndTime)
-//     //     .arg(dbStartTime)
-//     //     .arg(dbEndTime)
-//     //     .arg(dateStr)
-//     //     .arg('n');
-//     //
-//     // qDebug() << insertQuery;
+}
 
-//     // using valueType = std::variant<int, std::string, Day>;
-//     // std::unordered_map<std::string, valueType> bookingData;
-//     //
-//     // bookingData["day_id"] = dayStrToEnum(dayName);
-//     // bookingData["subject_id"] = selectedSubject.toStdString();
+void MainWindow::bookedClassesEval(QString start_time, QString end_time, std::string day) {
+    std::string getRoomCondition = QString("WHERE (start_time_actual='%1' OR start_time_actual='%2') AND day_id='%3'")
+        .arg(start_time)
+        .arg(end_time)
+        .arg(QString::number(dayStrToEnum(day)))
+        .toStdString();
 
-//     // TODO: think if group id is required or not and how to let user select the subject? dropdown or just a text box to type the course name.
+    qDebug() << getRoomCondition;
 
-//     // bookingData["group_id"] = "2";
-//     // bookingData["start_time"] = dbStartTime.toStdString();
-//     // bookingData["end_time"] = dbEndTime.toStdString();
-//     // bookingData["default_schedule"] = "n";
-//     //
-//     // if (cmsDb->insertData(bookingData, "Schedule")) {
-//     //     qDebug() << "Successfull";
-//     // } else {
-//     //     qDebug() << "ONOOOO";
-//     // }
-// }
+    std::unordered_map<std::string, std::vector<std::string>> tableData;
+    std::vector<Room> availableRooms;
 
-// void MainWindow::on_booking_search_clicked()
-// {
-//     book_room();
-// }
+    tableData = cmsDb->getData("Schedule", getRoomCondition);
+
+    for (const auto& pair : tableData) {
+        if (pair.first == "room_id") {
+            addAvailableRooms(pair.second, availableRooms);
+        }
+    }
+
+    int j = 1;
+    for (size_t i = 0; i < availableRooms.size(); i++) {
+        if (j == 1) {
+            ui->book1->setText(roomEnumToStr(availableRooms.at(i)));
+            ui->book_button_1->setVisible(true);
+            j++;
+        }
+        else if (j == 2) {
+            ui->book2->setText(roomEnumToStr(availableRooms.at(i)));
+            ui->book_button_2->setVisible(true);
+            j++;
+        }
+        else if (j == 3) {
+            ui->book3->setText(roomEnumToStr(availableRooms.at(i)));
+            ui->book_button_3->setVisible(true);
+            j++;
+        }
+        else if (j == 4) {
+            ui->book4->setText(roomEnumToStr(availableRooms.at(i)));
+            ui->book_button_4->setVisible(true);
+            j++;
+        }
+        else if (j == 5) {
+            ui->book5->setText(roomEnumToStr(availableRooms.at(i)));
+            ui->book_button_5->setVisible(true);
+            j++;
+        }
+        else if (j == 6) {
+            ui->book6->setText(roomEnumToStr(availableRooms.at(i)));
+            ui->book_button_6->setVisible(true);
+            j++;
+        }
+        else if (j == 7) {
+            ui->book7->setText(roomEnumToStr(availableRooms.at(i)));
+            ui->book_button_7->setVisible(true);
+            j++;
+        }
+    }
+}
+
+void MainWindow::book_room() {
+
+    QString startTime = ui->booking_start_time->currentText();
+    QString endTime = ui->booking_end_time->currentText();
+    QDate date = ui->dateEdit->date();
+
+    // get and format the time according to the database structure.
+    QString dateStr = date.toString("dddd");
+    std::string dayName = dateStr.toStdString();
+
+    // dbStartTime = "9:00";
+
+    bookedClassesEval(startTime, endTime, dateStr.toStdString());
+
+    // book the selected room.
+    std::unordered_map<std::string, std::string> bookingData;
+
+    bookingData["day_id"] = QString::number(dayStrToEnum(dayName)).toStdString();
+    bookingData["subject_id"] = "1";
+    bookingData["group_id"] = "3";
+    // bookingData["room_id"] = QString::number(roomStrToEnum(room)).toStdString();
+    bookingData["start_time"] = startTime.toStdString();
+    bookingData["end_time"] = endTime.toStdString();
+    bookingData["start_time_actual"] = startTime.toStdString();
+    bookingData["end_time_actual"] = endTime.toStdString();
+    bookingData["date"] = dateStr.toStdString();
+    bookingData["default_schedule"] = "n";
+
+    // TODO: think if group id is required or not and how to let user select the subject? dropdown or just a text box to type the course name.
+
+    // if (cmsDb->insertData(bookingData, "Schedule")) {
+    //     qDebug() << "Successfull";
+    // } else {
+    //     qDebug() << "ONOOOO";
+    // }
+}
+
+void MainWindow::on_booking_search_clicked()
+{
+    ui->book_button_1->setVisible(false);
+    ui->book_button_2->setVisible(false);
+    ui->book_button_3->setVisible(false);
+    ui->book_button_4->setVisible(false);
+    ui->book_button_5->setVisible(false);
+    ui->book_button_6->setVisible(false);
+    ui->book_button_7->setVisible(false);
+
+    ui->book1->setText("");
+    ui->book2->setText("");
+    ui->book3->setText("");
+    ui->book4->setText("");
+    ui->book5->setText("");
+    ui->book6->setText("");
+    ui->book7->setText("");
+
+    book_room();
+}
 
 void MainWindow::on_home_2_clicked()
 {
