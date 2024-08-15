@@ -116,6 +116,7 @@ QString UserWindow::getEndTime() {
 
 void UserWindow::getSchedule() {
 
+    qDebug() << "Chikan is lob";
     std::unordered_map<std::string, std::vector<std::string>> defaultScheduleData;
     std::unordered_map<std::string, std::vector<std::string>> bookedScheduleData;
     std::unordered_map<std::string, std::vector<std::string>> combinedScheduleData;
@@ -133,7 +134,7 @@ void UserWindow::getSchedule() {
 
     
     // get the booked schedule.
-    std::string bookedCondition = QString("WHERE start_time='%1' AND end_time='%2' AND day_id='%3' AND default_schedule='n'")
+    std::string bookedCondition = QString("WHERE start_time='9:00' AND end_time='10:00' AND day_id='6' AND default_schedule='n'")
         .arg(startTime)
         .arg(endTime)
         .arg(dayName)
