@@ -101,7 +101,7 @@ void MainWindow::setupRoom106()
     QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button");
     QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button");
 
-    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    QStringList imagesPage = {":/resource/assets/room.jpg", ":/resource/assets/Knowledge.png"};
     ImageSlider *sliderPage1 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
 
@@ -356,6 +356,19 @@ void MainWindow::on_loginButton_clicked()
     {
         qDebug() << "Department UI element is null!";
     }
+
+    ui->dashboard_username->setText(usernameText);
+    ui->phonenumber->setText( QString::fromStdString(phone));
+    ui->firstname->setText( QString::fromStdString(fname));
+    if(!mname.empty())
+    {
+        ui->middlename->setText(QString::fromStdString(mname));
+    }
+    ui->lastname->setText(QString::fromStdString(lname));
+    ui->mail->setText(QString::fromStdString(mail));
+
+
+
 
     for (int i = 1; i <= 10; i++)
     {
@@ -668,67 +681,67 @@ int roomStrToEnum(QString roomNum) {
     }
 }
 
-void MainWindow::book_room() {
+// void MainWindow::book_room() {
 
-    QTime startTime = ui->booking_start_time->time();
-    QTime endTime = ui->booking_end_time->time();
-    QDate date = ui->booking_date->date();
-    QString room = ui->booking_room_number->currentText();
+//     QTime startTime = ui->booking_start_time->time();
+//     QTime endTime = ui->booking_end_time->time();
+//     QDate date = ui->booking_date->date();
+//     QString room = ui->booking_room_number->currentText();
 
-    // get and format the time according to the database structure.
-    QString startTimeStr = startTime.toString("hh:mm:ss");
-    QString endTimeStr = endTime.toString("hh:mm:ss");
-    QString dateStr = date.toString("dddd");
-    std::string dayName = dateStr.toStdString();
+//     // get and format the time according to the database structure.
+//     QString startTimeStr = startTime.toString("hh:mm:ss");
+//     QString endTimeStr = endTime.toString("hh:mm:ss");
+//     QString dateStr = date.toString("dddd");
+//     std::string dayName = dateStr.toStdString();
 
-    std::string startTimeHour = startTimeStr.toStdString().substr(0, 2);
-    std::string startTimeMinute = startTimeStr.toStdString().substr(3, 2);
-    std::string endTimeHour = endTimeStr.toStdString().substr(0, 2);
-    std::string endTimeMinute = endTimeStr.toStdString().substr(3, 2);
+//     std::string startTimeHour = startTimeStr.toStdString().substr(0, 2);
+//     std::string startTimeMinute = startTimeStr.toStdString().substr(3, 2);
+//     std::string endTimeHour = endTimeStr.toStdString().substr(0, 2);
+//     std::string endTimeMinute = endTimeStr.toStdString().substr(3, 2);
 
-    QString dbStartTime = QString::fromStdString(startTimeHour) + ":" + QString::fromStdString(startTimeMinute);
-    QString dbEndTime = QString::fromStdString(endTimeHour) + ":" + QString::fromStdString(endTimeMinute);
+//     QString dbStartTime = QString::fromStdString(startTimeHour) + ":" + QString::fromStdString(startTimeMinute);
+//     QString dbEndTime = QString::fromStdString(endTimeHour) + ":" + QString::fromStdString(endTimeMinute);
 
-    QSqlQuery query;
+//     QSqlQuery query;
 
-    // QString insertQuery = QString("INSERT INTO Schedule ('day_id', 'subject_id', 'group_id', 'room_id', 'start_time', 'end_time', 'start_time_actual', 'end_time_actual', 'date', 'default_schedule') VALUES (%1)")
-    //     .arg(QString::number(dayStrToEnum(dayName)))
-    //     .arg(1)
-    //     .arg(3)
-    //     .arg(QString::number(roomStrToEnum(room)))
-    //     .arg(dbStartTime)
-    //     .arg(dbEndTime)
-    //     .arg(dbStartTime)
-    //     .arg(dbEndTime)
-    //     .arg(dateStr)
-    //     .arg('n');
-    //
-    // qDebug() << insertQuery;
+//     // QString insertQuery = QString("INSERT INTO Schedule ('day_id', 'subject_id', 'group_id', 'room_id', 'start_time', 'end_time', 'start_time_actual', 'end_time_actual', 'date', 'default_schedule') VALUES (%1)")
+//     //     .arg(QString::number(dayStrToEnum(dayName)))
+//     //     .arg(1)
+//     //     .arg(3)
+//     //     .arg(QString::number(roomStrToEnum(room)))
+//     //     .arg(dbStartTime)
+//     //     .arg(dbEndTime)
+//     //     .arg(dbStartTime)
+//     //     .arg(dbEndTime)
+//     //     .arg(dateStr)
+//     //     .arg('n');
+//     //
+//     // qDebug() << insertQuery;
 
-    // using valueType = std::variant<int, std::string, Day>;
-    // std::unordered_map<std::string, valueType> bookingData;
-    //
-    // bookingData["day_id"] = dayStrToEnum(dayName);
-    // bookingData["subject_id"] = selectedSubject.toStdString();
+//     // using valueType = std::variant<int, std::string, Day>;
+//     // std::unordered_map<std::string, valueType> bookingData;
+//     //
+//     // bookingData["day_id"] = dayStrToEnum(dayName);
+//     // bookingData["subject_id"] = selectedSubject.toStdString();
 
-    // TODO: think if group id is required or not and how to let user select the subject? dropdown or just a text box to type the course name.
+//     // TODO: think if group id is required or not and how to let user select the subject? dropdown or just a text box to type the course name.
 
-    // bookingData["group_id"] = "2";
-    // bookingData["start_time"] = dbStartTime.toStdString();
-    // bookingData["end_time"] = dbEndTime.toStdString();
-    // bookingData["default_schedule"] = "n";
-    //
-    // if (cmsDb->insertData(bookingData, "Schedule")) {
-    //     qDebug() << "Successfull";
-    // } else {
-    //     qDebug() << "ONOOOO";
-    // }
-}
+//     // bookingData["group_id"] = "2";
+//     // bookingData["start_time"] = dbStartTime.toStdString();
+//     // bookingData["end_time"] = dbEndTime.toStdString();
+//     // bookingData["default_schedule"] = "n";
+//     //
+//     // if (cmsDb->insertData(bookingData, "Schedule")) {
+//     //     qDebug() << "Successfull";
+//     // } else {
+//     //     qDebug() << "ONOOOO";
+//     // }
+// }
 
-void MainWindow::on_booking_search_clicked()
-{
-    book_room();
-}
+// void MainWindow::on_booking_search_clicked()
+// {
+//     book_room();
+// }
 
 void MainWindow::on_home_2_clicked()
 {
