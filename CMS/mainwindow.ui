@@ -4824,7 +4824,11 @@ border:none;</string>
                     <string>Start Time</string>
                    </property>
                   </widget>
+<<<<<<< HEAD
+                  <widget class="QDateEdit" name="booking_date">
+=======
                   <widget class="QDateEdit" name="dateEdit">
+>>>>>>> main
                    <property name="geometry">
                     <rect>
                      <x>40</x>
@@ -4916,7 +4920,11 @@ QCalendarWidget QComboBox QAbstractItemView {
                     <bool>true</bool>
                    </property>
                   </widget>
+<<<<<<< HEAD
+                  <widget class="QTimeEdit" name="booking_start_time">
+=======
                   <widget class="QComboBox" name="startTime">
+>>>>>>> main
                    <property name="geometry">
                     <rect>
                      <x>300</x>
@@ -5003,7 +5011,11 @@ QDateEdit {
                     </property>
                    </item>
                   </widget>
+<<<<<<< HEAD
+                  <widget class="QComboBox" name="booking_room_number">
+=======
                   <widget class="QLabel" name="time_icon_11">
+>>>>>>> main
                    <property name="geometry">
                     <rect>
                      <x>300</x>
@@ -5151,7 +5163,11 @@ font-size:20px;border:none;</string>
                     <string>End Time</string>
                    </property>
                   </widget>
+<<<<<<< HEAD
+                  <widget class="QPushButton" name="booking_search">
+=======
                   <widget class="QComboBox" name="Block">
+>>>>>>> main
                    <property name="geometry">
                     <rect>
                      <x>870</x>
@@ -5372,7 +5388,11 @@ font-weight:bold;</string>
                     </property>
                    </widget>
                   </widget>
+<<<<<<< HEAD
+                  <widget class="QComboBox" name="booking_block_number">
+=======
                   <widget class="QFrame" name="frame_31">
+>>>>>>> main
                    <property name="geometry">
                     <rect>
                      <x>50</x>
@@ -5719,7 +5739,71 @@ font-size:17px;
                     <rect>
                      <x>50</x>
                      <y>290</y>
+<<<<<<< HEAD
+                     <width>801</width>
+                     <height>101</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QLabel {
+  background-color: #DFF2FF; /* Light blue background */
+  color: #003366; /* Dark blue text */
+  font-family: &quot;Segoe UI&quot;; /* Font family */
+  font-size: 15px;
+  font-weight: bold; /* Bold text */
+  padding: 5px; /* Padding for spacing */
+}
+
+
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Instructions:
+- Select date, time, room no, and block
+- Click 'Search' to find available rooms
+</string>
+                   </property>
+                   <property name="textFormat">
+                    <enum>Qt::PlainText</enum>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                  <widget class="QLabel" name="label_89">
+                   <property name="geometry">
+                    <rect>
+                     <x>320</x>
+                     <y>80</y>
+                     <width>91</width>
+                     <height>51</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(240, 240, 240, 255), stop:1 rgba(255, 255, 255, 255));
+border-color: rgb(255, 255, 255);
+  color: #003366; 
+font-size:15px;
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>End Time</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                  <widget class="QTimeEdit" name="booking_end_time">
+                   <property name="geometry">
+                    <rect>
+                     <x>330</x>
+                     <y>140</y>
+                     <width>131</width>
+=======
                      <width>1061</width>
+>>>>>>> main
                      <height>41</height>
                     </rect>
                    </property>

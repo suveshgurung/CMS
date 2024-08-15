@@ -3,6 +3,7 @@
 
 User* user = nullptr;
 UserWindow* userWindow = nullptr;
+UserWindow* bookingWindow = nullptr;
 
 User::User() {
     // user id 0 means no user is present.
@@ -233,7 +234,6 @@ void UserWindow::getSchedule() {
 
     linkSubjects();
     linkTime();
-
 }
 
 void UserWindow::setRooms(std::vector<std::string> roomsVec) {
@@ -267,7 +267,6 @@ void UserWindow::setRooms(std::vector<std::string> roomsVec) {
         }
 
     }
-
 }
 
 void UserWindow::setGroups(std::vector<std::string> groupsVec) {
@@ -370,7 +369,6 @@ void UserWindow::setSubjects(std::vector<std::string> subjectsVec) {
         }
 
     }
-
 }
 
 void UserWindow::setStartTimeVec(std::vector<std::string> vec) {
