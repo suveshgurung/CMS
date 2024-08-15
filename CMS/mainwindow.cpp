@@ -28,9 +28,16 @@ MainWindow::MainWindow(QWidget *parent)
 {
 
     // Assuming you already have a QDateEdit object called 'dateEdit'
-    QDate today = QDate::currentDate();
-
+    
     ui->setupUi(this);
+
+    QDate today = QDate::currentDate();  // Get the current date
+    ui-> dateEdit->setDate(today);            // Set today's date
+
+
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(showTime()));
+    timer->start();
 
     ui->book_button_1->setVisible(false);
     ui->book_button_2->setVisible(false);
