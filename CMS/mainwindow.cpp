@@ -147,7 +147,7 @@ void MainWindow::setupRoom208()
     QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_6");
     QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_6");
 
-    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    QStringList imagesPage = {":/resource/assets/208.jpg", ""};
     ImageSlider *sliderPage6 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
 
@@ -157,7 +157,7 @@ void MainWindow::setupRoom209()
     QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_7");
     QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_7");
 
-    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    QStringList imagesPage = {":/resource/assets/209.jpg", ":/resource/assets/209_room.jpg"};
     ImageSlider *sliderPage7 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
 
