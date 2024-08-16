@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="landing_page"/>
       <widget class="QWidget" name="explore_page">
