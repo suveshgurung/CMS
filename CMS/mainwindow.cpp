@@ -147,7 +147,7 @@ void MainWindow::setupRoom208()
     QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_6");
     QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_6");
 
-    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    QStringList imagesPage = {":/resource/assets/208.jpg", ""};
     ImageSlider *sliderPage6 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
 
@@ -157,7 +157,7 @@ void MainWindow::setupRoom209()
     QPushButton *leftButton = findChild<QPushButton *>("left_swipe_button_7");
     QPushButton *rightButton = findChild<QPushButton *>("right_swipe_button_7");
 
-    QStringList imagesPage = {":/resource/assets/school.jpg", ":/resource/assets/Knowledge.png"};
+    QStringList imagesPage = {":/resource/assets/209.jpg", ":/resource/assets/209_room.jpg"};
     ImageSlider *sliderPage7 = new ImageSlider(imageLabel, leftButton, rightButton, imagesPage, this);
 }
 
@@ -574,87 +574,87 @@ void MainWindow::update_room_status()
      for (size_t i = 0; i < rooms.size(); i++)
           {
 
-          switch (rooms.at(i))
-          {
-          case ROOM_106:
-          ui->room_106_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-          ui->room_106_status->setText("Not Available");
-          ui->room_106_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
-          ui->room_106_class_time->setText(timeRange);
-          ui->Subject_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          ui->start_time->setText(QString::fromStdString(startTime[rooms.at(i)]));
-          ui->end_time->setText(QString::fromStdString(endTime[rooms.at(i)]));
-          ui->availability_status->setText("Not Available");
-          break;
-          case ROOM_107:
-          ui->room_107_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-          ui->room_107_status->setText("Not Available");
-          ui->room_107_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
-          ui->room_107_class_time->setText(timeRange);
-          ui->Subject_name_2->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          ui->start_time_2->setText(QString::fromStdString(startTime[rooms.at(i)]));
-          ui->end_time_2->setText(QString::fromStdString(endTime[rooms.at(i)]));
-          ui->availability_status_2->setText("Not Available");
-          break;
-          case ROOM_108:
-          ui->room_108_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-          ui->room_108_status->setText("Not Available");
-          ui->room_108_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
-          ui->room_108_class_time->setText(timeRange);
-          ui->Subject_name_3->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          ui->start_time_3->setText(QString::fromStdString(startTime[rooms.at(i)]));
-          ui->end_time_3->setText(QString::fromStdString(endTime[rooms.at(i)]));
-          ui->availability_status_3->setText("Not Available");
-          break;
-          case ROOM_109:
-          ui->room_109_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-          ui->room_109_status->setText("Not Available");
-          ui->room_109_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
-          ui->room_109_class_time->setText(timeRange);
-          ui->Subject_name_4->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          ui->start_time_4->setText(QString::fromStdString(startTime[rooms.at(i)]));
-          ui->end_time_4->setText(QString::fromStdString(endTime[rooms.at(i)]));
-          ui->availability_status_4->setText("Not Available");
-          break;
-          case ROOM_207:
-          ui->room_207_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-          ui->room_207_status->setText("Not Available");
-          ui->room_207_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
-          ui->room_207_class_time->setText(timeRange);
-          ui->Subject_name_5->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          ui->start_time_5->setText(QString::fromStdString(startTime[rooms.at(i)]));
-          ui->end_time_5->setText(QString::fromStdString(endTime[rooms.at(i)]));
-          ui->availability_status_5->setText("Not Available");
-          break;
-          case ROOM_208:
-          ui->room_208_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-          ui->room_208_status->setText("Not Available");
-          ui->room_208_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
-          ui->room_208_class_time->setText(timeRange);
-          ui->Subject_name_6->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          ui->start_time_6->setText(QString::fromStdString(startTime[rooms.at(i)]));
-          ui->end_time_6->setText(QString::fromStdString(endTime[rooms.at(i)]));
-          ui->availability_status_6->setText("Not Available");
-          break;
-          case ROOM_209:
-          ui->room_209_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
-          ui->room_209_status->setText("Not Available");
-          ui->room_209_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
-          ui->room_209_class_time->setText(timeRange);
-          ui->Subject_name_7->setText(QString::fromStdString(subjects[rooms.at(i)]));
-          ui->start_time_7->setText(QString::fromStdString(startTime[rooms.at(i)]));
-          ui->end_time_7->setText(QString::fromStdString(endTime[rooms.at(i)]));
-          ui->availability_status_7->setText("Not Available");
-          break;
-          default:
-          break;
+        switch (rooms.at(i))
+        {
+        case ROOM_106:
+            ui->room_106_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_106_status->setText("Not Available");
+            ui->room_106_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
+            ui->room_106_class_time->setText(timeRange);
+            ui->Subject_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            ui->start_time->setText(QString::fromStdString(startTime[rooms.at(i)]));
+            ui->end_time->setText(QString::fromStdString(endTime[rooms.at(i)]));
+            ui->availability_status->setText("Not Available");
+            break;
+        case ROOM_107:
+            ui->room_107_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_107_status->setText("Not Available");
+            ui->room_107_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
+            ui->room_107_class_time->setText(timeRange);
+            ui->Subject_name_2->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            ui->start_time_2->setText(QString::fromStdString(startTime[rooms.at(i)]));
+            ui->end_time_2->setText(QString::fromStdString(endTime[rooms.at(i)]));
+            ui->availability_status_2->setText("Not Available");
+            break;
+        case ROOM_108:
+            ui->room_108_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_108_status->setText("Not Available");
+            ui->room_108_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
+            ui->room_108_class_time->setText(timeRange);
+            ui->Subject_name_3->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            ui->start_time_3->setText(QString::fromStdString(startTime[rooms.at(i)]));
+            ui->end_time_3->setText(QString::fromStdString(endTime[rooms.at(i)]));
+            ui->availability_status_3->setText("Not Available");
+            break;
+        case ROOM_109:
+            ui->room_109_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_109_status->setText("Not Available");
+            ui->room_109_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
+            ui->room_109_class_time->setText(timeRange);
+            ui->Subject_name_4->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            ui->start_time_4->setText(QString::fromStdString(startTime[rooms.at(i)]));
+            ui->end_time_4->setText(QString::fromStdString(endTime[rooms.at(i)]));
+            ui->availability_status_4->setText("Not Available");
+            break;
+        case ROOM_207:
+            ui->room_207_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_207_status->setText("Not Available");
+            ui->room_207_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
+            ui->room_207_class_time->setText(timeRange);
+            ui->Subject_name_5->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            ui->start_time_5->setText(QString::fromStdString(startTime[rooms.at(i)]));
+            ui->end_time_5->setText(QString::fromStdString(endTime[rooms.at(i)]));
+            ui->availability_status_5->setText("Not Available");
+            break;
+        case ROOM_208:
+            ui->room_208_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_208_status->setText("Not Available");
+            ui->room_208_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
+            ui->room_208_class_time->setText(timeRange);
+            ui->Subject_name_6->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            ui->start_time_6->setText(QString::fromStdString(startTime[rooms.at(i)]));
+            ui->end_time_6->setText(QString::fromStdString(endTime[rooms.at(i)]));
+            ui->availability_status_6->setText("Not Available");
+            break;
+        case ROOM_209:
+            ui->room_209_status->setStyleSheet("background-color:#ef4444;padding:5px;width:auto;color:white;");
+            ui->room_209_status->setText("Not Available");
+            ui->room_209_class_name->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            timeRange = QString::fromStdString(startTime[rooms.at(i)]) + "-" + QString::fromStdString(endTime[rooms.at(i)]);
+            ui->room_209_class_time->setText(timeRange);
+            ui->Subject_name_7->setText(QString::fromStdString(subjects[rooms.at(i)]));
+            ui->start_time_7->setText(QString::fromStdString(startTime[rooms.at(i)]));
+            ui->end_time_7->setText(QString::fromStdString(endTime[rooms.at(i)]));
+            ui->availability_status_7->setText("Not Available");
+            break;
+        default:
+            break;
         }
     }
 }

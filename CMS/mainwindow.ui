@@ -39,7 +39,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="landing_page"/>
       <widget class="QWidget" name="explore_page">
@@ -1587,7 +1587,7 @@ margin:0px;
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                  <pixmap resource="resources.qrc">:/resource/assets/106.jpg</pixmap>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
@@ -1842,7 +1842,7 @@ margin:0px;
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                  <pixmap resource="resources.qrc">:/resource/assets/107.jpg</pixmap>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
@@ -2095,7 +2095,7 @@ margin:0px;
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                  <pixmap resource="resources.qrc">:/resource/assets/108.jpg</pixmap>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
@@ -2348,7 +2348,7 @@ margin:0px;
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                  <pixmap resource="resources.qrc">:/resource/assets/106.jpg</pixmap>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
@@ -2679,7 +2679,7 @@ margin:0px;
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                  <pixmap resource="resources.qrc">:/resource/assets/207.jpg</pixmap>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
@@ -2932,7 +2932,7 @@ margin:0px;
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                  <pixmap resource="resources.qrc">:/resource/assets/208.jpg</pixmap>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
@@ -3185,7 +3185,7 @@ margin:0px;
                   <string/>
                  </property>
                  <property name="pixmap">
-                  <pixmap resource="resources.qrc">:/resource/assets/room.jpg</pixmap>
+                  <pixmap resource="resources.qrc">:/resource/assets/209.jpg</pixmap>
                  </property>
                  <property name="scaledContents">
                   <bool>true</bool>
